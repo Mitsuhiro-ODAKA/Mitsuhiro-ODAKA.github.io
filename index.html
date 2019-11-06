@@ -28,26 +28,25 @@ mainVisual video {
 }
 @media screen {
   mainVisual {
-    height: 500px;
+    height: 1280px;
   }
 }
 </style>
 
-<br>
 <button id="myBtn" onclick="myFunction()">Pause</button>
-  <script>
-      var video = document.getElementById("mainVisual");
-      var btn = document.getElementById("myBtn");
-      function myFunction() {
-        if (video.paused) {
-          video.play();
-          btn.innerHTML = "Pause";
-        } else {
-        video.pause();
-        btn.innerHTML = "Play";
-        }
-      }
-    </script>
+<script>
+var video = document.getElementById("mainVisual");
+var btn = document.getElementById("myBtn");
+function myFunction() {
+ if (video.paused) {
+  video.play();
+  btn.innerHTML = "Pause";
+  } else {
+  video.pause();
+  btn.innerHTML = "Play";
+  }
+ }
+</script>
 
 
 
