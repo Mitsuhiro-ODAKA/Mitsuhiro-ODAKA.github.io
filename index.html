@@ -1,87 +1,66 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Mitsuhiro_Odaka_Official_Website</title>
-</head>
+<title>Mitsuhiro ODAKA Official Website</title>
+</head>  
 </html>
 
-<body bgcolor= "#C0C0C0" ; rightmargin= "10px"; leftmargin= "10px">
+
 
 <html>
-<br>
-<div align ="left"; style="background-color:#C0C0C0">
-<font size ="7"; face="Yu Gothic Medium"; color="#222222">
+
+<body bgcolor= "#C0C0C0" ; font-color ="#222222" ; face= "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "sans-serif";>
+<header>
+  <nav>
+    <video autoplay muted loop id="myVideo">
+      <source src="homepage2.mp4" type="video/mp4">
+    </video>
+    
+    <button id="myBtn" onclick="myFunction()">Pause</button>
+<!--     </div> -->
+    <script>
+      var video = document.getElementById("myVideo");
+      var btn = document.getElementById("myBtn");
+      function myFunction() {
+        if (video.paused) {
+          video.play();
+          btn.innerHTML = "Pause";
+        } else {
+        video.pause();
+        btn.innerHTML = "Play";
+        }
+      }
+    </script>
+  </nav>
+</header>
+  
+<div align ="left">
+<font size ="7">
 <b>
 &nbsp;MITSUHIRO<br>
 &nbsp;ODAKA<br>
 </b>
-</div>
-  
-<div align="left"; font-color:"#222222">
-<font size="5"; face="Yu Gothic Medium"><b>&nbsp;&nbsp;小髙充弘 (Bachelor of Medicine)</font><br><br>
-<font size="3"; face="Yu Gothic Medium">
-&nbsp;&nbsp;&nbsp;Graduate student, RA (The Graduate University for Advanced Studies, SOKENDAI & National Institute of Informatics)(Japan)<br><br>
-<!-- &nbsp;&nbsp;&nbsp;市民有志団体「デジタル・ヒューマニティーズ同好会（デジもんず）」企画代表</font><br><br> -->
 </font>
+</div>
+
+  
+<div align="left">
+<font size="5">&nbsp;&nbsp;小髙充弘 (Bachelor of Medicine)</font><br>
+<font size="3">&nbsp;&nbsp;&nbsp;Graduate student, RA (The Graduate University for Advanced Studies, SOKENDAI & National Institute of Informatics)(Japan)</font><br>
 </div>  
-  
-<div align ="center" ; style="background-color:#C0C0C0">
 
-<font size="5"; face="Yu Gothic Medium">
-<div align="center"; style="padding:5px 10px;font-weight:bold; width: 900px; background: radial-gradient(#fff8dc, #fff8dc); color: #222222; border-radius: 20px; -webkit-border-radius: 20px; -moz-border-radius: 20px;"> 
-<font face="Yu Gothic Medium">
-<a href="index.html">Main</a>&nbsp;
-<a href="about.html">About</a>&nbsp;
-<a href="activity.html">Research&Art</a>&nbsp;
-<a href="top.html">Research Works</a>&nbsp;
-<a href="gallery.html">Art Works</a>&nbsp;
-<a href="link.html">Contact</a><br>
-</font>
+<div align = "center">
+<a href="index.html">HOME</a>&nbsp;
+<a href="bio.html">BIO</a>&nbsp;
+<a href="gallery.html">GALLERY</a>&nbsp;
+<a href="info.html">INFO</a><br>
 </div>
-<br>
 
-
-<!-- <hr width="500"> -->
-</html>
-
-<html>
-<video autoplay muted loop id="myVideo">
-<source src="homepage2.mp4" type="video/mp4">
-</video>
-
-<p><font color ="#222222"; face="Yu Gothic Medium">© Mitsuhiro ODAKA 2019</font></p>
-
-<button id="myBtn" onclick="myFunction()">Pause</button>
-</div>
-</html>
   
-<script>
-// Get the video
-var video = document.getElementById("myVideo");
-
-// Get the button
-var btn = document.getElementById("myBtn");
-
-// Pause and play the video, and change the button text
-function myFunction() {
-  if (video.paused) {
-    video.play();
-    btn.innerHTML = "Pause";
-  } else {
-    video.pause();
-    btn.innerHTML = "Play";
-  }
-}
-</script>
-<html>
-<br>
 <div align ="right"; style="background-color:#C0C0C0">
-<font color="#222222"; face="Yu Gothic Medium">Last Updated<br>
-2019/11/05</font>
+Last Updated<br>
+2019/11/05<br>
 </div>
-</html>
-
-
-
+  
 </body>
-
+</html>
