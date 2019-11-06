@@ -3,30 +3,36 @@
 <title>Mitsuhiro ODAKA Official Website</title>
 <body font-family: YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif; margin: 0 auto;>
 
-  
-<head>
-	<meta charset="utf-8">
-	<meta name="X-UA-Compatible" content="IE=Edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>html-video</title>
-	<!-- 独自CSS -->
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-
-<!-- top -->
-<div class="top">
-	<video id="video1" src="homepage2.mp4" muted autoplay loop>
-	</video>
-
-	<div class="headline">
-		<h2>Headline here</h2>
-		<p>This is a sample text.</p>
-	</div>
+<div class="mainVisual">
+  <video src="//into-the-program.com/asset/video/homepage2.mp4" autoplay loop muted></video>
 </div>
   
-<video>
-<source src='homepage2.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-
+<style>
+body {
+  margin: 0;
+  padding: 0;
+}
+.mainVisual {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+mainVisual  video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+@media screen and (min-width: 768px) {
+  mainVisual {
+    height: 500px;
+  }
+}
+</style>
+<br>
 <button id="myBtn" onclick="myFunction()">Pause</button>
     <script>
       var video = document.getElementById("myVideo");
@@ -43,74 +49,7 @@
     </script>
 
 
-/*--------------トップ-----------------*/
-.top {
-	height: 100%;
-	background: none;
-	position: relative;
-}
 
-.top video {
-	display: block;
-	width: 100%;
-}
-
-.headline {
-	position: absolute;
-  text-align: center;
-	top: 50%;
-	left: 50%;
-	-ms-transform: translate(-50%,-50%);
-	-webkit-transform: translate(-50%,-50%);
-	transform: translate(-50%,-50%);
-}
-
-.headline h2 {
-	margin: 0;
-    font-size: 52px;
-    color: #fff;
-	}
-
-.headline p {
-	color: #fff;
-	font-weight: 100;
-}
-
-/*------------------------------------*/
-/*--------------スマホ-----------------*/
-/*------------------------------------*/
-@media screen and (max-width: 480px) {
-/*--------------トップ-----------------*/
-.top {
-    background: url(img/topimg.jpg);
-    position: relative;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.top video {
-	display: none;
-}
-
-.headline {
-	width: 100%;
-	position: absolute;
-}
-
-.headline h2 {
-  margin: 0;
-  font-size: 36px;
-  color: #fff;
-}
-
-.headline p {
-	color: #fff;
-	font-weight: 100;
-}
-}
-      
 <div align ="left">
 <font size ="7">
 <b>
