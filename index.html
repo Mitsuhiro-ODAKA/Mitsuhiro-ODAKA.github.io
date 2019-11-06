@@ -5,14 +5,11 @@
     <title>Mitsuhiro ODAKA Official Website</title>
     <style>
       body {
-        background: #F2F2F2;
+        background: #000000;
         font-family: YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
       }
       div {
         background: #000000;
-        width: 300px;
-        padding: 10px;
-        text-align: center;
       }
       .mainVisual {
         position: relative;
@@ -23,10 +20,23 @@
       .links{
         position: absolute;
         text-align: center;
+        color: "f5f5f5";
+        left: 50px;
+        top: 50px;
       }
       .update{
         position: absolute;
         text-align: center;
+        color: "f5f5f5";
+        left: 50px;
+        top: 100px;
+      }
+      .main{
+        position: absolute;
+        text-align: center;
+        color:"f5f5f5";
+        left: 50px;
+        top: 150px;
       }
       mainVisual video {
         position: absolute;
@@ -48,20 +58,28 @@
   <body>
     <div class="mainVisual">
       <video src="ho5.mp4" ;  poster="odaka.PNG" ; autoplay loop muted></video>
-      <a href="index.html">HOME</a>&nbsp;
-      <a href="bio.html">BIO</a>&nbsp;
-      <a href="gallery.html">GALLERY</a>&nbsp;
-      <a href="info.html">INFO</a><br>
-
-      <button id="myBtn" onclick="myFunction()">Pause</button>
-      Last Updated<br>
-      2019/11/05<br>
-     </div>
-     <h1><font color="#f5f5f5">MITSUHIRO ODAKA</font></h1>
-     <p><font color="f5f5f5">Bachelor of Medicine, Graduate student, RA (The Graduate University for Advanced Studies, SOKENDAI & National Institute of Informatics)(Japan)</font></p>
+      <div class="links">
+        <a href="index.html">HOME</a>&nbsp;
+        <a href="bio.html">BIO</a>&nbsp;
+        <a href="gallery.html">GALLERY</a>&nbsp;
+        <a href="info.html">INFO</a><br>
+      </div>
+      <div class="button">
+        <button id="button" onclick="myFunction()">Pause</button>
+      </div>
+      <div class="update">
+        Last Updated<br>
+        2019/11/05<br>
+      </div>
+      <div class="main">
+        <h1><font color="#f5f5f5">MITSUHIRO ODAKA</font></h1>
+        <p><font color="f5f5f5">Bachelor of Medicine, Graduate student, RA (The Graduate University for Advanced Studies, SOKENDAI & National Institute of Informatics)(Japan)</font></p>
+      </div>   
+    </div>
+    
     <script>
       var video = document.getElementById("mainVisual");
-      var btn = document.getElementById("myBtn");
+      var btn = document.getElementById("button");
       function myFunction() {
         if (video.paused) {
           video.play();
