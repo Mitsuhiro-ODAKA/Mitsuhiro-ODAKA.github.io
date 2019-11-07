@@ -6,8 +6,10 @@
     <style>
       body {
         font-family: YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+        background:"#000000";
       }
       div {
+        background:"#000000";
       }
       .mainVisual {
         position: relative;
@@ -18,18 +20,21 @@
       .links{
         position: absolute;
         text-align: center;
+        font-size:xx-large;
         left: 50px;
         top: 50px;
       }
       .update{
         position: absolute;
         text-align: center;
-        left: 50px;
-        top: 200px;
+        font-size:xx-large;
+        right: 50px;
+        buttom: 100px;
       }
       .main{
         position: absolute;
         text-align: left;
+        font-size:12ex;
         left: 50px;
         top: 100px;
       }
@@ -39,7 +44,6 @@
         top: 0px;
         min-width: 100%;
         min-height: 100%;
-        clip:rect(0,0,0,300px);
         z-index: -1;
       }
       
@@ -53,27 +57,29 @@
   </head>
   <body>
     <div class="mainVisual">
-      <video src="ho5.mp4" ;  poster="odaka.PNG" ; autoplay loop muted></video>
+      <video src="ho6.mp4" ;  poster="odaka.PNG" ; autoplay loop muted></video>
       <div class="links">
         <a href="index.html">HOME</a>&nbsp;
         <a href="bio.html">BIO</a>&nbsp;
         <a href="gallery.html">GALLERY</a>&nbsp;
         <a href="info.html">INFO</a><br>
       </div>
-      <div class="button">
+<!--       <div class="button">
         <button id="button" onclick="myFunction()">Pause</button>
-      </div>
+      </div> -->
       <div class="update">
         Last Updated<br>
         2019/11/05<br>
       </div>
       <div class="main">
         <h1>MITSUHIRO ODAKA</h1>
-        <p>Bachelor of Medicine, Graduate student, RA (The Graduate University for Advanced Studies, SOKENDAI & National Institute of Informatics)(Japan)</p>
+        <p>Bachelor of Medicine, Graduate student,<br>
+          RA (The Graduate University for Advanced Studies,<br>
+          SOKENDAI & National Institute of Informatics)(Japan)</p>
       </div>   
     </div>
     
-    <script>
+<!--     <script>
       var video = document.getElementById("mainVisual");
       var btn = document.getElementById("button");
       function myFunction() {
@@ -85,7 +91,7 @@
           btn.innerHTML = "Play";
         }
       }
-    </script>
+    </script> -->
     
   </body>
 </html>
