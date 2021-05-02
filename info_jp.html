@@ -24,7 +24,6 @@
         background-color:#000000;
         font-size: 3vh;
         color : #C0C0C0;
-
       }
 
       div {
@@ -59,9 +58,27 @@
         top: 18%;
       }
       
-      p.sns img {
-        width: 5vw;
+      img {
+       max-width: 100%;
+       max-height: 100%;
+       width: auto;
+       height: auto;
       }
+      
+      .img-container--absolute-position {
+         position: relative;
+         width: 5vm;
+         border: 1px solid black;
+         img {
+         position: absolute;
+         left: 0;
+         right: 0;
+         top: 0;
+         bottom: 0;
+         margin: auto;
+         }
+}
+      
     </style>
 
 
@@ -100,10 +117,12 @@
         function Language_setting() {
             if (datalist.language == "en") {
                 document.getElementById("lang").innerHTML = "English";
+                document.getElementById("01").innerHTML = "Digital Humanities Club";
                 datalist.language = "jp"
                 localStorage.setItem("datalist", JSON.stringify(datalist));
             } else if (datalist.language == "jp") {
                 document.getElementById("lang").innerHTML = "日本語";
+                document.getElementById("01").innerHTML = "デジもんず";
                 datalist.language = "en";
                 localStorage.setItem("datalist", JSON.stringify(datalist));
             } else {
@@ -125,7 +144,7 @@
       <a href="https://mitsuhiro-odaka.github.io/password_please.html">小髙の取扱説明書</a><br> 
       <br>
       <a href="https://mitsuhiro-odaka.github.io/jimoko.html"><img border="0" src="EHkVBDlU0AAmNMQ.jpg" alt="can't display the image" title="Jump to Digital Humanities Doko-Kai."></a><br>
-      <span style="font-family: 'Yusei Magic', sans-serif">デジもんず</span><br>
+      <div id="01"><span style="font-family: 'Yusei Magic', sans-serif">デジもんず</span></div><br>
       <br>
       連絡（個人用携帯）<br>
       ｈａｒｕｔｏｓｙｕｒａ［ａｔ］ｉ．ｓｏｆｔｂａｎｋ．ｊｐ<br>
