@@ -76,25 +76,11 @@
           box-sizing: border-box;
         }
 
-        body {
-          background: #FDFDFD;
-          margin: 25px 0;
-        }
-
-        span.title {
-          margin: 0 auto;
-          color: #BBB;
-          font-family: 'M PLUS 1p', sans-serif;
-          font-size: 0.85rem;
-          text-align: center;
-          display: block;
-        }
-
-        .basicBox, .swiggleBox, .checkBox {
-          width: 130px;
-          height: 65px;
+        .basicBox{
+          width: 5vw;
+          height: 5vh;
           margin: 15px auto;
-          color: #4274D3;
+          color: #C0C0C0;
           font-family: 'M PLUS 1p', sans-serif;
           font-size: 1.15rem;
           line-height: 65px;
@@ -111,12 +97,12 @@
         }
         svg rect, svg path, svg polyline {
           fill: none;
-          stroke: #4274D3;
+          stroke: #C0C0C0;
           stroke-width: 1;
         }
 
-        .basicBox:hover svg rect, .swiggleBox:hover svg path, .checkBox:hover svg polyline {
-          stroke: #4274D3;
+        .basicBox:hover svg rect{
+          stroke: #C0C0C0;
         }
 
         /* Basic Box */
@@ -136,136 +122,6 @@
           -ms-transition: all 0.8s ease-in-out;
           -o-transition: all 0.8s ease-in-out;
         }
-
-        /* Swiggle Box */
-        svg path {
-          stroke-dasharray: 265, 0;
-          -webkit-transition: all 1s ease-in-out;
-          -moz-transition: all 1s ease-in-out;
-          -ms-transition: all 1s ease-in-out;
-          -o-transition: all 1s ease-in-out;
-        }
-        .swiggleBox:hover svg path {
-          stroke-width: 3;
-          stroke-dasharray: 0, 350;
-          stroke-dashoffset: 20;
-          -webkit-transition: all 1s ease-in-out;
-          -moz-transition: all 1s ease-in-out;
-          -ms-transition: all 1s ease-in-out;
-          -o-transition: all 1s ease-in-out;
-        }
-
-        /* Check Box */
-        .checkBox {
-          /* Add Padding Left To Center Text */
-        }
-        .checkBox svg {
-          /* Presentation Purposes */
-          margin-left: -10px;
-        }
-        .checkBox svg rect, .checkBox svg polyline {
-          fill: none;
-          stroke: #4274D3;
-          stroke-width: 1;
-          -webkit-transition: all 0.8s ease-in-out;
-          -moz-transition: all 0.8s ease-in-out;
-          -ms-transition: all 0.8s ease-in-out;
-          -o-transition: all 0.8s ease-in-out;
-        }
-        .checkBox:hover svg rect {
-          stroke-width: 2;
-          -webkit-transition: all 0.8s ease-in-out;
-          -moz-transition: all 0.8s ease-in-out;
-          -ms-transition: all 0.8s ease-in-out;
-          -o-transition: all 0.8s ease-in-out;
-        }
-        .checkBox:hover svg polyline {
-          stroke-width: 2;
-          -webkit-transition: all 0.8s ease-in-out;
-          -moz-transition: all 0.8s ease-in-out;
-          -ms-transition: all 0.8s ease-in-out;
-          -o-transition: all 0.8s ease-in-out;
-        }
-        .checkBox svg .button {
-          stroke-dasharray: 400px, 0;
-        }
-        .checkBox:hover svg .button {
-          stroke-dasharray: 0, 400px;
-          stroke-dashoffset: 33px;
-        }
-        /* Check Mark Effect */
-        .box, .checkMark {
-          opacity: 0;
-        }
-        .checkBox:hover .box {
-          -webkit-animation: boxDisplay 0.2s forwards;
-          -moz-animation: boxDisplay 0.2s forwards;
-          -ms-animation: boxDisplay 0.2s forwards;
-          -o-animation: boxDisplay 0.2s forwards;
-          animation: boxDisplay 0.2s forwards;
-          -webkit-animation-delay: 0.65s;
-          -moz-animation-delay: 0.65s;
-          -ms-animation-delay: 0.65s;
-          -o-animation-delay: 0.65s;
-          animation-delay: 0.65s;
-        }
-        .checkBox:hover .checkMark {
-          -webkit-animation: checkDisplay 0.2s forwards;
-          -moz-animation: checkDisplay 0.2s forwards;
-          -ms-animation: checkDisplay 0.2s forwards;
-          -o-animation: checkDisplay 0.2s forwards;
-          animation: checkDisplay 0.2s forwards;
-          -webkit-animation-delay: 1s;
-          -moz-animation-delay: 1s;
-          -ms-animation-delay: 1s;
-          -o-animation-delay: 1s;
-          animation-delay: 1s;
-        }
-        /* Check Box Display */
-        @-webkit-keyframes boxDisplay {
-          0% { opacity: 0; }
-          100% { opacity: 1; }
-        }
-        @-moz-keyframes boxDisplay {
-          0% { opacity: 0; }
-          100% { opacity: 1; }
-        }
-        @-ms-keyframes boxDisplay {
-          0% { opacity: 0; }
-          100% { opacity: 1; }
-        }
-        @-o-keyframes boxDisplay {
-          0% { opacity: 0; }
-          100% { opacity: 1; }
-        }
-        @keyframes boxDisplay {
-          0% { opacity: 0; }
-          100% { opacity: 1; }
-        }
-        /* Check Mark Display */
-        @-webkit-keyframes checkDisplay {
-          0% { opacity: 0; }
-          100% { opacity: 1; }
-        }
-        @-moz-keyframes checkDisplay {
-          0% { opacity: 0; }
-          100% { opacity: 1; }
-        }
-        @-ms-keyframes checkDisplay {
-          0% { opacity: 0; }
-          100% { opacity: 1; }
-        }
-        @-o-keyframes checkDisplay {
-          0% { opacity: 0; }
-          100% { opacity: 1; }
-        }
-        @keyframes checkDisplay {
-          0% { opacity: 0; }
-          100% { opacity: 1; }
-        } 
-        
-        
-        
         
 }
     </style>
@@ -320,15 +176,12 @@
     </div>
   
     <button type="button" id="btn" onClick="Language_setting()">
-      
-      <span class="title"></span>
         <div class="basicBox">
           <div id="lang">日本語</div>
           <svg width="130" height="65" viewBox="0 0 130 65" xmlns="http://www.w3.org/2000/svg">
             <rect x='0' y='0' fill='none' width='130' height='65'/>
           </svg>
         </div>
-                
     </button>
     
     <div class="sns">
@@ -336,9 +189,7 @@
       <div class="img-container--absolute-position">
       <a href="https://www.facebook.com/odakanii"><img border="0" src="flogo_RGB_HEX-144.png" alt="can't display the image" title="Jump to Facebook."></a>
       </div>
-      
-      &nbsp;
-      
+      &nbsp;      
       <div class="img-container--absolute-position">
       <a href="https://twitter.com/NII90795280"><img border="0" src="Twitter_Social_Icon_Circle_Color.png" alt="can't display the image" title="Jump to Twitter."></a>
       </div>
@@ -347,10 +198,9 @@
       
       <div class="img-container--absolute-position">
       <a href="https://www.linkedin.com/in/odakanii/"><img border="0" src="LI-Logo.png" alt="can't display the image" title="Jump to LinkedIn."></a>
-      </div>
       
       &nbsp;
-      <div class="img-container--absolute-position">
+     
       <a href="https://www.wantedly.com/users/85042864"><img border="0" src="wantedly_logo.svg" alt="can't display the image" title="Jump to Wantedly."></a>
       </div>
       
