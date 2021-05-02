@@ -141,21 +141,23 @@
     
     <script>
         var datalist = {
-            "language": "en",
+            "language": "jp",
             "others": "others"
         };
         //localStorage.setItem("datalist", JSON.stringify(datalist));
         function Language_setting() {
             if (datalist.language == "en") {
-                document.getElementById("lang").innerHTML = "English";
+                document.getElementById("lang").innerHTML = "日本語";
                 document.getElementById("01").innerHTML = "Digital Humanities Club";
                 document.getElementById("01").style.fontFamily = "'Yusei Magic', sans-serif";
+                document.getElementById("02").innerHTML = "Contact";
                 datalist.language = "jp"
                 localStorage.setItem("datalist", JSON.stringify(datalist));
             } else if (datalist.language == "jp") {
-                document.getElementById("lang").innerHTML = "日本語";
+                document.getElementById("lang").innerHTML = "English";
                 document.getElementById("01").innerHTML = "デジもんず";
                 document.getElementById("01").style.fontFamily = "'Yusei Magic', sans-serif";
+                document.getElementById("02").innerHTML = "連絡（個人用携帯）";
                 datalist.language = "en";
                 localStorage.setItem("datalist", JSON.stringify(datalist));
             } else {
@@ -168,7 +170,7 @@
         <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0001-8725-3366" href="https://orcid.org/0000-0001-8725-3366" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">ORCID: 0000-0001-8725-3366</a></div>
         <br>
         <button type="button" id="btn" onClick="Language_setting()">
-          <div id="lang">日本語</div>
+          <button><div id="lang">English</div></button>
         </button>
     </div>
     
@@ -206,7 +208,7 @@
       <a href="https://mitsuhiro-odaka.github.io/password_please.html">小髙の取扱説明書</a><br> 
       <br>
       <br>
-      連絡（個人用携帯）<br>
+      <div id="02">連絡（個人用携帯）</div><br>
       ｈａｒｕｔｏｓｙｕｒａ［ａｔ］ｉ．ｓｏｆｔｂａｎｋ．ｊｐ<br>
       <br>
       <br>
