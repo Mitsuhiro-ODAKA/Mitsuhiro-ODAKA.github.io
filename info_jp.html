@@ -37,6 +37,7 @@
         top: 2%;
 
       }
+      
       .content{
         position: absolute;
         font-size: 2em;
@@ -62,8 +63,10 @@
       
       .img-container--absolute-position {
          position: relative;
-         width: 10vw;
+         width: 10%;
          border: 1px solid black;
+         vertical-align: middle;
+         text-align: center;
          img {
          position: absolute;
          left: 0;
@@ -79,13 +82,13 @@
         }
 
         .basicBox{
-          width: 130px;
-          height: 65px;
-          margin: 15px auto;
+          width: calc(70% + 130px);
+          height: calc(20% + 65px);
+          margin: 3% auto;
           color: #4274D3;
           font-family: 'M PLUS 1p', sans-serif;
           font-size: 1.15rem;
-          line-height: 65px;
+          line-height: calc(3%+65px);
           text-transform: uppercase;
           text-align: center;
           position: relative;
@@ -99,12 +102,12 @@
         }
         svg rect {
           fill: none;
-          stroke: #4274D3;
-          stroke-width: 1;
+          stroke: #ffff00;
+          stroke-width: 3;
         }
 
         .basicBox:hover svg rect{
-          stroke: #4274D3;
+          stroke: #ffff00;
         }
 
         /* Basic Box */
