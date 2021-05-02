@@ -77,56 +77,42 @@
          }
         
         
-        *, *::before, *::after {
-          box-sizing: border-box;
-        }
-
-        .basicBox{
-          width: calc(70% + 130px);
-          height: calc(20% + 65px);
-          margin: 3% auto;
-          color: #4274D3;
-          font-family: 'M PLUS 1p', sans-serif;
-          font-size: 1.15rem;
-          line-height: calc(3%+65px);
-          text-transform: uppercase;
-          text-align: center;
-          position: relative;
-          cursor: pointer;
-        }
-
-        svg {
-          position: absolute;
-          top: 0;
-          left: 0;
-        }
-        svg rect {
-          fill: none;
-          stroke: #ffff00;
-          stroke-width: 3;
-        }
-
-        .basicBox:hover svg rect{
-          stroke: #ffff00;
-        }
-
-        /* Basic Box */
-        svg rect {
-          stroke-dasharray: 400, 0;
-          -webkit-transition: all 0.8s ease-in-out;
-          -moz-transition: all 0.8s ease-in-out;
-          -ms-transition: all 0.8s ease-in-out;
-          -o-transition: all 0.8s ease-in-out;
-        }
-        .basicBox:hover svg rect {
-          stroke-width: 3;
-          stroke-dasharray: 35, 245;
-          stroke-dashoffset: 38;
-          -webkit-transition: all 0.8s ease-in-out;
-          -moz-transition: all 0.8s ease-in-out;
-          -ms-transition: all 0.8s ease-in-out;
-          -o-transition: all 0.8s ease-in-out;
-        }
+        button{
+        background:#000000;
+        color:#C0C0C0;
+        border:none;
+        position:relative;
+        height:2em;
+        font-size:3em;
+        padding:0 2em;
+        cursor:pointer;
+        transition:800ms ease all;
+        outline:none;
+      }
+      button:hover{
+        background:#000000;
+        color:#C0C0C0;
+      }
+      button:before,button:after{
+        content:'';
+        position:absolute;
+        top:0;
+        right:0;
+        height:2em;
+        width:0;
+        background: #000000;
+        transition:400ms ease all;
+      }
+      button:after{
+        right:inherit;
+        top:inherit;
+        left:0;
+        bottom:0;
+      }
+      button:hover:before,button:hover:after{
+        width:100%;
+        transition:800ms ease all;
+      }
         
 }
     </style>
@@ -180,17 +166,10 @@
     
     <div class="content">    
         <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0001-8725-3366" href="https://orcid.org/0000-0001-8725-3366" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">ORCID: 0000-0001-8725-3366</a></div>
-    </div>
-    
-    
-  
-    <div class="basicBox">
+        <br>
         <button type="button" id="btn" onClick="Language_setting()">
           <div id="lang">日本語</div>
         </button>
-          <svg width= "calc(70% + 130)" height="calc(20% + 65)" viewBox="0 0 calc(70% + 130) calc(20% + 65)" xmlns="http://www.w3.org/2000/svg">
-            <rect x='0' y='0' fill='none' width='calc(70% + 130)' height='calc(20% + 65)'/>
-          </svg>
     </div>
     
     <div class="sns">
