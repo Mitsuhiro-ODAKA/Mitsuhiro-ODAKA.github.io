@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100&family=Yusei+Magic&display=swap" rel="stylesheet">
     
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
     
     <title>INFO Mitsuhiro ODAKA JP</title>
 
@@ -20,9 +21,8 @@
 
       body {
         font-family: 'M PLUS 1p', sans-serif, YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3';
-     
         background-color:#000000;
-
+        font-size: 3vh;
         color : #C0C0C0;
 
       }
@@ -32,27 +32,23 @@
       }
 
       .links{
-
         position: absolute;
-
-        font-size:6ex;
-
-        left: 50px;
-
-        top: 50px;
+        font-size:6em;
+        left: 5%;
+        top: 2%;
 
       }
       .language{
         position: absolute;
-        font-size:4ex;
-        left: 50px;
-        top:150px;
+        font-size:2em;
+        left: 5%;
+        top: 8%;
       }
       .sns{
         position: absolute;
-        font-size:32px;
-        left: 50px;
-        top:300px;
+        font-size: 3em;
+        left: 5%;
+        top: 14%;
       }
 
     </style>
@@ -79,6 +75,33 @@
       <a href="info_jp.html">日本語</a>&nbsp;<a href="info_en.html">英語</a>
     </div>
 
+    <button class="btn-square-toy" type="button" id="btn" onClick="Language_setting()">
+        <div id="lang">日本語</div>
+    </button>
+  
+    <script>
+        var datalist = {
+            "language": "en",
+            "others": "others"
+        };
+        //localStorage.setItem("datalist", JSON.stringify(datalist));
+        function Language_setting() {
+            if (datalist.language == "en") {
+                document.getElementById("lang").innerHTML = "English";
+                datalist.language = "jp"
+                localStorage.setItem("datalist", JSON.stringify(datalist));
+            } else if (datalist.language == "jp") {
+                document.getElementById("lang").innerHTML = "日本語";
+                datalist.language = "en";
+                localStorage.setItem("datalist", JSON.stringify(datalist));
+            } else {
+                document.getElementById("lang").innerHTML = '';
+            }
+        };
+    </script>
+
+    
+    
     <div class="content">
         <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0001-8725-3366" href="https://orcid.org/0000-0001-8725-3366" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">https://orcid.org/0000-0001-8725-3366</a></div>
     </div>
