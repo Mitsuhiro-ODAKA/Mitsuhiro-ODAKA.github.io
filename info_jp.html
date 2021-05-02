@@ -22,7 +22,7 @@
       body {
         font-family: 'M PLUS 1p', sans-serif, YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3';
         background-color:#000000;
-        font-size: 1vh;
+        font-size: 2vh;
         color : #C0C0C0;
       }
 
@@ -33,22 +33,23 @@
       .links{
         position: absolute;
         font-size:6em;
-        left: 5%;
+        left: 2%;
         top: 2%;
 
       }
       .language{
         position: absolute;
         font-size:2em;
-        left: 5%;
+        left: 2%;
         top: 8%;
       }
       
       .btn-square-toy{
         position: absolute;
         font-size:2em;
-        left: 5%;
+        left: 2%;
         top: 12%;
+        
       }
       
       .sns{
@@ -67,8 +68,8 @@
       
       .img-container--absolute-position {
          position: relative;
-         width: 5vm;
-         border: 1px solid black;
+         width: 5vw;
+         border: 1px solid darkgray;
          img {
          position: absolute;
          left: 0;
@@ -77,8 +78,72 @@
          bottom: 0;
          margin: auto;
          }
+
+      .btn,
+      a.btn,
+      button.btn {
+        font-size: 1.6rem;
+        font-weight: 700;
+        line-height: 1.5;
+        position: relative;
+        display: inline-block;
+        padding: 1rem 4rem;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        text-align: center;
+        vertical-align: middle;
+        text-decoration: none;
+        letter-spacing: 0.1em;
+        color: #212529;
+        border-radius: 0.5rem;
+      }
+
+      a.btn-svg {
+        font-weight: 700;
+        line-height: 54px;
+
+        width: 204px;
+        height: 54px;
+        padding: 0;
+
+        cursor: pointer;
+        text-decoration: none;
+
+        background-color: transparent;
+      }
+
+      a.btn-svg svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+      }
+
+      a.btn-svg svg rect {
+        -webkit-transition: all 400ms ease;
+        transition: all 400ms ease;
+
+        stroke: #000;
+        stroke-width: 2;
+        stroke-dasharray: 200px, 16px;
+        stroke-dashoffset: 70px;
+      }
+
+      a.btn-svg:hover svg rect {
+        stroke-dashoffset: 284px;
+      }
+
+      a.btn-svg span {
+        color: #000;
+      }
 }
-      
     </style>
 
 
@@ -126,27 +191,52 @@
         };
     </script>
     
-    <div class="content">
-        <button class="btn-square-toy" type="button" id="btn" onClick="Language_setting()">
-          <div id="lang">日本語</div>
-        </button>
+    <div class="content">    
         <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0001-8725-3366" href="https://orcid.org/0000-0001-8725-3366" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">ORCID: 0000-0001-8725-3366</a></div>
     </div>
-    <div class="img-container--absolute-position">
+  
+    <button class="btn btn-svg" type="button" id="btn" onClick="Language_setting()">
+      <svg>
+        <rect x="2" y="2" rx="0" fill="none" width=200 height="50"></rect>
+      </svg>
+          <span><div id="lang">日本語</div></span>
+    </button>
+    
     <div class="sns">
+      
+      <div class="img-container--absolute-position">
       <a href="https://www.facebook.com/odakanii"><img border="0" src="flogo_RGB_HEX-144.png" alt="can't display the image" title="Jump to Facebook."></a>
-      &nbsp;<a href="https://twitter.com/NII90795280"><img border="0" src="Twitter_Social_Icon_Circle_Color.png" alt="can't display the image" title="Jump to Twitter."></a>
-      &nbsp;<a href="https://www.linkedin.com/in/odakanii/"><img border="0" src="LI-Logo.png" alt="can't display the image" title="Jump to LinkedIn."></a>
-      &nbsp;<a href="https://www.wantedly.com/users/85042864"><img border="0" src="wantedly_logo.svg" alt="can't display the image" title="Jump to Wantedly."></a>
+      </div>
+      
+      &nbsp;
+      
+      <div class="img-container--absolute-position">
+      <a href="https://twitter.com/NII90795280"><img border="0" src="Twitter_Social_Icon_Circle_Color.png" alt="can't display the image" title="Jump to Twitter."></a>
+      </div>
+      
+      &nbsp;
+      
+      <div class="img-container--absolute-position">
+      <a href="https://www.linkedin.com/in/odakanii/"><img border="0" src="LI-Logo.png" alt="can't display the image" title="Jump to LinkedIn."></a>
+      </div>
+      
+      &nbsp;
+      <div class="img-container--absolute-position">
+      <a href="https://www.wantedly.com/users/85042864"><img border="0" src="wantedly_logo.svg" alt="can't display the image" title="Jump to Wantedly."></a>
+      </div>
+      
       <br>
       <a href="https://mitsuhiro-odaka.github.io/password_please.html">小髙の取扱説明書</a><br> 
       <br>
+      
+      <div class="img-container--absolute-position">
       <a href="https://mitsuhiro-odaka.github.io/jimoko.html"><img border="0" src="EHkVBDlU0AAmNMQ.jpg" alt="can't display the image" title="Jump to Digital Humanities Doko-Kai."></a><br>
       <div id="01"><span style="font-family: 'Yusei Magic', sans-serif">デジもんず</span></div><br>
+      </div>
+      
       <br>
       連絡（個人用携帯）<br>
       ｈａｒｕｔｏｓｙｕｒａ［ａｔ］ｉ．ｓｏｆｔｂａｎｋ．ｊｐ<br>
-    </div>
     </div>
 
   </body>
