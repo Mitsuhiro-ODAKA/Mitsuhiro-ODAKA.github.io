@@ -39,16 +39,16 @@
       }
       .content{
         position: absolute;
-        font-size: 3em;
-        left: 5%;
-        top: 15%;
+        font-size: 2em;
+        left: 10%;
+        top: 20%;
       }
       
       .sns{
         position: absolute;
-        font-size: 3em;
-        left: 5%;
-        top: 18%;
+        font-size: 2em;
+        left: 10%;
+        top: 30%;
       }
       
       img {
@@ -73,19 +73,6 @@
          margin: auto;
          }
         
-      .img-container--absolute-position2 {
-         position: relative;
-         width: 10vw;
-         border: 1px solid black;
-         font-family: 'Yusei Magic', sans-serif;
-         img {
-         position: absolute;
-         left: 0;
-         right: 0;
-         top: 0;
-         bottom: 0;
-         margin: auto;
-         }
         
         *, *::before, *::after {
           box-sizing: border-box;
@@ -173,11 +160,13 @@
             if (datalist.language == "en") {
                 document.getElementById("lang").innerHTML = "English";
                 document.getElementById("01").innerHTML = "Digital Humanities Club";
+                document.getElementById("01").style.fontFamily = "'Yusei Magic', sans-serif";
                 datalist.language = "jp"
                 localStorage.setItem("datalist", JSON.stringify(datalist));
             } else if (datalist.language == "jp") {
                 document.getElementById("lang").innerHTML = "日本語";
                 document.getElementById("01").innerHTML = "デジもんず";
+                document.getElementById("01").style.fontFamily = "'Yusei Magic', sans-serif";
                 datalist.language = "en";
                 localStorage.setItem("datalist", JSON.stringify(datalist));
             } else {
@@ -222,9 +211,11 @@
       <a href="https://www.wantedly.com/users/85042864"><img border="0" src="wantedly_logo.svg" alt="can't display the image" title="Jump to Wantedly."></a>
       </div>
             
-      <div class="img-container--absolute-position2">
+      &nbsp;
+      
+      <div class="img-container--absolute-position">
       <a href="https://mitsuhiro-odaka.github.io/jimoko.html"><img border="0" src="EHkVBDlU0AAmNMQ.jpg" alt="can't display the image" title="Jump to Digital Humanities Doko-Kai."></a><br>
-      <div id="01">デジもんず</div><br>
+      <div id="01"><span style="font-family:'Yusei Magic', sans-serif">デジもんず</span></div><br>
       </div>
       
       <br>
