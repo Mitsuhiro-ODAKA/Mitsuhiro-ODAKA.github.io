@@ -47,14 +47,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
       }
 
-/*       .mvbox  {
-       width: 100%;
-       height: 100vh;
-       opacity: 1;
-       position: absolute;
+      .mvbox  {
        width: 100%;
        height: 100%;
-      } */
+       opacity: 1;
+       position: absolute;
+       left: 0px;
+       top: 0px;
+       z-index: -1;
+      }
       
       img {
        max-width: 100%;
@@ -255,12 +256,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!--       <video src="ho6.mp4" ;  poster="odaka.PNG" ; autoplay loop muted></video> -->
 
 <!--       <video src="https://bitbucket.org/odaka_mitsuhiro/website/src/master/210504_main_page_movie.mp4" ;  poster="odaka.PNG" ; autoplay loop muted></video> -->
-         <a id="P2" class="player" data-property="{videoURL:'GJKwsKtqPFA',containment:'body',autoPlay:true, mute:true, startAt:0, opacity:1, showYTLogo:false, showControls:false}"></a>
+         <a id="P2" class="player" data-property="{videoURL:'GJKwsKtqPFA',containment:'.mvbox', playsinline:true, autoPlay:true, muted:true, startAt:0, opacity:1, showYTLogo:false, showControls:false}"></a>
          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
         <script>
-        jQuery(function(){
-            jQuery(".player").mb_YTPlayer();
+        $jQuery(function(){
+            $jQuery(".player").mb_YTPlayer();
         });
         </script>
           
