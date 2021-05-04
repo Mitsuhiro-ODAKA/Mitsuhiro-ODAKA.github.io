@@ -24,6 +24,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <meta charset=“UFT-8” name="Content-Style-Type" content="text/css">
 
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=Yusei+Magic&display=swap" rel="stylesheet">
+    
     <title>HOME Mitsuhiro ODAKA EN</title>
 
   </head>
@@ -33,15 +37,78 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <style>
 
       body {
-
-        font-family: YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
-
+        font-family: 'M PLUS 1p', sans-serif, YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3';
         background-color:#000000;
-
+        font-size: 1.5vh;
         color : #C0C0C0;
 
       }
 
+      img {
+       max-width: 100%;
+       max-height: 100%;
+       width: auto;
+       height: auto;
+      }
+      
+      div {display: inline-block; _display: inline;}
+      
+      .img-container--absolute-position {
+             position: relative;
+             width: 12%;
+             border: 1px solid black;
+             vertical-align: middle;
+             text-align: center;
+             img {
+             position: absolute;
+             left: 0;
+             right: 0;
+             top: 0;
+             bottom: 0;
+             margin: auto;
+             }
+
+          }
+
+          button{
+          background:#daa520;
+          color:#fff;
+          border:none;
+          position:relative;
+          height:60px;
+          font-size:1em;
+          padding:0 1.4em;
+          cursor:pointer;
+          transition:800ms ease all;
+          outline:none;
+        }
+        button:hover{
+          background:#000000;
+          color:#daa520;
+        }
+        button:before,button:after{
+          content:'';
+          position:absolute;
+          top:0;
+          right:0;
+          height:2px;
+          width:0;
+          background: #daa520;
+          transition:400ms ease all;
+        }
+        button:after{
+          right:inherit;
+          top:inherit;
+          left:0;
+          bottom:0;
+        }
+        button:hover:before,button:hover:after{
+          width:100%;
+          transition:800ms ease all;
+        }
+      
+      
+      
       .video-section .pattern-overlay {
             background-color: #000000;
             min-height: 700px;
@@ -82,22 +149,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       }
 
       .links{
-
         position: absolute;
+        font-size: 2em;
+        left: 2%;
+        top: 2%;
 
-        font-size:6ex;
-
-        left: 50px;
-
-        top: 50px;
-
+      }
+      
+      .content{
+        position: absolute;
+        font-size: 2em;
+        left: 10%;
+        top: 20%;
       }
 
       .update{
 
         position: absolute;
 
-        font-size:xx-large;
+        font-size:2em;
 
         color:#C0C0C0;
 
@@ -121,7 +191,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
       }
 
-      mainVisual video {
+/*       mainVisual video {
 
         position: absolute;
 
@@ -135,7 +205,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         z-index: -1;
 
-      }
+      } */
 
       .youtube{
 
@@ -163,7 +233,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
       
 
-      @media screen {
+/*       @media screen {
 
         mainVisual {
 
@@ -173,7 +243,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
       }
 
-      }
+      } */
 
     </style>
 
@@ -221,39 +291,97 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       
 
-      <div class="main">
+<!--       <div class="main"> -->
 
 <!--         <h1>MITSUHIRO<br>
 
         ODAKA</h1> -->
 
-      </div>   
+<!--       </div>    -->
 
 <!--     </div> -->
 
-    <div class="links">
+      <div class="links">
 
-        <a href="index_en.html">HOME</a>&nbsp;
+        <div class="img-container--absolute-position">
+        <button type="button">
+        <a href="index_jp.html" style="text-decoration:none;" target="_blank">Home</a>
+        </button>
+        <img border="0" src="black_bg.png">
+        </div>  
+        &nbsp;&nbsp;&nbsp;
 
-        <a href="bio_en.html">BIO</a>&nbsp;
+        <div class="img-container--absolute-position">
+        <button type="button">
+        <a href="bio_jp.html" style="text-decoration:none;" target="_blank">Bio</a>
+        </button>
+        <img border="0" src="black_bg.png">
+        </div>  
+        &nbsp;&nbsp;&nbsp;
+          
+        <div class="img-container--absolute-position">
+        <button type="button">
+        <a href="gallery_jp.html" style="text-decoration:none;" target="_blank">Gallery</a>
+        </button>
+        <img border="0" src="black_bg.png">
+        </div>  
+        &nbsp;&nbsp;&nbsp;
 
-        <a href="gallery_en.html">GALLERY</a>&nbsp;
-
-        <a href="info_en.html">INFO</a><br>
-
+        <div class="img-container--absolute-position">
+        <button type="button">
+        <a href="info_jp.html" style="text-decoration:none;" target="_blank">Info</a><br>
+        </button>
+        <img border="0" src="black_bg.png">
+        </div>
+        &nbsp;&nbsp;&nbsp;
+          
     </div>
-
+    
+    
+    <script>
+        var datalist = {
+            "language": "jp",
+            "others": "others"
+        };
+        //localStorage.setItem("datalist", JSON.stringify(datalist));
+        function Language_setting() {
+            if (datalist.language == "en") {
+                document.getElementById("lang").innerHTML = "日本語";
+                document.getElementById("01").innerHTML = "Last Updated by Mitsuhiro Odaka on May 4, 2021.";
+//                 document.getElementById("02").innerHTML = "Contact";
+                datalist.language = "jp"
+                localStorage.setItem("datalist", JSON.stringify(datalist));
+            } else if (datalist.language == "jp") {
+                document.getElementById("lang").innerHTML = "English";
+                document.getElementById("01").innerHTML = "最終更新日";
+//                 document.getElementById("02").innerHTML = "連絡（個人携帯）";
+                datalist.language = "en";
+                localStorage.setItem("datalist", JSON.stringify(datalist));
+            } else {
+                document.getElementById("lang").innerHTML = '';
+            }
+        };
+    </script>
+    
+    <div class="content">    
+        <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0001-8725-3366" href="https://orcid.org/0000-0001-8725-3366" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://upload.wikimedia.org/wikipedia/commons/0/06/ORCID_iD.svg" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">https://orcid.org/0000-0001-8725-3366</a></div>
+        <br>
+        <button type="button" id="btn" onClick="Language_setting()">
+          <div id="lang">English</div>
+        </button>
+    </div>
+    
+<!-- 
     <div class="language">
 
        language setting<br>
 
        <a href="index_jp.html">Japanese</a>&nbsp;<a href="index_en.html">English</a>
-
-    </div>
+    </div> -->
 
     <div class="update">
 
-        Last Updated<br>
+        <div id="01">最終更新日</div><br>
 
         2021/05/04<br>
 
