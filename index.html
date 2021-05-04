@@ -257,9 +257,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!--       <video src="https://bitbucket.org/odaka_mitsuhiro/website/src/master/210504_main_page_movie.mp4" ;  poster="odaka.PNG" ; autoplay loop muted></video> -->
          <a id="P2" class="player" data-property="{videoURL:'GJKwsKtqPFA',containment:'body',autoPlay:true, mute:true, startAt:0, opacity:1, showYTLogo:false, showControls:false}"></a>
          
-          jQuery(function(){
-            jQuery( '.player' ).mb_YTPlayer();
-          });
+        <script>
+        jQuery(function(){
+            jQuery(".player").mb_YTPlayer();
+        });
+        </script>
           
 <!--         <div id="mv" class="player" data-property="{
              videoURL:'GJKwsKtqPFA',
