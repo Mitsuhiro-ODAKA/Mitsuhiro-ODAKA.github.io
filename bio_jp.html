@@ -224,15 +224,15 @@
         //localStorage.setItem("datalist", JSON.stringify(datalist));
         function Language_setting() {
             if (datalist.language == "en") {
-                document.getElementById("lang").innerHTML = "日本語";
-                document.getElementById("01").style.visibility = "hidden"  
+                document.getElementById("lang").innerHTML = "日本語"; 
                 document.getElementById("01").innerHTML = document.getElementById("03").textContent;
+                document.getElementById("03").style.visibility = "visible" 
                 datalist.language = "jp"
                 localStorage.setItem("datalist", JSON.stringify(datalist));
             } else if (datalist.language == "jp") {
                 document.getElementById("lang").innerHTML = "English";
-                document.getElementById("01").style.visibility = "hidden"
                 document.getElementById("01").innerHTML = document.getElementById("02").textContent;
+                document.getElementById("03").style.visibility = "hidden"
                 datalist.language = "en";
                 localStorage.setItem("datalist", JSON.stringify(datalist));
             } else {
@@ -249,10 +249,12 @@
         </button>
      </div>
    
-<div id="01" class="profile">
+<div class="profile">
+<div id="01">
   
-<div>
-  
+</div>
+</div> 
+    
   <div id="02">
 　<div id=jump_01><b>小髙充弘 現所属</b></div><br><br>
 　　　<br>
@@ -616,8 +618,7 @@ Association for Computing Machinery, New York, NY, USA, 75–82. 2020<br>
       <a href="#jump_01">ページ先頭へ戻る</a><br>
     </button>
       
-    </div>
-   
+</div>
 </div> 
 
       
