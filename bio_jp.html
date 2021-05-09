@@ -225,7 +225,7 @@
         function Language_setting() {
             if (datalist.language == "en") {
                 document.getElementById("lang").innerHTML = "日本語";
-                document.getElementById("01").innerHTML = document.getElementById("02").textContent;
+                document.getElementById("01").innerHTML = document.getElementById("01").textContent;
                 document.getElementById("02").style.visibility = "hidden"
                 datalist.language = "jp"
                 localStorage.setItem("datalist", JSON.stringify(datalist));
