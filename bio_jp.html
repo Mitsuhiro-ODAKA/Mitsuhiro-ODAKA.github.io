@@ -225,13 +225,13 @@
         function Language_setting() {
             if (datalist.language == "en") {
                 document.getElementById("lang").innerHTML = "日本語";
-                document.getElementById("01").innerHTML = document.getElementById("01").textContent;
-                document.getElementById("02").style.visibility = "hidden"
+                document.getElementById("01").innerHTML = document.getElementById("02").textContent;
+                document.getElementById("01").style.visibility = "hidden"
                 datalist.language = "jp"
                 localStorage.setItem("datalist", JSON.stringify(datalist));
             } else if (datalist.language == "jp") {
                 document.getElementById("lang").innerHTML = "English";
-                document.getElementById("01").innerHTML = document.getElementById("02").textContent;
+                document.getElementById("01").innerHTML = document.getElementById("01").textContent;
                 document.getElementById("02").style.visibility = "hidden"
                 datalist.language = "en";
                 localStorage.setItem("datalist", JSON.stringify(datalist));
@@ -339,8 +339,8 @@
       
   <b>業績</b> <br><br>
     <button type="button" id="btn">
-      <a href="#jump_01">ページ先頭へ戻る</a><br>
-    </button>
+      <a href="#jump_01">ページ先頭へ戻る</a>
+    </button><br><br>
 
       <font size="5">=======学会発表=======</font><br>
 
