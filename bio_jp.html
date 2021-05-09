@@ -110,6 +110,9 @@
 
       }
 
+      .EN{
+        visibility:hidden;
+      }
 /*       .mainVisual {
         position: relative;
         width: 100%;
@@ -173,9 +176,7 @@
         z-index: -1;
       }
       
-      .EN{
-        visibility:hidden;
-      }
+      
       
     </style>
 
@@ -227,17 +228,17 @@
         function Language_setting() {
             if (datalist.language == "en") {
                 document.getElementById("lang").innerHTML = "日本語"; 
-                document.getElementById("03").hidden = true; 
+                document.getElementById("03").hidden = false; 
                 document.getElementById("01").innerHTML = document.getElementById("03").textContent;
-                document.getElementById("02").hidden = false; 
+                document.getElementById("02").hidden = true; 
               
                 datalist.language = "jp";
                 localStorage.setItem("datalist", JSON.stringify(datalist));
             } else if (datalist.language == "jp") {
                 document.getElementById("lang").innerHTML = "English";
-                document.getElementById("02").hidden = true; 
+                document.getElementById("02").hidden = false; 
                 document.getElementById("01").innerHTML = document.getElementById("02").textContent;
-                document.getElementById("03").hidden = false;
+                document.getElementById("03").hidden = true;
                 datalist.language = "en";
                 localStorage.setItem("datalist", JSON.stringify(datalist));
             } else {
