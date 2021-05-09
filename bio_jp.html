@@ -173,8 +173,9 @@
       }
       
       .EN{
-      visibility:hidden;
+        visibility:hidden;
       }
+      
     </style>
 
 
@@ -225,17 +226,17 @@
         function Language_setting() {
             if (datalist.language == "en") {
                 document.getElementById("lang").innerHTML = "日本語"; 
-                document.getElementById("03").style.visibility = "visible"; 
+                document.getElementById("03").hidden = false; 
                 document.getElementById("01").innerHTML = document.getElementById("03").textContent;
-                document.getElementById("02").style.visibility = "hidden"; 
+                document.getElementById("02").hidden = true; 
               
                 datalist.language = "jp";
                 localStorage.setItem("datalist", JSON.stringify(datalist));
             } else if (datalist.language == "jp") {
                 document.getElementById("lang").innerHTML = "English";
-                document.getElementById("02").style.visibility = "visible"; 
+                document.getElementById("02").hidden = false; 
                 document.getElementById("01").innerHTML = document.getElementById("02").textContent;
-                document.getElementById("03").style.visibility = "hidden";
+                document.getElementById("03").hidden =true;
                 datalist.language = "en";
                 localStorage.setItem("datalist", JSON.stringify(datalist));
             } else {
@@ -247,7 +248,7 @@
      <div class="content">    
 <!--         <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0001-8725-3366" href="https://orcid.org/0000-0001-8725-3366" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://upload.wikimedia.org/wikipedia/commons/0/06/ORCID_iD.svg" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">https://orcid.org/0000-0001-8725-3366</a></div> -->
 <!--         <br> -->
-        <button type="button" id="btn" onClick="Language_setting()">
+        <button type="button" id="btn02" onClick="Language_setting()">
           <div id="lang">English</div>
         </button>
      </div>
