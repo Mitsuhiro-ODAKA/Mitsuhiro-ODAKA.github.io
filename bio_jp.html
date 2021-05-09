@@ -171,7 +171,10 @@
         right: 50px;
         top:300px;
       }
-
+      
+      .EN{
+      visibility:hidden;
+      }
     </style>
 
 
@@ -223,11 +226,13 @@
             if (datalist.language == "en") {
                 document.getElementById("lang").innerHTML = "日本語";
                 document.getElementById("01").innerHTML = document.getElementById("02").textContent;
+                document.getElementById("02").style.visibility = "hidden"
                 datalist.language = "jp"
                 localStorage.setItem("datalist", JSON.stringify(datalist));
             } else if (datalist.language == "jp") {
                 document.getElementById("lang").innerHTML = "English";
                 document.getElementById("01").innerHTML = document.getElementById("02").textContent;
+                document.getElementById("02").style.visibility = "hidden"
                 datalist.language = "en";
                 localStorage.setItem("datalist", JSON.stringify(datalist));
             } else {
@@ -239,18 +244,14 @@
     <div class="content">    
 <!--         <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0001-8725-3366" href="https://orcid.org/0000-0001-8725-3366" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://upload.wikimedia.org/wikipedia/commons/0/06/ORCID_iD.svg" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">https://orcid.org/0000-0001-8725-3366</a></div> -->
 <!--         <br> -->
-        <button type="button" id="btn" onClick="Language_setting()">
+        <div class="img-container--absolute-position">
+        <button type="button" type="button" id="btn" onClick="Language_setting()">
           <div id="lang">English</div>
         </button>
-    </div>
+        <img border="0" src="black_bg2.png">
+        </div>
    
 <div id="01">
-  <div class="content">    
-    <button type="button" id="btn2">
-      <br><br><a href="#jump_01">ページ先頭へ戻る</a>
-    </button>
-  </div>
-   
   <div class="profile">
 　<div id=jump_01><b>小髙充弘 現所属</b></div><br><br>
 　　　<br>
@@ -336,6 +337,10 @@
       <br><br>
       
   <b>業績</b> <br><br>
+    <button type="button" id="btn">
+      <a href="#jump_01">ページ先頭へ戻る</a><br>
+    </button>
+
       <font size="5">=======学会発表=======</font><br>
 
 <br>
@@ -606,13 +611,18 @@ Association for Computing Machinery, New York, NY, USA, 75–82. 2020<br>
 <a href="https://doi.org/10.1145/3429210.3429214">ダウンロードサイト</a><br>
 
 <br>
+    <button type="button" id="btn">
+      <a href="#jump_01">ページ先頭へ戻る</a><br>
+    </button>
       
     </div>
    
-   </div> 
+</div> 
 
-<div id="02">
-  test
+      
+<div id="02" class="EN">
+  <div class="profile">
+　<b>Mitsuhiro ODAKA Current Position</b><br><br>
 </div>
   
   </body>
