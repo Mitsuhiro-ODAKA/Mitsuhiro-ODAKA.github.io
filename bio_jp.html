@@ -218,19 +218,22 @@
     
     <script>
         var datalist = {
-            "language": "en",
+            "language": "jp",
             "others": "others"
         };
         //localStorage.setItem("datalist", JSON.stringify(datalist));
         function Language_setting() {
             if (datalist.language == "en") {
                 document.getElementById("lang").innerHTML = "日本語"; 
+                document.getElementById("03").style.visibility = "visible"; 
                 document.getElementById("01").innerHTML = document.getElementById("03").textContent;
                 document.getElementById("02").style.visibility = "hidden"; 
+              
                 datalist.language = "jp";
                 localStorage.setItem("datalist", JSON.stringify(datalist));
             } else if (datalist.language == "jp") {
                 document.getElementById("lang").innerHTML = "English";
+                document.getElementById("02").style.visibility = "visible"; 
                 document.getElementById("01").innerHTML = document.getElementById("02").textContent;
                 document.getElementById("03").style.visibility = "hidden";
                 datalist.language = "en";
