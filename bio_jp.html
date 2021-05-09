@@ -5,9 +5,24 @@
   <head>
 
     <meta charset=“UFT-8” name="Content-Style-Type" content="text/css">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=Yusei+Magic&display=swap" rel="stylesheet">
     <title>BIO Mitsuhiro ODAKA JP</title>
 
+    <script>
+    $('a[href^="#"]').click(function() {
+      // スクロールの速度
+      let speed = 400; // ミリ秒で記述
+      let href = $(this).attr("href");
+      let target = $(href == "#" || href == "" ? 'html' : href);
+      let position = target.offset().top;
+      $('body,html').animate({
+        scrollTop: position
+      }, speed, 'swing');
+      return false;
+    });
+    </script>
+    
   </head>
 
   
@@ -15,36 +30,137 @@
     <style>
 
       body {
-
-        font-family: YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
-
+        font-family: 'M PLUS 1p', sans-serif, YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3';
         background-color:#000000;
-
+        font-size: 1.5vh;
         color : #C0C0C0;
-
+      }
+      
+      
+      
+      img {
+       max-width: 100%;
+       max-height: 100%;
+       width: auto;
+       height: auto;
       }
 
+      div {display: inline-block; _display: inline;}
+      
+      .img-container--absolute-position {
+             position: relative;
+             width: 12vw;
+             border: 0.1px solid black;
+             vertical-align: middle;
+             text-align: center;
+             img {
+             position: absolute;
+             left: 0;
+             right: 0;
+             top: 0;
+             bottom: 0;
+             margin: auto;
+             }
+
+          }
+
+          button{
+          background:#daa520;
+          color:#fff;
+          border:none;
+          position:relative;
+          height:60px;
+          font-size:1em;
+          padding:0 1.4em;
+          cursor:pointer;
+          transition:800ms ease all;
+          outline:none;
+        }
+        button:hover{
+          background:#000000;
+          color:#daa520;
+        }
+        button:before,button:after{
+          content:'';
+          position:absolute;
+          top:0;
+          right:0;
+          height:2px;
+          width:0;
+          background: #daa520;
+          transition:400ms ease all;
+        }
+        button:after{
+          right:inherit;
+          top:inherit;
+          left:0;
+          bottom:0;
+        }
+        button:hover:before,button:hover:after{
+          width:100%;
+          transition:800ms ease all;
+        }
+      
+      
+      
       div {
 
       }
 
+/*       .mainVisual {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      } */
+
       .links{
-
         position: absolute;
-
-        font-size:6ex;
-
-        left: 50px;
-
-        top: 50px;
+        font-size: 2em;
+        left: 0.1%;
+        top: 2%;
 
       }
+      
+      .content{
+        position: absolute;
+        font-size: 2em;
+        right: 3%;
+        top: 90%;
+      }
+      
       .language{
-        position: absolute;
+
+        position:absolute;
+
         font-size:4ex;
-        left: 50px;
-        top:150px;
+
+        right:50px;
+
+        top:300px;
+
       }
+      
+      a {
+        font-weight: bold;/*太字に*/
+        text-decoration: none;/*下線消す*/
+/*         background: skyblue;/*背景を水色に*/ */
+        color:skyblue;/*文字を白に*/
+/*         padding:5px 10px;/*内側の余白*/ */
+/*         border-radius: 20px;/*角を丸くする*/ */
+/*         font-family: 'Avenir','Arial'; */ */
+      }
+      
+      a:hover {
+/*         background: silver;/*背景色をシルバーに*/ */
+        text-decoration: none;/*下線を消す*/
+      }
+      
+      a:visited {
+/*         color: gray;/*文字をグレイに*/ */
+      }
+      
+     
       .profile{
         position: absolute;
         font-size:20px;
@@ -61,24 +177,79 @@
 
 
     <div class="links">
+        <div class="img-container--absolute-position">
+        <button type="button">
+        <a href="index_jp.html" style="text-decoration:none;" target="_blank">Home</a>
+        </button>
+        <img border="0" src="black_bg2.png">
+        </div>  
+        &nbsp;&nbsp;&nbsp;
+        <div class="img-container--absolute-position">
+        <button type="button">
+        <a href="bio_jp.html" style="text-decoration:none;" target="_blank">Bio</a>
+        </button>
+        <img border="0" src="black_bg2.png">
+        </div>  
+        &nbsp;&nbsp;&nbsp;
+          
+        <div class="img-container--absolute-position">
+        <button type="button">
+        <a href="gallery_jp.html" style="text-decoration:none;" target="_blank">Gallery</a>
+        </button>
+        <img border="0" src="black_bg2.png">
+        </div>  
+        &nbsp;&nbsp;&nbsp;
 
-        <a href="index_jp.html">HOME</a>&nbsp;
-
-        <a href="bio_jp.html">BIO</a>&nbsp;
-
-        <a href="gallery_jp.html">GALLERY</a>&nbsp;
-
-        <a href="info_jp.html">INFO</a><br>
-
+        <div class="img-container--absolute-position">
+        <button type="button">
+        <a href="info_jp.html" style="text-decoration:none;" target="_blank">Info</a><br>
+        </button>
+        <img border="0" src="black_bg2.png">
+        </div>
+        &nbsp;&nbsp;&nbsp;
+          
     </div>
-
-    <div class="language">
-      言語設定<br>
-      <a href="bio_jp.html">日本語</a>&nbsp;<a href="bio_en.html">英語</a>
+    
+    <script>
+        var datalist = {
+            "language": "jp",
+            "others": "others"
+        };
+        //localStorage.setItem("datalist", JSON.stringify(datalist));
+        function Language_setting() {
+            if (datalist.language == "en") {
+                document.getElementById("lang").innerHTML = "日本語";
+                document.getElementById("01").innerHTML = document.getElementById("02").textContent;
+                datalist.language = "jp"
+                localStorage.setItem("datalist", JSON.stringify(datalist));
+            } else if (datalist.language == "jp") {
+                document.getElementById("lang").innerHTML = "English";
+                document.getElementById("01").innerHTML = document.getElementById("02").textContent;
+                datalist.language = "en";
+                localStorage.setItem("datalist", JSON.stringify(datalist));
+            } else {
+                document.getElementById("lang").innerHTML = '';
+            }
+        };
+    </script>
+    
+    <div class="content">    
+<!--         <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0001-8725-3366" href="https://orcid.org/0000-0001-8725-3366" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://upload.wikimedia.org/wikipedia/commons/0/06/ORCID_iD.svg" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">https://orcid.org/0000-0001-8725-3366</a></div> -->
+<!--         <br> -->
+        <button type="button" id="btn" onClick="Language_setting()">
+          <div id="lang">English</div>
+        </button>
     </div>
-
-    <div class="profile">
-　<b>小髙充弘 現所属</b><br><br>
+   
+<div id="01">
+  <div class="content">    
+    <button type="button" id="btn2">
+      <br><br><a href="#jump_01">ページ先頭へ戻る</a>
+    </button>
+  </div>
+   
+  <div class="profile">
+　<div id=jump_01><b>小髙充弘 現所属</b></div><br><br>
 　　　<br>
 　　　国立情報学研究所 (NII) 博士課程大学院生<br>
 　　　Laboratory of Digital Sciences of Nantes (LS2N) 博士課程大学院生（国際共同研究プログラムによる正規生としての在籍）<br>
@@ -435,8 +606,12 @@ Association for Computing Machinery, New York, NY, USA, 75–82. 2020<br>
       
     </div>
    
-    
+   </div> 
 
+<div id="02">
+  test
+</div>
+  
   </body>
 
 </html>
