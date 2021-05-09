@@ -169,7 +169,7 @@
         font-size:2em;
         left: 3%;
         right: 3%;
-        top: 7%;
+        top: 12%;
       }
       
       .EN{
@@ -225,14 +225,14 @@
         function Language_setting() {
             if (datalist.language == "en") {
                 document.getElementById("lang").innerHTML = "日本語";
+                document.getElementById("01").style.visibility = "hidden"  
                 document.getElementById("01").innerHTML = document.getElementById("02").textContent;
-                document.getElementById("01").style.visibility = "hidden"
                 datalist.language = "jp"
                 localStorage.setItem("datalist", JSON.stringify(datalist));
             } else if (datalist.language == "jp") {
                 document.getElementById("lang").innerHTML = "English";
-                document.getElementById("01").innerHTML = document.getElementById("01").textContent;
-                document.getElementById("02").style.visibility = "hidden"
+                document.getElementById("01").style.visibility = "hidden"
+                document.getElementById("01").innerHTML = document.getElementById("03").textContent;
                 datalist.language = "en";
                 localStorage.setItem("datalist", JSON.stringify(datalist));
             } else {
@@ -253,7 +253,10 @@
     </div>
    
 <div id="01">
-  <div class="profile">
+  
+<div>
+  
+  <div id="02" class="profile">
 　<div id=jump_01><b>小髙充弘 現所属</b></div><br><br>
 　　　<br>
 　　　国立情報学研究所 (NII) 博士課程大学院生<br>
@@ -621,9 +624,10 @@ Association for Computing Machinery, New York, NY, USA, 75–82. 2020<br>
 </div> 
 
       
-<div id="02" class="EN">
+<div id="03" class="EN">
   <div class="profile">
 　<b>Mitsuhiro ODAKA Current Position</b><br><br>
+  </div>
 </div>
   
   </body>
