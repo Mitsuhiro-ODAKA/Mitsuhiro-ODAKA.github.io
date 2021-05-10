@@ -137,6 +137,8 @@
         font-size: 2em;
         right: 3%;
         top: 90%;
+        postion: -webkit-sticky;
+        position: sticky;
       }
       
       .language{
@@ -152,9 +154,9 @@
       }
       
       a {
-        font-weight: bold;/*太字に*/
-        text-decoration: none;/*下線消す*/
-/*         background: skyblue;/*背景を水色に*/ */
+        font-weight: bold;
+        text-decoration: none;
+        background: #daa520;
         color:skyblue;/*文字を白に*/
 /*         padding:5px 10px;/*内側の余白*/ */
 /*         border-radius: 20px;/*角を丸くする*/ */
@@ -230,6 +232,11 @@
       }
     </script>
     
+    <script src="js/stickyfill.min.js"></script>
+    <script>
+    $('.sticky').Stickyfill();
+    </script>
+    
     <script>
         var datalist = {
             "language": "en",
@@ -262,7 +269,7 @@
 <!--         <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0001-8725-3366" href="https://orcid.org/0000-0001-8725-3366" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://upload.wikimedia.org/wikipedia/commons/0/06/ORCID_iD.svg" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">https://orcid.org/0000-0001-8725-3366</a></div> -->
 <!--         <br> -->
         <button type="button" id="btn02" onClick="Language_setting()">
-          <div id="lang">English</div>
+          <div class="sticky"><div id="lang">English</div></div>
         </button>
      </div>
     
@@ -586,7 +593,7 @@ The 11th International Conference on Computational Systems-Biology and Bioinform
 2020/12/01 - 2020/12/31<br>
 作品名：「Sailing with COVID-19」<br>
 制作者：小髙充弘<br>
-<a href="https://jcat-gallery.com/mitsuhiro-odaka/"></a><br>
+<a href="https://jcat-gallery.com/mitsuhiro-odaka/">オンライン個展のウェブページを見る</a><br>
 <a href="https://www.ejapion.com/topics/32276/">Weekly NY Japion（週刊NYジャピオン）</a>に掲載されました。(2020/12/18)<br>
 <br>
 
