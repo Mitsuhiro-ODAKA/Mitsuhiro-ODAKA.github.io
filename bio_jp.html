@@ -234,7 +234,7 @@
             if (datalist.language == "en") {
                 document.getElementById("lang").innerHTML = "日本語"; 
                 document.getElementById("03").hidden = false; 
-                document.getElementById("01").innerHTML = document.getElementById("03").textContent;
+                document.getElementById("01").innerHTML = document.getElementById("03").innerHTML;
                 document.getElementById("02").hidden = true; 
               
                 datalist.language = "jp";
@@ -242,7 +242,7 @@
             } else if (datalist.language == "jp") {
                 document.getElementById("lang").innerHTML = "English";
                 document.getElementById("02").hidden = false; 
-                document.getElementById("01").innerHTML = document.getElementById("02").textContent;
+                document.getElementById("01").innerHTML = document.getElementById("02").innerHTML;
                 document.getElementById("03").hidden = true;
                 datalist.language = "en";
                 localStorage.setItem("datalist", JSON.stringify(datalist));
@@ -266,7 +266,8 @@
 </div>
 </div> 
     
-  <div id="02" class="profile" class="EN_">
+  <div id="02" class="profile"> 
+  <div class="EN_">
 　<div id=jump_01><b>小髙充弘 現所属</b></div><br><br>
 　　　<br>
 　　　国立情報学研究所 (NII) 博士課程大学院生<br>
