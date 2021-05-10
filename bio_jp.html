@@ -109,14 +109,6 @@
       div {
 
       }
-
-      .EN{
-        visibility:hidden;
-      }
-      
-      .EN_{
-        visibility:visible;
-      }
       
 /*       .mainVisual {
         position: relative;
@@ -225,6 +217,11 @@
     </div>
     
     <script>
+      window.onload = function() {
+        document.getElementById("01").innerHTML = document.getElementById("02").innerHTML;
+        document.getElementById("03").hidden=true;
+      }
+      
         var datalist = {
             "language": "en",
             "others": "others"
@@ -267,7 +264,7 @@
 </div> 
     
   <div id="02" class="profile"> 
-  <div class="EN_">
+  
 　<div id=jump_01><b>小髙充弘 現所属</b></div><br><br>
 　　　<br>
 　　　国立情報学研究所 (NII) 博士課程大学院生<br>
@@ -629,15 +626,12 @@ Association for Computing Machinery, New York, NY, USA, 75–82. 2020<br>
     <button type="button" id="btn">
       <a href="#jump_01">ページ先頭へ戻る</a><br>
     </button>
-      
-</div>
+
 </div> 
 
       
 <div id="03" class="profile">
-  <div class="EN">
 　<b>Mitsuhiro ODAKA Current Position</b><br><br>
-  </div>
 </div>
   
   </body>
