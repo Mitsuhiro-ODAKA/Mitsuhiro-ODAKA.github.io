@@ -138,15 +138,16 @@
       }
       
       .content{
+        position: absolute;
         font-size: 2em;
         right: 3%;
         top: 90%;
       }
       
-      .sticky{
+/*       .sticky{
         postion: -webkit-sticky;
         position: sticky;
-      }
+      } */
       
       .language{
 
@@ -161,18 +162,19 @@
       }
       
       a {
-        font-weight: bold;
+/*         font-weight: bold; */
         text-decoration: none;
         background: #daa520;
-        color:#4b0082;/*文字を白に*/
+        color:#4b0082;
 /*         padding:5px 10px;/*内側の余白*/ */
 /*         border-radius: 20px;/*角を丸くする*/ */
 /*         font-family: 'Avenir','Arial'; */ */
       }
       
       a:hover {
-/*         background: silver;/*背景色をシルバーに*/ */
+        background: #000000;
         text-decoration: none;/*下線を消す*/
+        color: #daa520;
       }
       
       a:visited {
@@ -273,7 +275,7 @@
 <!--         <div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0001-8725-3366" href="https://orcid.org/0000-0001-8725-3366" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://upload.wikimedia.org/wikipedia/commons/0/06/ORCID_iD.svg" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">https://orcid.org/0000-0001-8725-3366</a></div> -->
 <!--         <br> -->
         <button type="button" id="btn02" onClick="Language_setting()">
-          <div class="sticky"><div id="lang">English</div></div>
+          <div id="lang">English</div>
         </button>
      </div>
     
