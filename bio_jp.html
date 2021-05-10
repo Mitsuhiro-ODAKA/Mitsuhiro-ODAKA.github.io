@@ -110,6 +110,13 @@
 
       }
       
+      .EN{
+      visibility: hidden;
+      }
+      
+      .EN_{
+      visibility: visible;
+      }
 /*       .mainVisual {
         position: relative;
         width: 100%;
@@ -221,7 +228,9 @@
         document.getElementById("01").innerHTML = document.getElementById("02").innerHTML;
         document.getElementById("03").hidden=true;
       }
-      
+    </script>
+    
+    <script>
         var datalist = {
             "language": "en",
             "others": "others"
@@ -263,8 +272,8 @@
 </div>
 </div> 
     
-  <div id="02" class="profile"> 
-  
+  <div id="02" class="EN_"> 
+  <div class="profile">
 　<div id=jump_01><b>小髙充弘 現所属</b></div><br><br>
 　　　<br>
 　　　国立情報学研究所 (NII) 博士課程大学院生<br>
@@ -628,11 +637,13 @@ Association for Computing Machinery, New York, NY, USA, 75–82. 2020<br>
     </button>
 
 </div> 
-
+</div> 
       
-<div id="03" class="profile">
+<div id="03" class="EN">
+<div class="profile">
 　<b>Mitsuhiro ODAKA Current Position</b><br><br>
 </div>
+</div>  
   
   </body>
 
