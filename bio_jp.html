@@ -122,13 +122,42 @@
       .EN_{
       visibility: visible;
       }
-/*       .mainVisual {
+    
+      .mainVisual {
         position: relative;
         width: 100%;
         height: 100%;
         overflow: hidden;
-      } */
+      }
 
+       mainVisual video {
+
+        position: absolute;
+
+        left: 0px;
+
+        top: 0px;
+
+        min-width: 1280px;
+
+        min-height: 720px;
+
+        z-index: -2;
+
+      }
+      
+      @media screen {
+
+        mainVisual {
+
+        width : 100%;
+
+        height: 100%;
+
+      }
+
+      }
+      
       .links{
         position: absolute;
         font-size: 2em;
@@ -202,6 +231,9 @@
 
   <body>
 
+    <div class="mainVisual">
+
+      <video src="Cube - 27033.mp4" ;  poster="odaka.PNG" ; autoplay loop muted></video>
 
     <div class="links">
         <div class="img-container--absolute-position">
