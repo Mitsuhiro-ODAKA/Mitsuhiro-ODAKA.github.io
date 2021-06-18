@@ -88,6 +88,13 @@
 
         left: 50px;
       }
+      
+       img_ {
+       max-width: 100%;
+       max-height: 100%;
+       width: auto;
+       height: auto;
+      }
 
       div {display: inline-block; _display: inline;}
       
@@ -97,7 +104,7 @@
              border: 0.1px transparent;
              vertical-align: middle;
              text-align: center;
-             img {
+             img_ {
              position: absolute;
              left: 0;
              right: 0;
@@ -159,41 +166,7 @@
       visibility: visible;
       }
     
-      .mainVisual {
-        position: fixed;
-        top: 0;
-        left:30vw;
-        bottom: 0;
-        width: 100vw;
-        height: 100vh;
-        overflow: hidden;
-        z-index: -3;
-      }
-
-       .mainVisual > video {
-
-        position: absolute;
-         
-        top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    min-width: 70%;
-    min-height: 70%;
-
-/*         min-width: 1280px;
-        min-height: 720px; */
-
-/*         z-index: -2; */
-
-      }
       
-/*       @media screen {
-        .mainVisual {
-        width : 100%;
-        height: 100%;
-      }
-      
-      } */
       
       .links{
         position: absolute;
@@ -227,28 +200,7 @@
 
       }
       
-      a {
-        font-weight: bold;
-/*         width: 100%; */
-/*         box-sizing: border-box; */
-        text-decoration: none;
-        background: #daa520;
-        color:#4b0082;
-/*         padding:5px 10px; */
-/*         border-radius: 20px;/*角を丸くする*/ */
-/*         font-family: 'Avenir','Arial'; */ */
-      }
       
-      a:hover {
-        
-        background: #000000;
-        text-decoration: none;/*下線を消す*/
-        color: #daa520;
-      }
-      
-      a:visited {
-/*          color: gray;/*文字をグレイに*/ */
-      }
       
      
       .profile{
@@ -268,11 +220,6 @@
 
   <body>
 
-    <div class="mainVisual">
-
-<!--       <video src="Cube - 27033.mp4" ;  poster="odaka.PNG" ; autoplay loop muted></video> -->
-      
-    </div>
     
     
     <div class="links">
