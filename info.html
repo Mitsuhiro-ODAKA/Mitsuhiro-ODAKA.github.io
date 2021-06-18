@@ -115,6 +115,120 @@
       transition:800ms ease all;
     }
         
+    div {
+
+      }
+      
+      .EN{
+      visibility: hidden;
+      }
+      
+      .EN_{
+      visibility: visible;
+      }
+    
+      .mainVisual {
+        position: fixed;
+        top: 0;
+        left:30vw;
+        bottom: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        z-index: -3;
+      }
+
+       .mainVisual > video {
+
+        position: absolute;
+         
+        top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    min-width: 70%;
+    min-height: 70%;
+
+/*         min-width: 1280px;
+        min-height: 720px; */
+
+/*         z-index: -2; */
+
+      }
+      
+/*       @media screen {
+        .mainVisual {
+        width : 100%;
+        height: 100%;
+      }
+      
+      } */
+      
+      .links{
+        position: absolute;
+        font-size: 2em;
+        left: 0.1%;
+        top: 2%;
+
+      }
+      
+      .content{
+        position: absolute;
+        font-size: 2em;
+        right: 0.1%;
+        top: 2%;
+      }
+      
+/*       .sticky{
+        postion: -webkit-sticky;
+        position: sticky;
+      } */
+      
+      .language{
+
+        position:absolute;
+
+        font-size:4ex;
+
+        right:50px;
+
+        top:300px;
+
+      }
+      
+      a {
+        font-weight: bold;
+/*         width: 100%; */
+/*         box-sizing: border-box; */
+        text-decoration: none;
+        background: #daa520;
+        color:#4b0082;
+/*         padding:5px 10px; */
+/*         border-radius: 20px;/*角を丸くする*/ */
+/*         font-family: 'Avenir','Arial'; */ */
+      }
+      
+      a:hover {
+        
+        background: #000000;
+        text-decoration: none;/*下線を消す*/
+        color: #daa520;
+      }
+      
+      a:visited {
+/*          color: gray;/*文字をグレイに*/ */
+      }
+      
+     
+      .profile{
+        position: absolute;
+        font-size:2em;
+        left: 3%;
+        right: 3%;
+        top: 14%;
+        z-index: -1;
+      }
+        
+    
 }
     </style>
 
