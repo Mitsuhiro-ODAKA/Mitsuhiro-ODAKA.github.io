@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+
+
+
+<html lang=“en”>
+
+
+
+  <head>
+
+
+
+    <meta charset=“UFT-8” name="Content-Style-Type" content="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=Yusei+Magic&display=swap" rel="stylesheet">
+    <title>GALLERY Mitsuhiro ODAKA</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+
+
+
+    <title>GALLERY A Mitsuhiro ODAKA A</title>
+
+
+
+  </head>
+
+
+
+  
+
+
+
+    <style>
+
+
+
+      body {
+
+
+
+        font-family: YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+
+
+
+        background-color:#000000;
+
+
+
+        color : #C0C0C0;
+
+
+
+      }
+
+
+
+      div {
+
+
+
+      }
+
+
+
+      .links{
+
+
+
+        position: absolute;
+
+
+
+        font-size:6ex;
+
+
+
+        left: 50px;
+
+
+
+        top: 50px;
+
+
+
+      }
+
+      .language{
+
+        position: absolute;
+
+        font-size:4ex;
+
+        left: 50px;
+<style>
+
+      body {
+        font-family: 'M PLUS 1p', sans-serif, YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3';
+        background-color:#000000;
+        font-size: 1.5vh;
+        color : #C0C0C0;
+      }
+      
+      
+      
+      img {
+       max-width: 100%;
+       max-height: 100%;
+       width: auto;
+       height: auto;
+      }
+
+      div {display: inline-block; _display: inline;}
+      
+      .img-container--absolute-position {
+             position: relative;
+             width: 12vw;
+             border: 0.1px transparent;
+             vertical-align: middle;
+             text-align: center;
+             img {
+             position: absolute;
+             left: 0;
+             right: 0;
+             top: 0;
+             bottom: 0;
+             margin: auto;
+             }
+
+          }
+
+          button{
+          background:#daa520;
+          color:#fff;
+          border:none;
+          position:relative;
+          height:60px;
+          font-size:1em;
+          padding:0 1.4em;
+          cursor:pointer;
+          transition:800ms ease all;
+          outline:none;
+        }
+        button:hover{
+          background:#000000;
+          color:#daa520;
+        }
+        button:before,button:after{
+          content:'';
+          position:absolute;
+          top:0;
+          right:0;
+          height:2px;
+          width:0;
+          background: #daa520;
+          transition:400ms ease all;
+        }
+        button:after{
+          right:inherit;
+          top:inherit;
+          left:0;
+          bottom:0;
+        }
+        button:hover:before,button:hover:after{
+          width:100%;
+          transition:800ms ease all;
+        }
+      
+      
+      
+      div {
+
+      }
+      
+      .EN{
+      visibility: hidden;
+      }
+      
+      .EN_{
+      visibility: visible;
+      }
+    
+      .mainVisual {
+        position: fixed;
+        top: 0;
+        left:30vw;
+        bottom: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        z-index: -3;
+      }
+
+       .mainVisual > video {
+
+        position: absolute;
+         
+        top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    min-width: 70%;
+    min-height: 70%;
+
+/*         min-width: 1280px;
+        min-height: 720px; */
+
+/*         z-index: -2; */
+
+      }
+      
+/*       @media screen {
+        .mainVisual {
+        width : 100%;
+        height: 100%;
+      }
+      
+      } */
+      
+      .links{
+        position: absolute;
+        font-size: 2em;
+        left: 0.1%;
+        top: 2%;
+
+      }
+      
+      .content{
+        position: absolute;
+        font-size: 2em;
+        right: 0.1%;
+        top: 2%;
+      }
+      
+/*       .sticky{
+        postion: -webkit-sticky;
+        position: sticky;
+      } */
+      
+      .language{
+
+        position:absolute;
+
+        font-size:4ex;
+
+        right:50px;
+
+        top:300px;
+
+      }
+      
+      a {
+        font-weight: bold;
+/*         width: 100%; */
+/*         box-sizing: border-box; */
+        text-decoration: none;
+        background: #daa520;
+        color:#4b0082;
+/*         padding:5px 10px; */
+/*         border-radius: 20px;/*角を丸くする*/ */
+/*         font-family: 'Avenir','Arial'; */ */
+      }
+      
+      a:hover {
+        
+        background: #000000;
+        text-decoration: none;/*下線を消す*/
+        color: #daa520;
+      }
+      
+      a:visited {
+/*          color: gray;/*文字をグレイに*/ */
+      }
+      
+     
+      .profile{
+        position: absolute;
+        font-size:2em;
+        left: 3%;
+        right: 3%;
+        top: 14%;
+        z-index: -1;
+      }
+      
+      
+      
+    </style>
+
+
+
+  <body>
+
+    <div class="mainVisual">
+
+<!--       <video src="Cube - 27033.mp4" ;  poster="odaka.PNG" ; autoplay loop muted></video> -->
+      
+    </div>
+    
+    
+    <div class="links">
+        <div class="img-container--absolute-position">
+        <button type="button">
+        <a href="index.html" style="text-decoration:none;" target="_blank">Home</a>
+        </button>
+        <img border="0" src="black_bg2.png">
+        </div>  
+        &nbsp;&nbsp;&nbsp;
+        <div class="img-container--absolute-position">
+        <button type="button">
+        <a href="bio.html" style="text-decoration:none;" target="_blank">Bio</a>
+        </button>
+        <img border="0" src="black_bg2.png">
+        </div>  
+        &nbsp;&nbsp;&nbsp;
+          
+        <div class="img-container--absolute-position">
+        <button type="button">
+        <a href="gallery.html" style="text-decoration:none;" target="_blank">Gallery</a>
+        </button>
+        <img border="0" src="black_bg2.png">
+        </div>  
+        &nbsp;&nbsp;&nbsp;
+
+        <div class="img-container--absolute-position">
+        <button type="button">
+        <a href="info.html" style="text-decoration:none;" target="_blank">Info</a><br>
+        </button>
+        <img border="0" src="black_bg2.png">
+        </div>
+        &nbsp;&nbsp;&nbsp;
+          
+    </div>
+    
+    <script>
+      window.onload = function() {
+        document.getElementById("01").innerHTML = document.getElementById("02").innerHTML;
+        document.getElementById("03").hidden=true;
+      }
+    </script>
+    
+    
+    
+    <script>
+        var datalist = {
+            "language": "en",
+            "others": "others"
+        };
+        //localStorage.setItem("datalist", JSON.stringify(datalist));
+        function Language_setting() {
+            if (datalist.language == "en") {
+                document.getElementById("lang").innerHTML = "日本語"; 
+                document.getElementById("03").hidden = false; 
+                document.getElementById("01").innerHTML = document.getElementById("03").innerHTML;
+                document.getElementById("02").hidden = true; 
+              
+                datalist.language = "jp";
+                localStorage.setItem("datalist", JSON.stringify(datalist));
+            } else if (datalist.language == "jp") {
+                document.getElementById("lang").innerHTML = "English";
+                document.getElementById("02").hidden = false; 
+                document.getElementById("01").innerHTML = document.getElementById("02").innerHTML;
+                document.getElementById("03").hidden = true;
+                datalist.language = "en";
+                localStorage.setItem("datalist", JSON.stringify(datalist));
+            } else {
+                document.getElementById("lang").innerHTML = '';
+            }
+        };
+    </script>
+    
+     <div class="content">    
+
+        <button type="button" id="btn02" onClick="Language_setting()">
+          <div id="lang">English</div>
+        </button>
+          </div>
+     </div>
+    
+<div id="01" class="profile">
+  <a href="https://github.com/Mitsuhiro-ODAKA/Mitsuhiro-ODAKA.github.io/blob/master/gallery_A.html">Gallery A (Films, Games, Sounds)</a><br>
+  <br>
+  <a href="https://github.com/Mitsuhiro-ODAKA/Mitsuhiro-ODAKA.github.io/blob/master/gallery_B.html">Gallery B (Images)</a><br>
+  <br>
+  <a href="https://youtu.be/7Wmr4ZOso84"><img border="1" src="ODAKA_03.jpeg" width="400" height="300" alt="can't display the image" title="FIRE ANTS RAFT(2020)"></a><br>
+      "Fire Ants Raft: Resilient Superorganism" 200614<br>
+      <br><br>
+      
+      <img border="1" src="ftc_tr2-min.PNG" width="400" height="300" alt="can't display the image" title="Flatten the Curve(2020)"><br>
+      "Flatten the Curve" 200606<br>
+      <a href="https://mitsuhiroodaka.itch.io/flatten-the-curve-n-windows64bit">Windows(64bit)</a><br>
+      <a href="https://mitsuhiroodaka.itch.io/flatten-the-curve-n-macos">MacOS</a><br>
+      <a href="https://mitsuhiroodaka.itch.io/flatten-the-curve-n-linux">Linux</a><br>
+      
+      <br><br>
+      
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/eSm7l7nFFcI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+
+      "Untitled" 200214
+      
+      <br><br>
+      
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/AWeeiTd_G88" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+      
+      "Morphogenesis" 200131
+      
+      <br><br>
+      
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/zpAEevvA--g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+
+      "Fenix" PROTOTYPE '200119
+      
+      <br><br>
+      
+      <a href="https://www.youtube.com/watch?v=dQK-sO41eEA&feature=youtu.be"><img border="1" src="191219_ODAKA.PNG" width="520" height="390" alt="can't display the image" title="Jump to play page."></a><br>
+
+      "SIR COLUMNA" 191219
+      
+      <br><br>
+      
+      <a href="https://www.youtube.com/watch?v=pIB39qd5MV0&feature=youtu.be"><img border="1" src="191209_2.PNG" width="520" height="390" alt="can't display the image" title="Jump to play page."></a><br>
+
+      "COLORFUL NETWORK2" 191205_2
+      
+      <br><br>
+      
+      <a href="https://www.youtube.com/watch?v=UuHENA5VcnA&feature=youtu.be"><img border="1" src="191209_1.PNG" width="520" height="390" alt="can't display the image" title="Jump to play page."></a><br>
+
+      "COLORFUL NETWORK" 191205_1
+      
+      <br><br>
+     
+      <a href="https://mitsuhiro-odaka.github.io/191103_odaka.github.io/"><img border="1" src="191109_01image.PNG" width="520" height="390" alt="can't display the image" title="Jump to game play page."></a><br>
+
+      "Flatten the Curve" PROTOTYPE 191103<br><br>
+      
+      <a href="https://www.youtube.com/watch?v=Z2O0lkHTDSo&feature=youtu.be"><img border="1" src="odaka_SIR.PNG" width="520" height="390" alt="can't display the image" title="Jump to game play DEMO page."></a><br>
+
+      "Infected Japonia" 190905
+
+      <br><br>
+
+      <br><br>
+
+      <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/710571136&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>&nbsp;<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/710569126&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+
+      <br><br>
+</div> 
+
+<div class="EN">
+<div class="profile" id="02">
+  <a href="https://github.com/Mitsuhiro-ODAKA/Mitsuhiro-ODAKA.github.io/blob/master/gallery_A.html">Gallery A (映像、ゲーム、音楽)</a><br>
+  <br>
+  <a href="https://github.com/Mitsuhiro-ODAKA/Mitsuhiro-ODAKA.github.io/blob/master/gallery_B.html">Gallery B (静止画)</a><br>
+  <br>
+  <a href="https://youtu.be/7Wmr4ZOso84"><img border="1" src="ODAKA_03.jpeg" width="400" height="300" alt="can't display the image" title="FIRE ANTS RAFT(2020)"></a><br>
+      "Fire Ants Raft: Resilient Superorganism" 200614<br>
+      <br><br>
+      
+      <img border="1" src="ftc_tr2-min.PNG" width="400" height="300" alt="can't display the image" title="Flatten the Curve(2020)"><br>
+      "Flatten the Curve" 200606<br>
+      <a href="https://mitsuhiroodaka.itch.io/flatten-the-curve-n-windows64bit">Windows(64bit)</a><br>
+      <a href="https://mitsuhiroodaka.itch.io/flatten-the-curve-n-macos">MacOS</a><br>
+      <a href="https://mitsuhiroodaka.itch.io/flatten-the-curve-n-linux">Linux</a><br>
+      
+      <br><br>
+      
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/eSm7l7nFFcI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+
+      "Untitled" 200214
+      
+      <br><br>
+      
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/AWeeiTd_G88" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+      
+      "Morphogenesis" 200131
+      
+      <br><br>
+      
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/zpAEevvA--g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+
+      "Fenix" PROTOTYPE '200119
+      
+      <br><br>
+      
+      <a href="https://www.youtube.com/watch?v=dQK-sO41eEA&feature=youtu.be"><img border="1" src="191219_ODAKA.PNG" width="520" height="390" alt="can't display the image" title="Jump to play page."></a><br>
+
+      "SIR COLUMNA" 191219
+      
+      <br><br>
+      
+      <a href="https://www.youtube.com/watch?v=pIB39qd5MV0&feature=youtu.be"><img border="1" src="191209_2.PNG" width="520" height="390" alt="can't display the image" title="Jump to play page."></a><br>
+
+      "COLORFUL NETWORK2" 191205_2
+      
+      <br><br>
+      
+      <a href="https://www.youtube.com/watch?v=UuHENA5VcnA&feature=youtu.be"><img border="1" src="191209_1.PNG" width="520" height="390" alt="can't display the image" title="Jump to play page."></a><br>
+
+      "COLORFUL NETWORK" 191205_1
+      
+      <br><br>
+     
+      <a href="https://mitsuhiro-odaka.github.io/191103_odaka.github.io/"><img border="1" src="191109_01image.PNG" width="520" height="390" alt="can't display the image" title="Jump to game play page."></a><br>
+
+      "Flatten the Curve" PROTOTYPE 191103<br><br>
+      
+      <a href="https://www.youtube.com/watch?v=Z2O0lkHTDSo&feature=youtu.be"><img border="1" src="odaka_SIR.PNG" width="520" height="390" alt="can't display the image" title="Jump to game play DEMO page."></a><br>
+
+      "Infected Japonia" 190905
+
+      <br><br>
+
+      <br><br>
+
+      <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/710571136&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>&nbsp;<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/710569126&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+
+      <br><br>
+</div>
+</div>
+    
+
+  </body>
+
+      
+
+
+</html>
+
