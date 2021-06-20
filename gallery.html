@@ -25,7 +25,7 @@
       
       
       
-      img {
+      img_ {
        max-width: 100%;
        max-height: 100%;
        width: auto;
@@ -40,7 +40,7 @@
              border: 0.1px transparent;
              vertical-align: middle;
              text-align: center;
-             img {
+             img_ {
              position: absolute;
              left: 0;
              right: 0;
@@ -120,8 +120,8 @@
         top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    min-width: 70%;
-    min-height: 70%;
+    min-width: 100%;
+    min-height: 100%;
 
 /*         min-width: 1280px;
 
@@ -302,18 +302,45 @@
      </div>
     
 <div id="01" class="profile">
-  <a href="https://mitsuhiro-odaka.github.io/gallery_A.html">Gallery A (Films, Games, Sounds)</a><br>
+  <div class="img-container--absolute-position">
+        <button type="button">
+        <a href="https://mitsuhiro-odaka.github.io/gallery_A.html" style="text-decoration:none;" target="_blank">Gallery A (Films, Games, Sounds)</a>
+        </button>
+        <img border="0" src="black_bg2.png">
+        </div>  
   <br>
-  <a href="https://mitsuhiro-odaka.github.io/gallery_B.html">Gallery B (Images)</a><br>
   <br>
+<div class="img-container--absolute-position">
+        <button type="button">
+        <a href="https://mitsuhiro-odaka.github.io/gallery_B.html" style="text-decoration:none;" target="_blank">Gallery B (Images)</a>
+        </button>
+        <img border="0" src="black_bg2.png">
+        </div>
+        <br>
+        <br>
 </div> 
 
-<div class="EN">
+<div class="EN_">
 <div class="profile" id="02">
-  <a href="https://mitsuhiro-odaka.github.io/gallery_A.html">Gallery A (映像、ゲーム、音楽)</a><br>
+  <div class="img-container--absolute-position">
+        <button type="button">
+        <a href="https://mitsuhiro-odaka.github.io/gallery_A.html" style="text-decoration:none;" target="_blank">Gallery A (映像、ゲーム、音楽)</a>
+        </button>
+        <img border="0" src="black_bg2.png">
+        </div>  
   <br>
-  <a href="https://mitsuhiro-odaka.github.io/gallery_B.html">Gallery B (静止画)</a><br>
   <br>
+<div class="img-container--absolute-position">
+        <button type="button">
+        <a href="https://mitsuhiro-odaka.github.io/gallery_B.html" style="text-decoration:none;" target="_blank">Gallery B (静止画)</a>
+        </button>
+        <img border="0" src="black_bg2.png">
+        </div>
+        <br>
+        <br>
+</div> 
+  
+  
 </div>
 </div>    
 
