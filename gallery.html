@@ -275,17 +275,16 @@
         function Language_setting() {
             if (datalist.language == "en") {
                 document.getElementById("lang").innerHTML = "日本語"; 
+                document.getElementById("02").hidden = true; 
                 document.getElementById("03").hidden = false; 
                 document.getElementById("01").innerHTML = document.getElementById("03").innerHTML;
-                document.getElementById("02").hidden = true; 
-              
                 datalist.language = "jp";
                 localStorage.setItem("datalist", JSON.stringify(datalist));
             } else if (datalist.language == "jp") {
                 document.getElementById("lang").innerHTML = "English";
+                document.getElementById("03").hidden = true;  
                 document.getElementById("02").hidden = false; 
                 document.getElementById("01").innerHTML = document.getElementById("02").innerHTML;
-                document.getElementById("03").hidden = true;
                 datalist.language = "en";
                 localStorage.setItem("datalist", JSON.stringify(datalist));
             } else {
@@ -295,7 +294,7 @@
     </script>
     
      <div class="content">    
-
+          
         <button type="button" id="btn02" onClick="Language_setting()">
           <div id="lang">English</div>
         </button>
@@ -305,7 +304,7 @@
 
 </div>
     
-<div id="02" class="profile">
+<div id="03" class="profile">
 <div class="img-container--absolute-position">
         <button type="button">
         <a href="https://mitsuhiro-odaka.github.io/gallery_A.html" style="text-decoration:none;" target="_blank">Films, Games, Sounds</a>
@@ -324,8 +323,8 @@
         <br>
 </div> 
 
-<div class="EN">
-<div class="profile" id="03">
+<div class="EN_">
+<div class="profile" id="02">
   
   <div class="img-container--absolute-position">
         <button type="button">
