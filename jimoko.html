@@ -4,73 +4,314 @@
 
   <head>
 
-    <meta charset=“UFT-8” name="Content-Style-Type" content="text/css">
 
+
+    <meta charset=“UFT-8” name="Content-Style-Type" content="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=Yusei+Magic&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
     <title>デジタル・ヒューマニティーズ同好会（デジもんず）</title>
+
+
 
   </head>
 
+
+
   
+
+
 
     <style>
 
       body {
-
-        font-family: YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
-
+        font-family: 'M PLUS 1p', sans-serif, YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3';
         background-color:#000000;
-
+        font-size: 1.5vh;
         color : #C0C0C0;
-
+      }
+      
+      
+      
+      img_ {
+       max-width: 100%;
+       max-height: 100%;
+       width: auto;
+       height: auto;
       }
 
+      div {display: inline-block; _display: inline;}
+      
+      .img-container--absolute-position {
+             position: relative;
+             width: 12vw;
+             border: 0.1px transparent;
+             vertical-align: middle;
+             text-align: center;
+             img_ {
+             position: absolute;
+             left: 0;
+             right: 0;
+             top: 0;
+             bottom: 0;
+             margin: auto;
+             }
+
+          }
+
+          button{
+          background:#daa520;
+          color:#fff;
+          border:none;
+          position:relative;
+          height:60px;
+          font-size:1em;
+          padding:0 1.4em;
+          cursor:pointer;
+          transition:800ms ease all;
+          outline:none;
+        }
+        button:hover{
+          background:#000000;
+          color:#daa520;
+        }
+        button:before,button:after{
+          content:'';
+          position:absolute;
+          top:0;
+          right:0;
+          height:2px;
+          width:0;
+          background: #daa520;
+          transition:400ms ease all;
+        }
+        button:after{
+          right:inherit;
+          top:inherit;
+          left:0;
+          bottom:0;
+        }
+        button:hover:before,button:hover:after{
+          width:100%;
+          transition:800ms ease all;
+        }
+      
+      
+      
       div {
 
       }
+      
+      .EN{
+      visibility: hidden;
+      }
+      
+      .EN_{
+      visibility: visible;
+      }
+    
+      .mainVisual {
+        position: fixed;
+        top: 0;
+        left:0;
+        bottom: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        z-index: -3;
+      }
 
-      .links{
+       .mainVisual > video {
 
         position: absolute;
+         
+        top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    min-width: 100%;
+    min-height: 100%;
 
-        font-size:6ex;
+/*         min-width: 1280px;
+        min-height: 720px; */
 
-        left: 50px;
-
-        top: 50px;
+/*         z-index: -2; */
 
       }
       
-      .a1{
-        position: absolute;
-        font-size:20px;
-        left: 50px;
-        top:300px;
+/*       @media screen {
+        .mainVisual {
+        width : 100%;
+        height: 100%;
       }
+      
+      } */
+      
+      .links{
+        position: absolute;
+        font-size: 2em;
+        left: 0.1%;
+        top: 2%;
 
+      }
+      
+      .content{
+        position: absolute;
+        font-size: 2em;
+        right: 1%;
+        top: 2%;
+      }
+      
+/*       .sticky{
+        postion: -webkit-sticky;
+        position: sticky;
+      } */
+      
+      .language{
+
+        position:absolute;
+
+        font-size:4ex;
+
+        right:10%;
+
+        top:300px;
+
+      }
+      
+      a {
+        font-weight: bold;
+        width: 100%;
+/*         box-sizing: border-box; */
+        text-decoration: none;
+        background: #daa520;
+        color:#4b0082;
+/*         padding:5px 10px; */
+/*         border-radius: 20px;/*角を丸くする*/ */
+/*         font-family: 'Avenir','Arial'; */ */
+      }
+      
+      a:hover {
+        
+        background: #000000;
+        text-decoration: none;/*下線を消す*/
+        color: #daa520;
+      }
+      
+      a:visited {
+/*          color: gray;/*文字をグレイに*/ */
+      }
+     
+      .explanation :not(.a){
+      }
+      
+      .profile{
+        position: absolute;
+        font-size:1.5em;
+        left: 3%;
+        right: 3%;
+        top: 20%;
+/*         z-index: 0; */
+      }
+      
+      
+      
     </style>
 
 
 
   <body>
 
+<!--     <div class="mainVisual"> -->
 
-    <div class="links">
-
-        <a href="index_jp.html">HOME</a>&nbsp;
-
-        <a href="bio_jp.html">BIO</a>&nbsp;
-
-        <a href="gallery_jp.html">GALLERY</a>&nbsp;
-
-        <a href="info_jp.html">INFO</a><br>
-
-    </div>
-
+<!--       <video src="Border - 60997.mp4" ;  poster="odaka.PNG" ; autoplay loop muted></video> -->
+      
+<!--     </div> -->
     
+    
+    <div class="links">
+        <div class="img-container--absolute-position">
+        <button type="button">
+        <a href="index.html" style="text-decoration:none;" target="_blank">Home</a>
+        </button>
+        <img border="0" src="black_bg2.png">
+        </div>  
+        &nbsp;&nbsp;&nbsp;
+        <div class="img-container--absolute-position">
+        <button type="button">
+        <a href="bio.html" style="text-decoration:none;" target="_blank">Bio</a>
+        </button>
+        <img border="0" src="black_bg2.png">
+        </div>  
+        &nbsp;&nbsp;&nbsp;
+          
+        <div class="img-container--absolute-position">
+        <button type="button">
+        <a href="gallery.html" style="text-decoration:none;" target="_blank">Gallery</a>
+        </button>
+        <img border="0" src="black_bg2.png">
+        </div>  
+        &nbsp;&nbsp;&nbsp;
 
-    <div class="a1">
-      デジタル・ヒューマニティーズ同好会（デジもんず）のページへようこそ！<br>
-      <img border="1" src="EHkVBDlU0AAmNMQ.jpg" width="390" height="390" alt="can't display the image" title="jimoko00"><br>
+        <div class="img-container--absolute-position">
+        <button type="button">
+        <a href="info.html" style="text-decoration:none;" target="_blank">Info</a><br>
+        </button>
+        <img border="0" src="black_bg2.png">
+        </div>
+        &nbsp;&nbsp;&nbsp;
+          
+    </div>
+    
+    <script>
+      window.onload = function() {
+        document.getElementById("01").innerHTML = document.getElementById("02").innerHTML;
+        document.getElementById("03").hidden=true;
+      }
+    </script>
+    
+    
+    
+    <script>
+        var datalist = {
+            "language": "en",
+            "others": "others"
+        };
+        //localStorage.setItem("datalist", JSON.stringify(datalist));
+        function Language_setting() {
+            if (datalist.language == "en") {
+                document.getElementById("lang").innerHTML = "日本語"; 
+                document.getElementById("03").hidden = false; 
+                document.getElementById("01").innerHTML = document.getElementById("03").innerHTML;
+                document.getElementById("02").hidden = true; 
+              
+                datalist.language = "jp";
+                localStorage.setItem("datalist", JSON.stringify(datalist));
+            } else if (datalist.language == "jp") {
+                document.getElementById("lang").innerHTML = "English";
+                document.getElementById("02").hidden = false; 
+                document.getElementById("01").innerHTML = document.getElementById("02").innerHTML;
+                document.getElementById("03").hidden = true;
+                datalist.language = "en";
+                localStorage.setItem("datalist", JSON.stringify(datalist));
+            } else {
+                document.getElementById("lang").innerHTML = '';
+            }
+        };
+    </script>
+    
+     <div class="content">    
+
+        <button type="button" id="btn02" onClick="Language_setting()">
+          <div id="lang">English</div>
+        </button>
+     </div>
+    
+<div id="01" class="profile"></div>
+    
+<div class="EN">
+<div id="03" class="profile">
+  デジタル・ヒューマニティーズ同好会（デジもんず）のページへようこそ！<br>
+      <img border="1" src="EHkVBDlU0AAmNMQ.jpg" width="600vw" height="400vh" alt="can't display the image" title="jimoko00"><br>
       デジタル・ヒューマニティーズ同好会（デジもんず）は，デジタル・ヒューマニティーズ（人文情報学）の勉強・自由研究を自主的に行う市民有志の集まりです．<br>
       活動実績<br>
       デジタル・ヒューマニティーズ同好会；企画展示「村上春樹とプラトン ～時を越えたつながり～」サイエンスアゴラ2019<br>
@@ -79,8 +320,12 @@
       デジもんずは，研究者団体ではありません．「日本デジタル・ヒューマニティーズ学会(JADH)」や「じんもんこん(SIGCH)」といった,正式な学会・団体とは，一切関係ありません.デジもんずの発信する知識や研究成果も，正確とは限りません．ある人がこれらの発信内容を信頼し利用することによって不利益を被っても，デジもんずはその人に対して，一切の責任をもつことができません．ご理解の程お願い申し上げます．<br>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ItlWeyJVCfI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
       <br>
-      <img border="1" src="jimoko25.png" width="520" height="350" alt="can't display the image" title="jimoko01">&nbsp;<img border="1" src="jimoko26.png" width="520" height="350" alt="can't display the image" title="jimoko02">&nbsp;<img border="1" src="jimoko29.png" width="520" height="350" alt="can't display the image" title="jimoko03"><br>
-      <img border="1" src="jimoko37.png" width="520" height="350" alt="can't display the image" title="jimoko04">&nbsp;<img border="1" src="jimoko37 (2).png" width="520" height="350" alt="can't display the image" title="jimoko05"><br>
+      <img border="1" src="jimoko25.png" width="400vw" height="300vh" alt="can't display the image" title="jimoko01">&nbsp;
+      <img border="1" src="jimoko26.png" width="400vw" height="300vh" alt="can't display the image" title="jimoko02">&nbsp;
+      <img border="1" src="jimoko29.png" width="400vw" height="300vh" alt="can't display the image" title="jimoko03">&nbsp;
+      <img border="1" src="jimoko37.png" width="400vw" height="300vh" alt="can't display the image" title="jimoko04">&nbsp;
+      <img border="1" src="jimoko37 (2).png" width="400vw" height="300vh" alt="can't display the image" title="jimoko05">&nbsp;
+      <br>
       <br>
       <a href="https://www.jst.go.jp/sis/scienceagora/">サイエンスアゴラ公式ホームページ</a><br>  
       <a href="https://www.jst.go.jp/sis/scienceagora/program/booth/315/">サイエンスアゴラ2019でのデジもんず紹介ページ</a><br>
@@ -114,8 +359,66 @@
       その他，ご意見ご感想ございましたら，TwitterのDMやEmailより，代表者（小髙）までお問い合わせ下さいませ．<br>
       Twitter：[ａｔ]ＮＩＩ９０７９５２８０<br>
       Email：ｈａｒｕｔｏｓｙｕｒａ［ａｔ］ｉ．ｓｏｆｔｂａｎｋ．ｊｐ<br>
+  
+  </div></div>
+ 
+  <div class="EN">
+<div id="02" class="profile">
+  デジタル・ヒューマニティーズ同好会（デジもんず）のページへようこそ！<br>
+      <img border="1" src="EHkVBDlU0AAmNMQ.jpg" width="600vw" height="400vh" alt="can't display the image" title="jimoko00"><br>
+      デジタル・ヒューマニティーズ同好会（デジもんず）は，デジタル・ヒューマニティーズ（人文情報学）の勉強・自由研究を自主的に行う市民有志の集まりです．<br>
+      活動実績<br>
+      デジタル・ヒューマニティーズ同好会；企画展示「村上春樹とプラトン ～時を越えたつながり～」サイエンスアゴラ2019<br>
+      <br>
+      [ご注意下さい]<br>
+      デジもんずは，研究者団体ではありません．「日本デジタル・ヒューマニティーズ学会(JADH)」や「じんもんこん(SIGCH)」といった,正式な学会・団体とは，一切関係ありません.デジもんずの発信する知識や研究成果も，正確とは限りません．ある人がこれらの発信内容を信頼し利用することによって不利益を被っても，デジもんずはその人に対して，一切の責任をもつことができません．ご理解の程お願い申し上げます．<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ItlWeyJVCfI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+      <br>
+      <img border="1" src="jimoko25.png" width="400vw" height="300vh" alt="can't display the image" title="jimoko01">&nbsp;
+      <img border="1" src="jimoko26.png" width="400vw" height="300vh" alt="can't display the image" title="jimoko02">&nbsp;
+      <img border="1" src="jimoko29.png" width="400vw" height="300vh" alt="can't display the image" title="jimoko03">&nbsp;
+      <img border="1" src="jimoko37.png" width="400vw" height="300vh" alt="can't display the image" title="jimoko04">&nbsp;
+      <img border="1" src="jimoko37 (2).png" width="400vw" height="300vh" alt="can't display the image" title="jimoko05">&nbsp;
+      <br>
+      <br>
+      <a href="https://www.jst.go.jp/sis/scienceagora/">サイエンスアゴラ公式ホームページ</a><br>  
+      <a href="https://www.jst.go.jp/sis/scienceagora/program/booth/315/">サイエンスアゴラ2019でのデジもんず紹介ページ</a><br>
       
-    </div>
+      <br><br>
+      
+      アンケート集計結果（集計期間：2019/11/16-17）（ご回答頂いた皆様，ありがとうございました．）<br>
+       <img border="1" src="agorafig1.PNG" width="600" height="340" alt="can't display the image" title="fig1"><br>
+             <img border="1" src="agorafig2.PNG" width="400vw" height="300vh" alt="can't display the image" title="fig2"><br>
+             <img border="1" src="agorafig3.PNG" width="400vw" height="300vh" alt="can't display the image" title="fig3"><br>
+             <img border="1" src="agorafig4.PNG" width="400vw" height="300vh" alt="can't display the image" title="fig4"><br>
+             <img border="1" src="agorafig5.PNG" width="400vw" height="300vh" alt="can't display the image" title="fig5"><br>
+             <img border="1" src="agorafig6.PNG" width="400vw" height="300vh" alt="can't display the image" title="fig6"><br>
+      <br>
+      寄せられた感想（皆様の大変貴重なご感想一つ一つを踏まえ，今後とも精進してまいります．ありがとうございました．）<br>
+      「丁寧な説明ありがとうございました．」（20歳代男性）<br>
+      「ご夫婦や友人のコミュニティが素敵でしたし，ほっと癒されました．深く考えられるゆっくりとした時間がいいなと思いました．」（30歳代女性）<br>
+      「ご夫婦の優しさがとても嬉しくて，心地よくて楽しかったです．人付き合いや学問とは本来はこのようなものなのかなと思いました．」（上と同じ方）<br>
+      「いろんな研究をされていて，すごく面白いなあと思いました．」（10歳代女性）<br>
+      「興味深い．注目点が面白かった．」（10歳代女性）<br>
+      「ミンナツナガッテルヨ～」（60歳代女性）<br>
+      「小規模でも理論レベルから実用レベルまで色々な形で見せることができると入口が広がってさらに良いと思いました．」（30歳代男性）<br>
+      「キャラクターがとても可愛いです．」（10歳代女性）<br>
+      「最先端の研究をされている．広告業とかプロモーションに使えそう．とても興味深い．」（10歳代その他）<br>
+      「今時の技術はすごいな，としみじみ思います．」（40歳代女性）<br>
+      「個人的な印象で申し訳ございませんが，まんがに文字が多いような気がします．」（20歳代女性）<br>
+      >>>代表者より「まんがに文字が多いとのご指摘，ありがとうございます．たしかに仰られる通り，今回のまんがは文字数が多く，可読性に改善の余地があると思われます．他にも，縦書きと横書きが混ざっていて読みにくい，と言って下さる方もいらっしゃいました．今後の刊行の場面において配慮させて頂きます．ありがとうございました．」<br>
+      「これからもこのような活動を期待いたします．」（50歳代その他）<br>
+      「とても分かりやすく説明して下さり，ありがとうございます．」（10歳代男性）<br>
+      <br>
+      その他，ご意見ご感想ございましたら，TwitterのDMやEmailより，代表者（小髙）までお問い合わせ下さいませ．<br>
+      Twitter：[ａｔ]ＮＩＩ９０７９５２８０<br>
+      Email：ｈａｒｕｔｏｓｙｕｒａ［ａｔ］ｉ．ｓｏｆｔｂａｎｋ．ｊｐ<br>
+  
+  </div></div>
+
+    
+      
+      
     
 
   </body>
