@@ -17,7 +17,7 @@
 <script>
 $(function(){
    // #で始まるアンカーをクリックした場合に処理
-   $('p[href^=#]').click(function() {
+   $('a[href^=#]').click(function() {
       // スクロールの速度
       var speed = 400; // ミリ秒
       // アンカーの値取得
@@ -229,7 +229,7 @@ $(function(){
      
       .profile{
         position: absolute;
-        font-size:1.5em;
+        font-size:2em;
         left: 3%;
         right: 3%;
         top: 14%;
@@ -335,8 +335,8 @@ $(function(){
     
   <div class="EN">
   <div class="profile" id="02">
-　<div id=jump_01><h4><b>小髙充弘</b></h4></div><br><br>
-  <img border="1" src="ImageDir_001/IMG_6030.JPG" width="300vw" height="300vh" alt="can't display the image" title="Mitsuhiro ODAKA (2021)"><br><br>
+　<a id=jump_01><h4><b><font size="5" ><p style="background-color:black"><p style="color:#C0C0C0">小髙充弘</p></p></font></b></h4></a><br><br>
+  <img border="1" src="ImageDir_001/IMG_6030.JPG" width="30%" height="30%" alt="can't display the image" title="Mitsuhiro ODAKA (2021)"><br><br>
 　<b>現所属</b><br><br>
 　　　<br>
 　　　国立情報学研究所 (NII) 博士課程 大学院生<br>
@@ -432,7 +432,7 @@ $(function(){
       
   <b>業績</b> <br><br>
     <button type="button" id="btn">
-      <p href="#jump_01">ページ先頭へ戻る</p>
+      <a href="#jump_01">ページ先頭へ戻る</a>
     </button><br><br>
 
       <font size="5">=======学会発表=======</font><br>
@@ -715,7 +715,7 @@ Association for Computing Machinery, New York, NY, USA, 75–82. 2020<br>
 
 <br>
     <button type="button" id="btn">
-      <p href="#jump_01">ページ先頭へ戻る</p><br>
+      <a href="#jump_01">ページ先頭へ戻る</a><br>
     </button>
 
 </div> 
@@ -723,8 +723,8 @@ Association for Computing Machinery, New York, NY, USA, 75–82. 2020<br>
       
 <div class="EN">
 <div id="03" class="profile">
-<b>Mitsuhiro ODAKA</b><br><br>
-<img border="1" src="ImageDir_001/IMG_6030.JPG" width="300vw" height="300vh" alt="can't display the image" title="Mitsuhiro ODAKA (2021)"><br><br>
+<a id="jump_01"><b><font size="5"><p style="background-color:black"><p style="color:#C0C0C0">Mitsuhiro ODAKA</p></p></font></b></a><br><br>
+<img border="1" src="ImageDir_001/IMG_6030.JPG" width="30%" height="30%" alt="can't display the image" title="Mitsuhiro ODAKA (2021)"><br><br>
 <b>CURRENT POSITION</b><br>
 •	Research Fellowship for Young Scientists						&nbsp;&nbsp;&nbsp;2021 – present<br>
 Japan Society for the Promotion of Science (JSPS), Tokyo<br>
@@ -803,9 +803,12 @@ The 11th International Conference on Computational Systems-Biology and Bioinform
 14)	Odaka M. 2020. Visualization and Sonification of Infection: Sensitivity Analysis of Multi-Agent Systems to Space Structural Metamorphosis. Expressive Japan 2020 of Art and Science Forum. Tokyo. Japan.<br>
 15)	Odaka M. 2020. The Gamification of SIR Model-based Simulation of COVID-19 Epidemics. IEEE Conference on Games (IEEE CoG). Osaka. Japan.<br>
 16)	Odaka M. and Inoue K. 2020. Computational Modeling and Simulation of Viral Load Kinetics in SARS-CoV-2 Replication. The 11th International Conference on Computational Systems-Biology and Bioinformatics (CSBio 2020). Bangkok. Thailand.<br>
-<br>
+<br><br>
+  <button type="button" id="btn">
+      <a href="#jump_01">Page Top</a><br>
+    </button>
 </div>
-</div>  
+</div>
   </body>
 
 </html>
