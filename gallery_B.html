@@ -5,8 +5,7 @@
 <html lang=“en”>
 
 
-
-  <head>
+   <head>
 
 
 
@@ -14,9 +13,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=Yusei+Magic&display=swap" rel="stylesheet">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-
-
-
     <title>GALLERY B Mitsuhiro ODAKA</title>
 
 
@@ -109,13 +105,6 @@
 
       }
       
-      .game{
-        position: absolute;
-        font-size:32px;
-        left: 50px;
-        top: 400px;
-      }
-      
       .EN{
       visibility: hidden;
       }
@@ -127,7 +116,7 @@
       .mainVisual {
         position: fixed;
         top: 0;
-        left:30vw;
+        left:0;
         bottom: 0;
         width: 100vw;
         height: 100vh;
@@ -142,8 +131,8 @@
         top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    min-width: 70%;
-    min-height: 70%;
+    min-width: 100%;
+    min-height: 100%;
 
 /*         min-width: 1280px;
         min-height: 720px; */
@@ -171,7 +160,7 @@
       .content{
         position: absolute;
         font-size: 2em;
-        right: 0.1%;
+        right: 1%;
         top: 2%;
       }
       
@@ -186,21 +175,45 @@
 
         font-size:4ex;
 
-        right:50px;
+        right:10%;
 
         top:300px;
 
       }
       
+      a {
+        font-weight: bold;
+        width: 100%;
+/*         box-sizing: border-box; */
+        text-decoration: none;
+        background: #daa520;
+        color:#4b0082;
+/*         padding:5px 10px; */
+/*         border-radius: 20px;/*角を丸くする*/ */
+/*         font-family: 'Avenir','Arial'; */ */
+      }
       
+      a:hover {
+        
+        background: #000000;
+        text-decoration: none;/*下線を消す*/
+        color: #daa520;
+      }
+      
+      a:visited {
+/*          color: gray;/*文字をグレイに*/ */
+      }
      
+      .explanation :not(.a){
+      }
+      
       .profile{
         position: absolute;
-        font-size:2em;
+        font-size:1.5em;
         left: 3%;
         right: 3%;
-        top: 14%;
-        z-index: -1;
+        top: 20%;
+/*         z-index: 0; */
       }
       
       
@@ -211,11 +224,11 @@
 
   <body>
 
-    <div class="mainVisual">
+<!--     <div class="mainVisual"> -->
 
-<!--       <video src="Cube - 27033.mp4" ;  poster="odaka.PNG" ; autoplay loop muted></video> -->
+<!--       <video src="Border - 60997.mp4" ;  poster="odaka.PNG" ; autoplay loop muted></video> -->
       
-    </div>
+<!--     </div> -->
     
     
     <div class="links">
@@ -296,116 +309,326 @@
         </button>
      </div>
     
-<div id="01" class="profile">
-  <a href="https://mitsuhiro-odaka.github.io/gallery_A.html">Gallery A (Films, Games, Sounds)</a><br>
-  <br>
-  <a href="https://mitsuhiro-odaka.github.io/gallery_B.html">Gallery B (Images)</a><br>
-  <br>
-</div>
-<div class="game"> 
-  <img border="1" src="11_Photophobia.PNG" width="400" height="600" alt="can't display the image" title="photophobia(2019)"><br><br>
+<div id="01" class="profile"></div>
 
-      <img border="1" src="レクタングル.PNG" width="400" height="300" alt="can't display the image" title="Rectangle(2019)">
 
-      &nbsp;<img border="1" src="カラフルカオス.PNG" width="400" height="300" alt="can't display the image" title="Colorful Chaos(2019)">
+<div class="EN">
+<div id="03" class="profile">
+        <div class="img-container--absolute-position">
+        <button type="button">
+        <a href="https://mitsuhiro-odaka.github.io/gallery_A.html" style="text-decoration:none;" target="_blank"><font size="-1">Films<br>Games<br>Sounds</font></a>
+        </button>
+        <img border="0" src="black_bg2.png">
+        </div>  
+  &nbsp;&nbsp;&nbsp;
+<div class="img-container--absolute-position">
+        <button type="button">
+        <a href="https://mitsuhiro-odaka.github.io/gallery_B.html" style="text-decoration:none;" target="_blank"><font size="-1">Drawing<br>Generative Art</font></a>
+        </button>
+        <img border="0" src="black_bg2.png">
+        </div>
+  <br><br>
+      <div class="explanation">
+      <img border="1" src="レクタングル.PNG" width="400vw" height="300vh" alt="can't display the image" title="Rectangle(2019)">
+      &nbsp;&nbsp;&nbsp;Rectangle(2019)&nbsp;&nbsp;&nbsp;
 
-      &nbsp;<img border="1" src="rasen.jpeg" width="400" height="300" alt="can't display the image" title="die Theorie der Schweigespirale(2019)">
+      <img border="1" src="カラフルカオス.PNG" width="400vw" height="300vh" alt="can't display the image" title="Colorful Chaos(2019)">
+      &nbsp;&nbsp;&nbsp;Colorful Chaos(2019)&nbsp;&nbsp;&nbsp;<br>
 
-      &nbsp;<img border="1" src="02_uminitokeru.png" width="400" height="300" alt="can't display the image" title="Melt into the sea(2019)">
+      <img border="1" src="rasen.jpeg" width="400vw" height="300vh" alt="can't display the image" title="die Theorie der Schweigespirale(2019)">
+      &nbsp;&nbsp;&nbsp;die Theorie der Schweigespirale(2019)&nbsp;&nbsp;&nbsp;
 
-      &nbsp;<img border="1" src="01_超都会.png" width="400" height="300" alt="can't display the image" title="Metropolis(2019)">
+      <img border="1" src="02_uminitokeru.png" width="400vw" height="300vh" alt="can't display the image" title="Melt into the sea(2019)">
+      &nbsp;&nbsp;&nbsp;Melt into the sea(2019)&nbsp;&nbsp;&nbsp;
 
-      &nbsp;<img border="1" src="07_潮騒.PNG" width="400" height="300" alt="can't display the image" title="The Sound of Waves(2019)">
+      <img border="1" src="01_超都会.png" width="400vw" height="300vh" alt="can't display the image" title="Metropolis(2019)">
+      &nbsp;&nbsp;&nbsp;Metropolis(2019)&nbsp;&nbsp;&nbsp;<br>
 
-      &nbsp;<img border="1" src="09_恋.png" width="400" height="300" alt="can't display the image" title="First Love(2019)">
+      <img border="1" src="07_潮騒.PNG" width="400vw" height="300vh" alt="can't display the image" title="The Sound of Waves(2019)">
+      &nbsp;&nbsp;&nbsp;Shiosai: The Sound of Waves(2019)&nbsp;&nbsp;&nbsp;
 
-      &nbsp;<img border="1" src="12_uncertain.PNG" width="400" height="300" alt="can't display the image" title="uncertain(2019)">
+      <img border="1" src="09_恋.png" width="400vw" height="300vh" alt="can't display the image" title="First Love(2019)">
+      &nbsp;&nbsp;&nbsp;First Love(2019)&nbsp;&nbsp;&nbsp;
 
-      &nbsp;<img border="1" src="沈黙の螺旋I.jpeg" width="400" height="300" alt="can't display the image" title="die Theorie der Schweigespirale II(2019)">
+      <img border="1" src="12_uncertain.PNG" width="400vw" height="300vh" alt="can't display the image" title="uncertain(2019)">
+      &nbsp;&nbsp;&nbsp;uncertain(2019)&nbsp;&nbsp;&nbsp;<br>
 
-      &nbsp;<img border="1" src="樹木裁判1.JPG" width="400" height="300" alt="can't display the image" title="Forest Politics(2019)">
+      <img border="1" src="沈黙の螺旋I.jpeg" width="400vw" height="300vh" alt="can't display the image" title="die Theorie der Schweigespirale II(2019)">
+      &nbsp;&nbsp;&nbsp;die Theorie der Schweigespirale II(2019)&nbsp;&nbsp;&nbsp;
 
-      &nbsp;<img border="1" src="幻覚虫.jpeg" width="400" height="300" alt="can't display the image" title="Genkakuchu(2019)">
+      <img border="1" src="樹木裁判1.JPG" width="400vw" height="300vh" alt="can't display the image" title="Forest Politics(2019)">
+      &nbsp;&nbsp;&nbsp;Forest Politics(2019)&nbsp;&nbsp;&nbsp;
+        
+      <img border="1" src="幻覚虫.jpeg" width="400vw" height="300vh" alt="can't display the image" title="Genkakuchu(2019)">
+      &nbsp;&nbsp;&nbsp;Hallucinations(2019)&nbsp;&nbsp;&nbsp;<br>
 
-      &nbsp;<img border="1" src="ホワイエ.jpeg" width="400" height="300" alt="can't display the image" title="Hall(2019)">
+      <img border="1" src="ホワイエ.jpeg" width="400vw" height="300vh" alt="can't display the image" title="Hall(2019)">
+      &nbsp;&nbsp;&nbsp;Hall(2019)&nbsp;&nbsp;&nbsp;
 
-      &nbsp;<img border="1" src="mush_beat2.jpeg" width="400" height="300" alt="can't display the image" title="Mush Beat(2019)">
+      <img border="1" src="mush_beat2.jpeg" width="400vw" height="300vh" alt="can't display the image" title="Mush Beat(2019)">
+      &nbsp;&nbsp;&nbsp;Mush Beat(2019)&nbsp;&nbsp;&nbsp;
 
-      &nbsp;<img border="1" src="191207.PNG" width="400" height="300" alt="can't display the image" title="Planet(2019)">
+      <img border="1" src="191207.PNG" width="400vw" height="300vh" alt="can't display the image" title="Planet(2019)">
+      &nbsp;&nbsp;&nbsp;Planet(2019)&nbsp;&nbsp;&nbsp;<br>
 
-      &nbsp;<img border="1" src="03_遠い昔の記憶.PNG" width="400" height="300" alt="can't display the image" title="Child Days Memory(2019)">      
+      <img border="1" src="03_遠い昔の記憶.PNG" width="400vw" height="300vh" alt="can't display the image" title="Child Days Memory(2019)">
+      &nbsp;&nbsp;&nbsp;Child Days Memory(2019)&nbsp;&nbsp;&nbsp;
 
-      &nbsp;<img border="1" src="04_銀河トンネル.png" width="400" height="300" alt="can't display the image" title="Atomic Tunnel(2019)">      
+      <img border="1" src="04_銀河トンネル.png" width="400vw" height="300vh" alt="can't display the image" title="Atomic Tunnel(2019)">
+      &nbsp;&nbsp;&nbsp;Atomic Tunnel(2019)&nbsp;&nbsp;&nbsp;
 
-      &nbsp;<img border="1" src="05_みんなひとりぼっち.png" width="400" height="300" alt="can't display the image" title="Everybody's Alone(2019)">      
+      <img border="1" src="05_みんなひとりぼっち.png" width="400vw" height="300vh" alt="can't display the image" title="Everybody's Alone(2019)">
+      &nbsp;&nbsp;&nbsp;Everybody's Alone(2019)&nbsp;&nbsp;&nbsp;<br>
 
-      &nbsp;<img border="1" src="22_Block_World.PNG" width="400" height="300" alt="can't display the image" title="BLOCK WORLD(2019)">      
+      <img border="1" src="22_Block_World.PNG" width="400vw" height="300vh" alt="can't display the image" title="BLOCK WORLD(2019)">
+      &nbsp;&nbsp;&nbsp;BLOCK WORLD(2019)&nbsp;&nbsp;&nbsp;
 
-      &nbsp;<img border="1" src="20010402.PNG" width="400" height="300" alt="can't display the image" title="Untitled(2020)">      
+      <img border="1" src="20010402.PNG" width="400vw" height="300vh" alt="can't display the image" title="Paranoia(2020)">
+      &nbsp;&nbsp;&nbsp;Paranoia(2020)&nbsp;&nbsp;&nbsp;
 
-      &nbsp;<img border="1" src="200107.PNG" width="400" height="300" alt="can't display the image" title="Trail(2020)">      
+      <img border="1" src="200107.PNG" width="400vw" height="300vh" alt="can't display the image" title="Trail(2020)">
+      &nbsp;&nbsp;&nbsp;Trail(2020)&nbsp;&nbsp;&nbsp;<br>
 
-      &nbsp;<img border="1" src="200106.PNG" width="400" height="300" alt="can't display the image" title="Walkers on the Earth(2020)">      
+      <img border="1" src="200106.PNG" width="400vw" height="300vh" alt="can't display the image" title="Walkers on the Earth(2020)">
+      &nbsp;&nbsp;&nbsp;Walkers on the Earth(2020)&nbsp;&nbsp;&nbsp;
 
-      &nbsp;<img border="1" src="MilesDavis.jpg" width="400" height="600" alt="can't display the image" title="Miles Davis(2018)">
-
-      &nbsp;<img border="1" src="LeoTolstoy.jpg" width="400" height="600" alt="can't display the image" title="Leo Tolstoy(2018)">
-
-      &nbsp;<img border="1" src="DianeArbus.jpg" width="400" height="600" alt="can't display the image" title="A young man with curlers at home on West 20th Street, N.Y.C.(2017)">
-
-      &nbsp;<img border="1" src="MoritaDouji.jpg" width="400" height="600" alt="can't display the image" title="Morita Douji(2017)">
-
-      &nbsp;<img border="1" src="ODAKA(26).jpg" width="400" height="600" alt="can't display the image" title="ODAKA(26)(2018)">
-
+      <img border="1" src="IMG_1339 （編集済み）.PNG" width="400vw" height="300vh" alt="can't display the image" title="Potluck Party!(2020)">
+      &nbsp;&nbsp;&nbsp;Potluck Party!(2020)&nbsp;&nbsp;&nbsp;
+        
+      <img border="1" src="IMG_1346.PNG" width="400vw" height="300vh" alt="can't display the image" title="Neon Flower Garden(2020)">
+      &nbsp;&nbsp;&nbsp;Neon Flower Garden(2020)&nbsp;&nbsp;&nbsp;
+        
+      <img border="1" src="IMG_1348.PNG" width="400vw" height="300vh" alt="can't display the image" title="An Object Appears(2020)">
+      &nbsp;&nbsp;&nbsp;An Object Appears(2020)&nbsp;&nbsp;&nbsp;<br>
+        
+      <img border="1" src="IMG_1357.PNG" width="400vw" height="300vh" alt="can't display the image" title="Alpha & Alpha(2020)">
+      &nbsp;&nbsp;&nbsp;Alpha & Alpha(2020)&nbsp;&nbsp;&nbsp;
       
-      &nbsp;<img border="1" src="IMG_1339 （編集済み）.PNG" width="400" height="300" alt="can't display the image" title="Potluck Party!(2020)">
-      &nbsp;<img border="1" src="IMG_1346.PNG" width="400" height="300" alt="can't display the image" title="Neon Flower Garden(2020)">
-      &nbsp;<img border="1" src="IMG_1348.PNG" width="400" height="300" alt="can't display the image" title="An Object Appears(2020)">
-      &nbsp;<img border="1" src="IMG_1357.PNG" width="400" height="300" alt="can't display the image" title="Paranoia - Alpha & Alpha(2020)">
-      &nbsp;<img border="1" src="harukimurakami11.png" width="400" height="300" alt="can't display the image" title="Small World Network 1911(2019)">
-      &nbsp;<img border="1" src="dhagdshgiaprewhifp.JPG" width="400" height="300" alt="can't display the image" title="Monovista 1(2020)">
-      &nbsp;<img border="1" src="simpleffects2638572946.PNG" width="400" height="300" alt="can't display the image" title="Monovista 2(2020)">
-      &nbsp;<img border="1" src="simpleffects2638730340.PNG" width="400" height="300" alt="can't display the image" title="Electric Network(2020)">
-      &nbsp;<img border="1" src="simpleffects2639123123.PNG" width="400" height="300" alt="can't display the image" title="Fractal Fractal(2020)">
-      &nbsp;<img border="1" src="simpleffects2639234616.PNG" width="400" height="300" alt="can't display the image" title="Multiplex Bio System(2020)">
-      &nbsp;<img border="1" src="simpleffects2639264318.PNG" width="400" height="300" alt="can't display the image" title="What's Your Dream(2020)">
-      &nbsp;<img border="1" src="simpleffects2639294110.PNG" width="400" height="300" alt="can't display the image" title="Moratorium(2020)">
-      &nbsp;<img border="1" src="bloom01.png" width="400" height="300" alt="can't display the image" title="Bloom(2020)">
-      &nbsp;<img border="1" src="200714_0001.png" width="400" height="300" alt="can't display the image" title="Happy Birthday(2020)">
-      &nbsp;<img border="1" src="200714_0002.png" width="400" height="300" alt="can't display the image" title="SIR columna part2(2020)">
-      &nbsp;<img border="1" src="200714_0003.png" width="400" height="300" alt="can't display the image" title="dysfunction(2020)">
-      &nbsp;<img border="1" src="200714_0004.png" width="400" height="300" alt="can't display the image" title="SIR brush(2020)">
-      &nbsp;<img border="1" src="IMG_2214.PNG" width="400" height="300" alt="can't display the image" title="Fly together(2020)">
-      <br><br>
-</div> 
+      <img border="1" src="harukimurakami11.png" width="400vw" height="300vh" alt="can't display the image" title="Small World Network 1911(2019)">
+      &nbsp;&nbsp;&nbsp;Small World Network(2019)&nbsp;&nbsp;&nbsp;
+        
+      <img border="1" src="dhagdshgiaprewhifp.JPG" width="400vw" height="300vh" alt="can't display the image" title="Monovista 1(2020)">
+      &nbsp;&nbsp;&nbsp;Monovista I(2020)&nbsp;&nbsp;&nbsp;<br>
+        
+      <img border="1" src="simpleffects2638572946.PNG" width="400vw" height="300vh" alt="can't display the image" title="Monovista 2(2020)">
+      &nbsp;&nbsp;&nbsp;Monovista II(2020)&nbsp;&nbsp;&nbsp;
+        
+      <img border="1" src="simpleffects2638730340.PNG" width="400vw" height="300vh" alt="can't display the image" title="Electric Network(2020)">
+      &nbsp;&nbsp;&nbsp;Electric Network(2020)&nbsp;&nbsp;&nbsp;
+        
+      <img border="1" src="simpleffects2639123123.PNG" width="400vw" height="300vh" alt="can't display the image" title="Fractal Fractal(2020)">
+      &nbsp;&nbsp;&nbsp;Fractal Fractal(2020)&nbsp;&nbsp;&nbsp;<br>
+        
+      <img border="1" src="simpleffects2639234616.PNG" width="400vw" height="300vh" alt="can't display the image" title="Multiplex Bio System(2020)">
+      &nbsp;&nbsp;&nbsp;Multiplex Bio System(2020)&nbsp;&nbsp;&nbsp;
+        
+      <img border="1" src="simpleffects2639264318.PNG" width="400vw" height="300vh" alt="can't display the image" title="What's Your Dream(2020)">
+      &nbsp;&nbsp;&nbsp;What's Your Dream?(2020)&nbsp;&nbsp;&nbsp;
+        
+      <img border="1" src="simpleffects2639294110.PNG" width="400vw" height="300vh" alt="can't display the image" title="Moratorium(2020)">
+      &nbsp;&nbsp;&nbsp;Moratorium(2020)&nbsp;&nbsp;&nbsp;<br>
+        
+      <img border="1" src="bloom01.png" width="400vw" height="300vh" alt="can't display the image" title="Bloom(2020)">
+      &nbsp;&nbsp;&nbsp;Bloom(2020)&nbsp;&nbsp;&nbsp;
+        
+      <img border="1" src="200714_0001.png" width="400vw" height="300vh" alt="can't display the image" title="Happy Birthday(2020)">
+      &nbsp;&nbsp;&nbsp;Happy Birthday(2020)&nbsp;&nbsp;&nbsp;
+        
+      <img border="1" src="200714_0002.png" width="400vw" height="300vh" alt="can't display the image" title="SIR columna part2(2020)">
+      &nbsp;&nbsp;&nbsp;SIR Columna Part II(2020)&nbsp;&nbsp;&nbsp;<br>
+        
+      <img border="1" src="200714_0003.png" width="400vw" height="300vh" alt="can't display the image" title="dysfunction(2020)">
+      &nbsp;&nbsp;&nbsp;Dysfunction(2020)&nbsp;&nbsp;&nbsp;
+        
+      <img border="1" src="200714_0004.png" width="400vw" height="300vh" alt="can't display the image" title="lot(2020)">
+      &nbsp;&nbsp;&nbsp;Empty Lot (2020)&nbsp;&nbsp;&nbsp;
+        
+      <img border="1" src="IMG_2214.PNG" width="400vw" height="300vh" alt="can't display the image" title="Fly together(2020)">
+      &nbsp;&nbsp;&nbsp;Fly together(2020)&nbsp;&nbsp;&nbsp;<br>
+      
+      <img border="1" src="11_Photophobia.PNG" width="400vw" height="600vh" alt="can't display the image" title="photophobia(2019)">
+      &nbsp;&nbsp;&nbsp;photophobia(2019)&nbsp;&nbsp;&nbsp;
+        
+      <img border="1" src="MilesDavis.jpg" width="400vw" height="600vh" alt="can't display the image" title="Miles Davis(2018)">
+      &nbsp;&nbsp;&nbsp;Miles Davis(2018)&nbsp;&nbsp;&nbsp;
+
+      <img border="1" src="LeoTolstoy.jpg" width="400vw" height="600vh" alt="can't display the image" title="Leo Tolstoy(2018)">
+      &nbsp;&nbsp;&nbsp;Leo Tolstoy(2018)&nbsp;&nbsp;&nbsp;<br>
+
+      <img border="1" src="DianeArbus.jpg" width="400vw" height="600vh" alt="can't display the image" title="A young man with curlers at home on West 20th Street, N.Y.C.(2017)">
+      &nbsp;&nbsp;&nbsp;A young man with curlers at home on West 20th Street, N.Y.C.(2017)&nbsp;&nbsp;&nbsp;
+
+      <img border="1" src="MoritaDouji.jpg" width="400vw" height="600vh" alt="can't display the image" title="Morita Douji(2017)">
+      &nbsp;&nbsp;&nbsp;Morita Douji(2017)&nbsp;&nbsp;&nbsp;
+
+      <img border="1" src="ODAKA(26).jpg" width="400vw" height="600vh" alt="can't display the image" title="ODAKA(26)(2018)">
+      &nbsp;&nbsp;&nbsp;ODAKA(26)(2018)&nbsp;&nbsp;&nbsp;<br>
+        
+        
+      </div>
+      
+  
+</div>
+</div>
 
 <div class="EN">
 <div class="profile" id="02">
-  <a href="https://mitsuhiro-odaka.github.io/gallery_A.html">Gallery A (映像、ゲーム、音楽)</a><br>
+        <div class="img-container--absolute-position">
+        <button type="button">
+        <a href="https://mitsuhiro-odaka.github.io/gallery_A.html" style="text-decoration:none;" target="_blank"><font size="-1">映像<br>ゲーム<br>音楽</font></a>
+        </button>
+        <img border="0" src="black_bg2.png">
+        </div>  
+&nbsp;&nbsp;&nbsp;
+        <div class="img-container--absolute-position">
+        <button type="button">
+        <a href="https://mitsuhiro-odaka.github.io/gallery_B.html" style="text-decoration:none;" target="_blank"><font size="-1">ドローイング<br>デジタルアート</font></a>
+        </button>
+        <img border="0" src="black_bg2.png">
+  </div>
   <br>
-  <a href="https://mitsuhiro-odaka.github.io/gallery_B.html">Gallery B (静止画)</a><br>
-  <br>
-</div>
-</div>
-    
+  <div class="explanation">
+      <img border="1" src="レクタングル.PNG" width="400vw" height="300vh" alt="can't display the image" title="Rectangle(2019)">
+      &nbsp;&nbsp;&nbsp;Rectangle(2019)&nbsp;&nbsp;&nbsp;
 
-  </body>
+      <img border="1" src="カラフルカオス.PNG" width="400vw" height="300vh" alt="can't display the image" title="Colorful Chaos(2019)">
+      &nbsp;&nbsp;&nbsp;Colorful Chaos(2019)&nbsp;&nbsp;&nbsp;<br>
 
+      <img border="1" src="rasen.jpeg" width="400vw" height="300vh" alt="can't display the image" title="die Theorie der Schweigespirale(2019)">
+      &nbsp;&nbsp;&nbsp;die Theorie der Schweigespirale(2019)&nbsp;&nbsp;&nbsp;
 
+      <img border="1" src="02_uminitokeru.png" width="400vw" height="300vh" alt="can't display the image" title="Melt into the sea(2019)">
+      &nbsp;&nbsp;&nbsp;Melt into the sea(2019)&nbsp;&nbsp;&nbsp;
 
+      <img border="1" src="01_超都会.png" width="400vw" height="300vh" alt="can't display the image" title="Metropolis(2019)">
+      &nbsp;&nbsp;&nbsp;Metropolis(2019)&nbsp;&nbsp;&nbsp;<br>
 
+      <img border="1" src="07_潮騒.PNG" width="400vw" height="300vh" alt="can't display the image" title="The Sound of Waves(2019)">
+      &nbsp;&nbsp;&nbsp;Shiosai: The Sound of Waves(2019)&nbsp;&nbsp;&nbsp;
 
+      <img border="1" src="09_恋.png" width="400vw" height="300vh" alt="can't display the image" title="First Love(2019)">
+      &nbsp;&nbsp;&nbsp;First Love(2019)&nbsp;&nbsp;&nbsp;
 
+      <img border="1" src="12_uncertain.PNG" width="400vw" height="300vh" alt="can't display the image" title="uncertain(2019)">
+      &nbsp;&nbsp;&nbsp;uncertain(2019)&nbsp;&nbsp;&nbsp;<br>
 
- 
+      <img border="1" src="沈黙の螺旋I.jpeg" width="400vw" height="300vh" alt="can't display the image" title="die Theorie der Schweigespirale II(2019)">
+      &nbsp;&nbsp;&nbsp;die Theorie der Schweigespirale II(2019)&nbsp;&nbsp;&nbsp;
 
+      <img border="1" src="樹木裁判1.JPG" width="400vw" height="300vh" alt="can't display the image" title="Forest Politics(2019)">
+      &nbsp;&nbsp;&nbsp;Forest Politics(2019)&nbsp;&nbsp;&nbsp;
+        
+      <img border="1" src="幻覚虫.jpeg" width="400vw" height="300vh" alt="can't display the image" title="Genkakuchu(2019)">
+      &nbsp;&nbsp;&nbsp;Hallucinations(2019)&nbsp;&nbsp;&nbsp;<br>
+
+      <img border="1" src="ホワイエ.jpeg" width="400vw" height="300vh" alt="can't display the image" title="Hall(2019)">
+      &nbsp;&nbsp;&nbsp;Hall(2019)&nbsp;&nbsp;&nbsp;
+
+      <img border="1" src="mush_beat2.jpeg" width="400vw" height="300vh" alt="can't display the image" title="Mush Beat(2019)">
+      &nbsp;&nbsp;&nbsp;Mush Beat(2019)&nbsp;&nbsp;&nbsp;
+
+      <img border="1" src="191207.PNG" width="400vw" height="300vh" alt="can't display the image" title="Planet(2019)">
+      &nbsp;&nbsp;&nbsp;Planet(2019)&nbsp;&nbsp;&nbsp;<br>
+
+      <img border="1" src="03_遠い昔の記憶.PNG" width="400vw" height="300vh" alt="can't display the image" title="Child Days Memory(2019)">
+      &nbsp;&nbsp;&nbsp;Child Days Memory(2019)&nbsp;&nbsp;&nbsp;
+
+      <img border="1" src="04_銀河トンネル.png" width="400vw" height="300vh" alt="can't display the image" title="Atomic Tunnel(2019)">
+      &nbsp;&nbsp;&nbsp;Atomic Tunnel(2019)&nbsp;&nbsp;&nbsp;
+
+      <img border="1" src="05_みんなひとりぼっち.png" width="400vw" height="300vh" alt="can't display the image" title="Everybody's Alone(2019)">
+      &nbsp;&nbsp;&nbsp;Everybody's Alone(2019)&nbsp;&nbsp;&nbsp;<br>
+
+      <img border="1" src="22_Block_World.PNG" width="400vw" height="300vh" alt="can't display the image" title="BLOCK WORLD(2019)">
+      &nbsp;&nbsp;&nbsp;BLOCK WORLD(2019)&nbsp;&nbsp;&nbsp;
+
+      <img border="1" src="20010402.PNG" width="400vw" height="300vh" alt="can't display the image" title="Paranoia(2020)">
+      &nbsp;&nbsp;&nbsp;Paranoia(2020)&nbsp;&nbsp;&nbsp;
+
+      <img border="1" src="200107.PNG" width="400vw" height="300vh" alt="can't display the image" title="Trail(2020)">
+      &nbsp;&nbsp;&nbsp;Trail(2020)&nbsp;&nbsp;&nbsp;<br>
+
+      <img border="1" src="200106.PNG" width="400vw" height="300vh" alt="can't display the image" title="Walkers on the Earth(2020)">
+      &nbsp;&nbsp;&nbsp;Walkers on the Earth(2020)&nbsp;&nbsp;&nbsp;
+
+      <img border="1" src="IMG_1339 （編集済み）.PNG" width="400vw" height="300vh" alt="can't display the image" title="Potluck Party!(2020)">
+      &nbsp;&nbsp;&nbsp;Potluck Party!(2020)&nbsp;&nbsp;&nbsp;
+        
+      <img border="1" src="IMG_1346.PNG" width="400vw" height="300vh" alt="can't display the image" title="Neon Flower Garden(2020)">
+      &nbsp;&nbsp;&nbsp;Neon Flower Garden(2020)&nbsp;&nbsp;&nbsp;
+        
+      <img border="1" src="IMG_1348.PNG" width="400vw" height="300vh" alt="can't display the image" title="An Object Appears(2020)">
+      &nbsp;&nbsp;&nbsp;An Object Appears(2020)&nbsp;&nbsp;&nbsp;<br>
+        
+      <img border="1" src="IMG_1357.PNG" width="400vw" height="300vh" alt="can't display the image" title="Alpha & Alpha(2020)">
+      &nbsp;&nbsp;&nbsp;Alpha & Alpha(2020)&nbsp;&nbsp;&nbsp;
       
+      <img border="1" src="harukimurakami11.png" width="400vw" height="300vh" alt="can't display the image" title="Small World Network 1911(2019)">
+      &nbsp;&nbsp;&nbsp;Small World Network(2019)&nbsp;&nbsp;&nbsp;
+        
+      <img border="1" src="dhagdshgiaprewhifp.JPG" width="400vw" height="300vh" alt="can't display the image" title="Monovista 1(2020)">
+      &nbsp;&nbsp;&nbsp;Monovista I(2020)&nbsp;&nbsp;&nbsp;<br>
+        
+      <img border="1" src="simpleffects2638572946.PNG" width="400vw" height="300vh" alt="can't display the image" title="Monovista 2(2020)">
+      &nbsp;&nbsp;&nbsp;Monovista II(2020)&nbsp;&nbsp;&nbsp;
+        
+      <img border="1" src="simpleffects2638730340.PNG" width="400vw" height="300vh" alt="can't display the image" title="Electric Network(2020)">
+      &nbsp;&nbsp;&nbsp;Electric Network(2020)&nbsp;&nbsp;&nbsp;
+        
+      <img border="1" src="simpleffects2639123123.PNG" width="400vw" height="300vh" alt="can't display the image" title="Fractal Fractal(2020)">
+      &nbsp;&nbsp;&nbsp;Fractal Fractal(2020)&nbsp;&nbsp;&nbsp;<br>
+        
+      <img border="1" src="simpleffects2639234616.PNG" width="400vw" height="300vh" alt="can't display the image" title="Multiplex Bio System(2020)">
+      &nbsp;&nbsp;&nbsp;Multiplex Bio System(2020)&nbsp;&nbsp;&nbsp;
+        
+      <img border="1" src="simpleffects2639264318.PNG" width="400vw" height="300vh" alt="can't display the image" title="What's Your Dream(2020)">
+      &nbsp;&nbsp;&nbsp;What's Your Dream?(2020)&nbsp;&nbsp;&nbsp;
+        
+      <img border="1" src="simpleffects2639294110.PNG" width="400vw" height="300vh" alt="can't display the image" title="Moratorium(2020)">
+      &nbsp;&nbsp;&nbsp;Moratorium(2020)&nbsp;&nbsp;&nbsp;<br>
+        
+      <img border="1" src="bloom01.png" width="400vw" height="300vh" alt="can't display the image" title="Bloom(2020)">
+      &nbsp;&nbsp;&nbsp;Bloom(2020)&nbsp;&nbsp;&nbsp;
+        
+      <img border="1" src="200714_0001.png" width="400vw" height="300vh" alt="can't display the image" title="Happy Birthday(2020)">
+      &nbsp;&nbsp;&nbsp;Happy Birthday(2020)&nbsp;&nbsp;&nbsp;
+        
+      <img border="1" src="200714_0002.png" width="400vw" height="300vh" alt="can't display the image" title="SIR columna part2(2020)">
+      &nbsp;&nbsp;&nbsp;SIR Columna Part II(2020)&nbsp;&nbsp;&nbsp;<br>
+        
+      <img border="1" src="200714_0003.png" width="400vw" height="300vh" alt="can't display the image" title="dysfunction(2020)">
+      &nbsp;&nbsp;&nbsp;Dysfunction(2020)&nbsp;&nbsp;&nbsp;
+        
+      <img border="1" src="200714_0004.png" width="400vw" height="300vh" alt="can't display the image" title="lot(2020)">
+      &nbsp;&nbsp;&nbsp;Empty Lot (2020)&nbsp;&nbsp;&nbsp;
+        
+      <img border="1" src="IMG_2214.PNG" width="400vw" height="300vh" alt="can't display the image" title="Fly together(2020)">
+      &nbsp;&nbsp;&nbsp;Fly together(2020)&nbsp;&nbsp;&nbsp;<br>
+      
+      <img border="1" src="11_Photophobia.PNG" width="400vw" height="600vh" alt="can't display the image" title="photophobia(2019)">
+      &nbsp;&nbsp;&nbsp;photophobia(2019)&nbsp;&nbsp;&nbsp;
+        
+      <img border="1" src="MilesDavis.jpg" width="400vw" height="600vh" alt="can't display the image" title="Miles Davis(2018)">
+      &nbsp;&nbsp;&nbsp;Miles Davis(2018)&nbsp;&nbsp;&nbsp;
 
-    </div>
+      <img border="1" src="LeoTolstoy.jpg" width="400vw" height="600vh" alt="can't display the image" title="Leo Tolstoy(2018)">
+      &nbsp;&nbsp;&nbsp;Leo Tolstoy(2018)&nbsp;&nbsp;&nbsp;<br>
 
+      <img border="1" src="DianeArbus.jpg" width="400vw" height="600vh" alt="can't display the image" title="A young man with curlers at home on West 20th Street, N.Y.C.(2017)">
+      &nbsp;&nbsp;&nbsp;A young man with curlers at home on West 20th Street, N.Y.C.(2017)&nbsp;&nbsp;&nbsp;
 
+      <img border="1" src="MoritaDouji.jpg" width="400vw" height="600vh" alt="can't display the image" title="Morita Douji(2017)">
+      &nbsp;&nbsp;&nbsp;Morita Douji(2017)&nbsp;&nbsp;&nbsp;
 
-  </body>
+      <img border="1" src="ODAKA(26).jpg" width="400vw" height="600vh" alt="can't display the image" title="ODAKA(26)(2018)">
+      &nbsp;&nbsp;&nbsp;ODAKA(26)(2018)&nbsp;&nbsp;&nbsp;<br>
+      </div>
+  
+  
+</div>  
+</div>   
+
+</body>
 
 
 
