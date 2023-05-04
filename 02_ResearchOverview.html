@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172940790-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-172940790-1');
+    </script> 
+    
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PKDZTFP');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <title>小髙充弘</title>
+    <link rel="stylesheet" type="text/css" href="css/a.css">
+    <link rel="stylesheet" type="text/css" href="css/c.css">
+    <link rel="stylesheet" type="text/css" href="css/fontsize.css">
+    <link rel="stylesheet" type="text/css" href="css/imagesize.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  	<script src="./js/include.js"></script>
+</head>
+
+<body>
+    <div class="Content">
+      <main>
+      	<div class="UnifiedContent">
+      	<p class="txt2" style="text-align:left"><b>目次</b></p>
+      	<p style="text-align:left">
+      	&ensp;研究活動の概要<br>
+      	&ensp;&ensp;<a href="#001">&#10070;過去から現在までの研究活動について</a><br>
+      	&ensp;&ensp;<a href="#002">&#10070;今後の研究（今後10年以内に取り組みたいこと）について</a><br>
+      	&ensp;&ensp;<a href="#003">&#10070;いきさつ：なぜ地球？</a><br>
+      	&ensp;過去から現在までの研究活動のより詳しい説明<br>
+      	&ensp;&ensp;<a href="#004">&#10070;多変量時系列からの因果ネットワーク学習による力学系の微分方程式同定 (2022 - 現在)</a><br>
+      	&ensp;&ensp;<a href="#005">&#10070;データ・知識融合型アプローチによる遺伝子ネットワーク推定とCOVID-19シグナルパスウェイ構築 (2021 - 現在)</a><br>
+      	&ensp;&ensp;<a href="#006">&#10070; 微分方程式系に基づくSARS-CoV-2ダイナミクスモデルの感度解析及び安定性解析 (2020 - 2021)</a><br>
+      	&ensp;&ensp;<a href="#007">&#10070; 一帯一路構想による中国化におけるグローバル株式ネットワークのデータ駆動型ネットワーク分析 (2018-2019)</a><br>
+      	&ensp;&ensp;<a href="#008">&#10070; 配列・構造ホモロジー解析によるヒトマラリア原虫の性分化蛋白の予測 (2016-2018)</a><br>
+      	&ensp;&ensp;<a href="#009">&#10070; 異質環境を考慮したマラリアの数理モデルと最適ワクチン接種戦略 (2015 - 2019)</a>
+      	</p>
+	      	<p class="txt2" style="text-align:left"><b>研究活動の概要</b></p>
+	      	<a name="001"></a><p style="text-align:left"><b>過去から現在までの研究活動について： ダイナミクス解明に向けた，データ駆動・知識基盤 (DD-KB) 融合型アプローチによる因果ネットワーク及び微分方程式系の学習・推論</b></p>
+	      	<p style="text-align:left">キーワード：<br> <i>データ・知識融合型アプローチ，モデリング＆シミュレーション，力学系，常微分方程式系 (ODEs)，数値シミュレーション，数値解析，ネットワーク（再）構成，知識グラフ，方程式発見，因果推論＆探索，マルチスケールモデリング，複雑系，深層学習，モデル検証と妥当性確認 (V&amp;V)</i></p>
+	      	<table>
+    			<tr>
+      				<td><p style="text-align:left"><div class="researchfigures"><img src="/imgs_res/Ov01.PNG" oncontextmenu="return false;"></img></div></p></td>
+      				<td><p style="text-align:left">私の最大の動機は，ダイナミクスを明らかにすることです．私の研究におけるダイナミクスの解明とは，因果関係のあるネットワークや方程式を発見することです．状態変数の情報から因果ネットワークや微分方程式を抽出できれば，システムや世界をより深く理解することにつながり，様々な実用的意義があると考えられます．</p></td>
+    			</tr>
+    			<tr>
+      				<td><p style="text-align:left"><div class="researchfigures"><img src="/imgs_res/Ov02.PNG" oncontextmenu="return false;"></img></div></p></td>
+      				<td><p style="text-align:left">ダイナミクス解明に向けて，データ駆動かつ知識基盤 (Data-Driven & Knowledge-Based; DD-KB) を融合した「データ・知識融合型アプローチ」を通じた新しい学習・推論フレームワークの開発に取り組んでいます．このフレームワークでは，ユーザーが興味対象とする系の構成要素（状態変数）に関する情報を入力すると，多変量時系列観測データ <i>O</i> と，背景理論や背景知識 <i>B</i>（因果ネットワークや論理プログラムで表現されます）をデータベースやドメイン固有の知識ベースにオンラインで問い合わせて自動取得し，ネットワークと微分方程式系を構築します．ノイズを含んでいたり部分的にしか観測できないようなデータからでもスケーラブルかつロバストに，解釈可能なモデルを導出する点に強みがあります．ワークフローは次の通りです．</p>
+      				<ul>
+      				<li><p style="text-align:left">まず、データ <i>O</i> のみからデータ駆動型有向・無向混合ネットワークや因果ネットワークを構築します．知識 <i>B</i> を使ってデータ駆動型ネットワークのエッジのもつ意味合いについて一つ一つチェックし，ネットワークをデータ駆動型でありながら知識に基づいて妥当性の確認もとれたものに変換します．ここで知識 <i>B</i> は因果ネットワークの潜在変数のアブダクションに利用することもできます．潜在変数が見つかった場合には，潜在変数を新規変数として，関連する時系列データと背景知識を API 経由で同様に取得して自動的にモデルに追加していきます．</p></li>
+      				<li><p style="text-align:left">次に、<i>O</i> と <i>B</i> から構築した DD-KB ネットワークを，出力の候補となる微分方程式系に変換します．</p></li>
+      				<li><p style="text-align:left">微分方程式系の予測精度と安定性など動的挙動を調べ，モデル検証を行ったり，感度指標を用いたパラメータ刈り込みによってモデルを単純化したりします．モデルの拡張と次元削減，モデル選択基準による評価を繰り返し，オーバーフィッティングを回避します．</p></li>
+      				<li><p style="text-align:left">こうして，モデル検証＆妥当性確認を経た因果ネットワークと微分方程式系を得ます．</p></li>
+      				</ul>
+<p style="text-align:left">上記のフレームワーク実現に向けて，私はいくつかの計算的手法を開発してきました．</p>
+<ul>
+<li><p style="text-align:left">最適なモデルやパラメータを探すには？[方程式ベースのモデリングにおける感度解析と安定性解析]</p></li>
+<li><p style="text-align:left">モデルの質を上げるには？[モデルの妥当性確認と検証］</p></li>
+<li><p style="text-align:left">ネットワークをどのように構築するか？[統計的アプローチか機械学習的アプローチか］</p></li>
+</ul>
+<p style="text-align:left">そして既存手法や自身が作った新しい手法について，互いの長所・短所を活かしつつ統合できないか，可能性を常に探りながら喫緊の世界的課題に応用してきました．</p>
+<ul>
+<li><p style="text-align:left">システム全体の中で何がレバレッジポイントになり得るか？[マラリアワクチン接種戦略の最適化，中国化におけるグローバル株式所有ネットワークのビッグデータ可視化など］</p></li>
+<li><p style="text-align:left">データと知識を比較した時に，既知の事実と未知の新事実は何か？[マラリア性決定タンパク質の相同性検索，COVID-19パスウェイの構築]</p></li>
+</ul></td>
+    			</tr>
+  			</table>
+
+    		<a name="002"></a><p style="text-align:left"><b>今後の研究（今後10年以内に取り組みたいこと）について：「プラネタリー・デジタルツイン」の研究開発と3DCG映像表現</b></p>
+    		<p style="text-align:left">キーワード：<br> <i>統合評価モデル (IAM)；地球システムモデル (ESM)；環境政策；気候変動；ティッピングカスケード；ニューロシンボリックAI；知識表現＆推論 (KR)；並列計算；ハイパフォーマンスコンピューティング (HPC)；アブダクション；非線形時系列解析；確率過程；ネットワークレジリエンス；システムダイナミクス；ガイア理論；World3 モデル；DestinE；Earth4All モデル；オペレーションズリサーチ；物理シミュレーション×AI；（シネマティックな）科学的可視化；データ同化</i></p>
+    		<p style="text-align:left">博士課程修了後の進路は模索中です．様々な条件を加味した上で決めるには時間がかかりそうです．条件というのはたとえば，</p>
+    		<ul>
+      		<li><p style="text-align:left">これまでに培ったスキル（モデリング＆シミュレーション，ビッグデータ，AI，3DCG）と研究ノウハウ，オンサイトまたはオンラインで得た知識</p></li>
+      		<li><p style="text-align:left">根源的な興味（グラフィカル・カラフルな視覚情報，抽象的・概念的だが数理的に解析できるマクロな対象物）</p></li>
+      		<li><p style="text-align:left">性格（アイデアマン，思索や内省を通じて戦略立てることが好き，プログラミングも人並にできなくはないが活字を書く方が好き，新しい理論を打ち立てるよりは既存ツールを使いこなし応用したい，職人気質）</p></li>
+      		<li><p style="text-align:left">職場のカルチャー（Win-Winの関係の中で自分の居場所となるか，多様性を認めているか， etc.）や収入・福利厚生，ワークライフバランス</p></li>
+      		<li><p style="text-align:left">家族の事情や世相</p></li>
+      		<li><p style="text-align:left">地理的・地政学的な条件（災害への頑健さ，食文化，治安，物価，社会保障制度）</p></li>
+      		</ul>
+    		<p style="text-align:left">といったことです．とはいえ，関わりたい分野は2015年頃からある程度頭の中にあります．それは地球惑星システムの分野（学問としては地球惑星システム科学，気候情報学，システム生態学，エコロジー経済学など）です．博士課程での「データ・知識融合型アプローチ」フレームワークの応用先としてこれまで，宿主内ウイルス感染系というミクロなシステムを扱ってきましたが，よりマクロな地球惑星システムを扱いたいと考えています．これは今まで取り扱っていたウイルスとは離れたトピックのようで，実は近しいものと考えています．たとえばウイルス感染系も地球惑星システムもマルチスケール・マルチフィジックス性を持つ複雑系であり，時間発展する主体によって構成されるネットワーク構造が根底にあるという意味で形式表現としては共通しています．また「データ・知識融合型アプローチ」とも相性が良い（はず）という共通点もあります．地球惑星システムに関連する代表的なモデルとして地球システムモデル (ESM) と統合評価モデル (IAM) がありますが，ESM は生物地球化学的循環や大西洋南北熱塩循環 (AMOC) などの物質循環から成る，自然科学的でデータ駆動に近い（深層学習でダウンスケーリングを行い，大規模かつ高精度を目指す）モデル，統合評価モデルは人間集団の行動変容や政策などの社会経済過程と相互作用する，社会科学的で知識・モデル駆動に近い（因果関係や解釈可能性を重視し，シンプルさを目指す）モデルです（さらに近年はこれら2つのモデルを結合した全球規模のモデルも検討されています）．「データ・知識融合型アプローチ」を使えば，ビッグデータに立脚しつつも結果に至る根拠も説明可能な，エビデンスに基づく政策立案（EBPM）に向けた ESM-IAM 結合モデリングが可能になるのではないかと考えています．地球の衛星データはリアルタイム性があるので，シミュレーションモデルというよりメタバース上に構築された「地球デジタルツイン」と呼べるかもしれません．さらに，海洋の非病原性ウイルス (marine virome) は巨大なバイオマスを形成しており，海洋生態系に大きな影響を与えているという事実を例にとってみても，自身の生物学的な知識も活かす場面があるはずです．加えて私は，漫画家・CGアニメーターを目指していた少年時代からシミュレーション・データ可視化にのめり込んだ現在に至るまで（最近はAIの理論的基盤技術開発寄りですが…）一貫してグラフィカルなものが好きなので，3DCGとスパコンによる高性能計算を使って，こういった科学的なデジタルツインを半ば芸術的に表現し，ソーシャリー・エンゲージド・アート (Socially Engaged Art; SEA) に貢献できないかと考えています．以上の試みを通じて，地球惑星システムのメカニズムを今以上に理解すること（基礎研究の側面）と，人新世の安全・安心な社会と持続可能な開発を実現するためのエビデンスに基づいた政策の立案やアドボカシーに貢献すること（応用研究の側面）を大きな目標に，種々のステークホルダーと協力しながら研究開発を行っていきたいと考えています．</p>
+    		
+    		<a name="003"></a><p style="text-align:left"><b>いきさつ：なぜ地球？</b></p>
+        <p style="text-align:left">上記で「データ・知識融合型アプローチ」の親和性の高さを理由に挙げていますが，実際このアプローチはデータと知識さえあれば何にでも応用可能です．では何故地球惑星システムにこだわるのか，ここに記しておきたいと思います．実は私は高校生，もっと遡れば中学生くらいの頃から，手塚治虫の「火の鳥」やレイチェルカーソンの「沈黙の春」に影響され，人類や地球環境の持続可能性に関心がありました．たとえばミレニアム開発目標 MDGs （現在の SDGs）に掲げられていた，貧困・飢餓の撲滅や乳幼児死亡率の低下（それに伴う人口爆発の抑制），地球環境の持続可能な開発といった話題です．そのため大学受験で職種・進路を決める際に環境系の職種と医師とで迷いましたが，故中村哲医師の生き様（特に「緑の大地計画」）に憧れ，熱帯地域での疫学や感染症学を深く学ぶために日本における感染症研究のメッカである長崎大学医学部に進みました．ところが実際医学部に入ってみると，医師としてレールの上をスタンプラリーのように歩んでいく典型的なキャリアパスや，自身の思い描いていた高邁な理想と医療における現実の乖離に直面し，「身を粉にして働く自己犠牲を美徳とする」ことに疑問を覚え始めどうしても医療に情熱を見いだせなくなり，選択した進路に悩む日々が続きました．一度休学して，アートの道に進もうともしました（アーティスト？は私のもう一つの顔です．現在もインディーゲーム制作などを趣味で続けています．当時はメインの仕事にすることも考えていました）．恐らく自分は研究になら打ち込めると考え，医学部に復学後は熱帯医学研究所の研究室の扉を叩いて研究の作法を学び始め，感染症の数理モデルに出会いました．数理モデルによるシミュレーションは視覚的なインパクトや戦略立てることが好きな自分にとって寝食を忘れるほどに楽しく，これがベースとなって現在の研究に至りました．研究生活の中では常に子供の頃からのサステナビリティへの意識があり，文献を調べる内に「ガイア仮説（理論）」や「スベンスマルク効果」といった地球惑星システムに関する興味深い話題にも出会いました．これまで研究上の興味の変遷や紆余曲折を経ましたが，根底には常に「今まで虐げられたり酷く扱われたりしたことで現在危うい何かが，未来よくなるように安全に保護することに貢献したい」という気持ちがありました．危うい何かとは，ある時は特定の患者集団のように疎外され孤立した社会的弱者だったり，ある時は地球環境だったりしましたが，この気持ち自体は揺らいだことがありません．こうした背景があって，博士修了後は地球惑星システムを扱いたいと思うに至りました．</p>
+    		<p class="txt2" style="text-align:left"><b>過去から現在までの研究活動のより詳しい説明</b>（新しいものから降順）</p>
+    		<a name="004"></a><p style="text-align:left"><b>&#10070; 多変量時系列からの因果ネットワーク学習による力学系の微分方程式同定</b> (2022 - 現在)</p>
+    		<p style="text-align:left">Keywords: <i>Data-Driven &amp; Knowledge-Based Integrated Approach; Observational Causal Discovery; Equation Discovery; Robustness; Interpretability</i></p>
+      		<table>
+    			<tr>
+      				<td><p style="text-align:left"><div class="researchfigures"><img src="/imgs_res/Ov05.png" oncontextmenu="return false;"></img></div></p></td>
+      				<td><p style="text-align:left">Discovering Ordinary Differential Equations (ODEs) governing the dynamics of a system is significant for our better understanding of the world. Considering existing equation discovery techniques have not explicitly discovered causality, The efforts in this study are dedicated to learning causal network topology from temporal data based on Generative Adversarial Networks (GANs) for robustness to adversarial noise and incorporating it into equation discovery for less model complexity. I conjectured that observational causal discovery could limit the search space in equation discovery and prevent models from overfitting due to those terms that are irrelevant to the causal model. [Odaka et al. <i>AAAI-SSS23</i> 2023](d18) [Odaka et al. <i>JSAI</i> 2023](d19) (I cannot write details here because this study is ongoing and private now. I hope to make the results open to the public very soon.) </p></td>
+    			</tr>
+  			</table>
+  			
+  			<a name="005"></a><p style="text-align:left"><b>&#10070; データ・知識融合型アプローチによる遺伝子ネットワーク推定とCOVID-19シグナルパスウェイ構築</b> (2021 - 現在)</p>
+    		<p style="text-align:left">Keywords: <i>Gene Network Inference; Partial Correlation; Network (Re-)Construction; Pathway Enrichment Analysis; COVID-19 Disease Map</i></p><br>
+      		<table>
+    			<tr>
+      				<td><p style="text-align:left"><div class="researchfigures"><img src="/imgs_res/Ov03.PNG" oncontextmenu="return false;"></img></div></p></td>
+      				<td><p style="text-align:left">I developed a data-driven and knowledge-based integrated approach to gene network inference. Differential co-expressed genes (DCGs) of gene of interest (ICAM1, ACTB, C15orf48) were extracted via statistical processing of single-cell omics data from COVID-19 patients and built second-order partial correlation network of DCGs. The meaning of all the edges in this correlation network were carefully examined using seven knowledge bases. To analyze what types of pathways are activated in data, pathway enrichment analysis was conducted in which the validated network model were mapped onto function-known pathway database KEGG. As a result, novel pathways were identified, such as NF-kB noncanonical pathway or pathways related to viral synapse formation by microtubule molecules, that are absent from the current COVID-19 Disease Map.<a href="https://www.researchsquare.com/article/rs-1300133/v1">[Odaka et al. <i>Research Square</i> 2022]</a>(b1) [Odaka et al. CAMDA 2022](d17)</p></td>
+    			</tr>
+    			<tr>
+      				<td><p style="text-align:left"><div class="researchfigures"><img src="/imgs_res/Ov04.png" oncontextmenu="return false;"></img></div></p></td>
+      				<td><p style="text-align:left"></p></td>
+    			</tr>
+  			</table>
+  			
+  			<a name="006"></a><p style="text-align:left"><b>&#10070; 微分方程式系に基づくSARS-CoV-2ダイナミクスモデルの感度解析及び安定性解析</b> (2020 - 2021)</p>
+    		<p style="text-align:left">Keywords: <i>Numerical Analysis; Equation-Based Modeling; Evolutionary Programming</i></p>
+      		<table>
+    			<tr>
+      				<td><p style="text-align:left"><div class="researchfigures"><img src="/imgs_res/Heliyon_01.jpg" oncontextmenu="return false;"></img></div></p></td>
+      				<td><p style="text-align:left">This study is about modeling and simulation of the viral load kinetics with the TIV model based on differential equations to find out the qualitative relationship between the severity of COVID-19 and the reactivation risk of asymptomatic carriers <a href="https://dl.acm.org/doi/abs/10.1145/3429210.3429214">[Odaka &amp; Inoue <i>CSBio</i> 2020]</a>(c3, d13). Expanding the models from one to four, the dynamical properties of the four models were investigated based on numerical analyses, including sensitivity analysis and stability analysis <a href="https://www.sciencedirect.com/science/article/pii/S2405844021023100">[Odaka &amp; Inoue <i>Heliyon</i> 2021]</a> (a1). After guaranteeing asymptomatic stability of solution orbits and pruning unnecessary parameters, models underwent calibration experiments, thereby allowing us to find an association between assumed cell-to-cell viral transmission effect and COVID-19 severity.</p></td>
+    			</tr>
+    			<tr>
+      				<td><p style="text-align:left"><div class="researchfigures"><img src="/imgs_res/Heliyon_02.jpg" oncontextmenu="return false;"></img></div></p></td>
+      				<td><p style="text-align:left">Cell-to-cell transmission is a direct transfer of viral particles from one cell to another cell. This transmission manner has been observed in other retroviruses, such as HIV-1 or HTLV-1, however, it has not been observed yet in SARS-CoV-2 infection (until late 2021). This study showed that assumed cell-to-cell transmission of SARS-CoV-2 would potentially have larger effect on rather than cell-free transmission.</p></td>
+    			</tr>
+  			</table>
+  			
+  			<a name="007"></a><p style="text-align:left"><b>&#10070; 一帯一路構想による中国化におけるグローバル株式ネットワークのデータ駆動型ネットワーク分析</b> (2018-2019)</p>
+    		<p style="text-align:left">Keywords: <i>Big Data; Network Visualization; Depth-First Search</i></p>
+      		<table>
+    			<tr>
+      				<td><p style="text-align:left"><div class="researchfigures2"><img src="/imgs_res/Chinalization.png" oncontextmenu="return false;"></img></div></p></td>
+      				<td><p style="text-align:left">As globalization has increased capital investment in international economic markets, it has become increasingly important to understand and control the dynamic changes in power relations among nations and the corporate investment strategies of nations. In this study, big data on stock ownership was derived from Bureau van Dijk, including 300 million firms and 140 million directors and shareholders, percolation rules, and depth-first search algorithms to extract subnetworks (groups of owned and controlled firms such that one shareholder is the ultimate owner) hidden in the global network structure of ownership  [Odaka and Mizuno <i>IPSJ</i> 2019](c1-2, d4-8, e1-2). Analyzing data allowed us to measure the scale of corporate ownership and control, including direct and indirect ownership and control linkages. In addition to visualizing the measured scale and attempting to discover knowledge, a hypothesis-testing data analysis was conducted. Corporate ownership and control scale were measured and visualized by extracting a partial network in which the Chinese government is the ultimate shareholder. Progressive reduction of the shareholding required for corporate ownership increased corporate ownership for French and South African (financial, services, manufacturing, and mining industries) firms and firms in tax havens. The trend for Japanese and Polish firms was toward controlling micro and small businesses. Network analysis was performed by extracting partial networks where the ultimate shareholder is a shareholder coalition formed by multiple shareholder alliances. China, the U.S., and GAFA were defined as shareholder alliances. Both China and the U.S. increased their ownership size through alliances. The ownership size relationship between China and the U.S. is reversed when the threshold is progressively reduced. The U.S. partial network is scale-free and rapidly increaseed its ownership size through hub firms. There was the difference in investment strategy between China's concentrated investment and the U.S.'s diversified investment. GAFAs do not increase in size through alliances but rather through business linkages. In addition, a similar extraction was performed for the historical data set to observe the dynamics of control size. The results were compared for China, the U.S., France, Germany, and Japan, where the final shareholders are China, the U.S., France, Germany, and Japan. China showed a steady increase, possibly due to the impact of Chineseization through the One Belt, One Road initiative. The U.S. was in a steady decline due to the global recession. France and Germany were staying the same as the U.S., while Japan was increasing the size of its dominance in Thailand and Hong Kong, possibly due to Abenomics.</p></td>
+    			</tr>
+  			</table>
+  			
+  			<a name="008"></a><p style="text-align:left"><b>&#10070; 配列・構造ホモロジー解析によるヒトマラリア原虫の性分化蛋白の予測</b> (2016-2018)</p>
+    		<p style="text-align:left">Keywords: <i>Malaria; Sex Determination; Gametogenesis; Matras</i></p>
+      		<table>
+    			<tr>
+      				<td><p style="text-align:left"><div class="researchfigures"><img src="/imgs_res/Homology.JPG" oncontextmenu="return false;"></img></div></p></td>
+      				<td><p style="text-align:left">Although sex determination is a critical process during the transmission of human malaria parasites Plasmodium, sex-determinant proteins have not been completely specified. Here the purpose of this study was to identify novel sex-determinant proteins of Plasmodium for transmission-blocking drug/vaccine design. As the first step, candidate proteins were identified by homology analysis. Sequence homology was examined between sex-determinant model organisms proteins and Plasmodium falciparum proteins. The structure homology comparison tool aligned the proteins with low sequence similarity. As a result, two types of candidates were found: 8 proteins with high sequence similarity and two proteins with low sequence similarity but high structural similarity. [Odaka <i>ICOPA</i> 2018] (d3)</p></td>
+    			</tr>
+  			</table>
+  			
+  			<a name="009"></a><p style="text-align:left"><b>&#10070; 異質環境を考慮したマラリアの数理モデルと最適ワクチン接種戦略</b> (2015 - 2019)</p>
+    		<p style="text-align:left">Keywords: <i>SIR Model; SEI-SI Model; High Frequency Data; Global Sensitivity Analysis; Sobol Sequences; Curve Fitting</i></p>
+      		<table>
+    			<tr>
+      				<td><p style="text-align:left"><div class="researchfigures2"><img src="/imgs_res/Malaria_01.png" oncontextmenu="return false;"></img></div></p></td>
+      				<td><p style="text-align:left">Targeting malaria hotspots has been considered an effective intervention because one assumes that the basic reproduction number (R0) in a heterogeneous setting should be bigger than R0 in a homogeneous setting. This assumption allows us to consider that targeting malaria hotspots cannot work well because the relationship in R0 can be false corresponding to parameter settings. If the effect on R0 of parameter settings is clarified, theoretically optimum vaccination strategy would be predicted for a pragmatic malaria vaccine trial, which started in 2019. Here the purpose of this study was to simulate the effectiveness (the level of prevalence decline after completing vaccination to half of the total population) corresponding to transmission intensity. The SEI-SI models was built in the heterogeneous or homogeneous biting setting with vaccination coverage of two types of vaccines: sporozoite (SpV) and transmission-blocking (TBV). [Odaka and Sunahara <i>CCS</i> 2019](d1-2, d9-10)</p></td>
+    			</tr>
+    			<tr>
+      				<td><p style="text-align:left"><div class="researchfigures"><img src="/imgs_res/Malaria_02.JPG" oncontextmenu="return false;"></img></div></p></td>
+      				<td><p style="text-align:left">The vector emergence population dramatically affected the effectiveness when other parameters were fixed. The increase in the emergence population of SpV and TBV made the effectiveness more significant in targeting the low-risk group. The effectiveness of SpV exceeded that of TBV. A little effect of vaccination caused this inverse phenomenon compared to regular vector supply, like "a drop in the ocean." Sensitivity analysis using the one-factor-at-a-time method (OFAT) and canonical discriminant analysis (about  30,000 iterations) allowed to find that the human recovery rate needs to be carefully set. Overall, targeting malaria hotspots can be counterproductive when transmission intensity is high.</p></td>
+    			</tr>
+  			</table>
+  	    </div>
+      </main>
+    </div>
+</body>
+</html>

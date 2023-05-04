@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172940790-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-172940790-1');
+    </script> 
+    
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PKDZTFP');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitsuhiro Odaka</title>
+    <link rel="stylesheet" type="text/css" href="css/a.css">
+    <link rel="stylesheet" type="text/css" href="css/c.css">
+    <link rel="stylesheet" type="text/css" href="css/fontsize.css">
+    <link rel="stylesheet" type="text/css" href="css/imagesize.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  	<script src="./js/include.js"></script>
+</head>
+
+<body>
+    <div class="Content">
+      <main>
+      	<div class="UnifiedContent">
+      	<p class="txt2" style="text-align:left"><b>Table of Contents</b></p>
+      	<p style="text-align:left">
+      	&ensp;Summary of Research Activity<br>
+      	&ensp;&ensp;<a href="#001">&#10070;Previous to Current Studies</a><br>
+      	&ensp;&ensp;<a href="#002">&#10070;Future research (to be undertaken within the next decade)</a><br>
+      	&ensp;&ensp;<a href="#003">&#10070;Why Earth?</a><br>
+      	&ensp;More Detailed Explanation of Previous to Current Studies<br>
+      	&ensp;&ensp;<a href="#004">&#10070;Learning Causal Network from Multivariate Time Series for Identifying Differential Equations of Dynamical Systems (2022 - present)</a><br>
+      	&ensp;&ensp;<a href="#005">&#10070;Data-Driven and Knowledge-Based Gene Network Inference for Constructing COVID-19 Signaling Pathways (2021 - present)</a><br>
+      	&ensp;&ensp;<a href="#006">&#10070; Sensitivity Analysis and Stability Analysis of SARS-CoV-2 Dynamics Model Based on Differential Equations (2020 - 2021)</a><br>
+      	&ensp;&ensp;<a href="#007">&#10070; Data-driven Network Analysis of Global Stock Ownership Network in Chinalization by One Belt One Road Initiative (2018-2019)</a><br>
+      	&ensp;&ensp;<a href="#008">&#10070; Protein Sequence and Structure Homology Analysis for Predicting Sex Determinant Proteins of Human Malaria Parasites (2016-2018)</a><br>
+      	&ensp;&ensp;<a href="#009">&#10070; Analyzing Mathematical Model of Malaria Epidemics in Heterogeneous Environments for Optimum Vaccination Strategy (2015 - 2019)</a>
+      	</p>
+	      	<p class="txt2" style="text-align:left"><b>Summary of Research Activity</b></p>
+	      	<a name="001"></a><p style="text-align:left"><b>Previous to Current Studies: Data-Driven &amp; Knowledge-Based (DD-KB) Integrated Approach to Learning and Inferring Causal Networks and Differential Equations Towards Uncovering Dynamics</b></p>
+	      	<p style="text-align:left">Keywords:<br> <i>DD-KB Integrated Approach; Modeling &amp; Simulation; Dynamical Systems; Ordinary Differential Equations (ODEs); Numerical Simulation; Numerical Analysis; Network (Re-)construction; Knowledge Graphs; Equation Discovery; Causal Inference &amp; Discovery; Multiscale Modeling; Complex Systems; Deep Learning; Model Validation and Verification (V&amp;V)</i></p>
+	      	<table>
+    			<tr>
+      				<td><p style="text-align:left"><div class="researchfigures"><img src="/imgs_res/Ov01.PNG" oncontextmenu="return false;"></img></div></p></td>
+      				<td><p style="text-align:left">My primary motivation is to uncover dynamics. Uncovering dynamics in my research means discovering causal networks and equations. Suppose we can extract causal networks and differential equations from information about state variables. In that case, it will lead to a deeper understanding of the system and the world and have various practical significance.</p></td>
+    			</tr>
+    			<tr>
+      				<td><p style="text-align:left"><div class="researchfigures"><img src="/imgs_res/Ov02.PNG" oncontextmenu="return false;"></img></div></p></td>
+      				<td><p style="text-align:left">To elucidate the dynamics, I develop a novel learning and inference framework through a "Data-Driven & Knowledge-Based (DD-KB) approach" that combines data and knowledge. In this framework, when a user inputs information on the system components (state variables) of interest, multivariate time-series observational data <i>O</i> and background theory or background knowledge <i>B</i> (expressed as causal networks or logic programs) are automatically retrieved by online queries to databases or domain-specific knowledge bases to construct networks and differential equations. Its strength lies in its ability to derive scalable, robust, and interpretable models from noisy or partially observable data. The workflow is as follows.</p>
+      				<ul>
+      				<li><p style="text-align:left">First, a data-driven directed and undirected mixed network or causal network is constructed purely from data <i>O</i>. Knowledge <i>B</i> is used to check the meaning of each edge of the data-driven network and transform the network into a data-driven and knowledge-based network with validation. Knowledge <i>B</i> can also be used for the abduction of latent variables in the causal network. When a latent variable is detected, the latent variable is added as a new variable, and the related time-series data and background knowledge are acquired similarly via the API and automatically added to the model.</p></li>
+      				<li><p style="text-align:left">Second, the DD-KB network constructed from <i>O</i> and <i>B</i> is transformed into a system of differential equations as candidate outputs.</p></li>
+      				<li><p style="text-align:left">Third, the dynamic behavior of the differential equations is examined, including prediction accuracy and stability (model verification). Models are simplified by parameter pruning using sensitivity indices. Iterative expansion of the model, reduction of its dimensionality, and evaluation of the model using model selection criteria help to avoid overfitting.</p></li>
+      				<li><p style="text-align:left">In this way, a causal and differential equation system that has undergone model verification and validation are obtained.</p></li>
+      				</ul>
+<p style="text-align:left">I have developed several computational methods to realize the above framework.</p>
+<ul>
+<li><p style="text-align:left">How to find the best model and parameters? [Sensitivity and stability analysis in equation-based modeling]</p></li>
+<li><p style="text-align:left">How to improve model quality? [Model validation and verification]</p></li>
+<li><p style="text-align:left">How to build a network? [Statistical approach or machine learning approach?]</p></li>
+</ul>
+<p style="text-align:left">I have applied existing and new methods that I have created to urgent global issues, constantly exploring the possibilities of integration while taking advantage of each other's strengths and weaknesses.
+<ul>
+<li><p style="text-align:left">What could be the leverage points in the overall system? [Optimization of malaria vaccination strategy, big data visualization of global stock ownership network in Chinalization, etc.]</p></li>
+<li><p style="text-align:left">When comparing data and knowledge, what are the known facts and unknown new facts? [homology search for malaria sex determinant proteins, construction of COVID-19 pathway]</p></li>
+</ul></td>
+    			</tr>
+  			</table>
+
+    		<a name="002"></a><p style="text-align:left"><b>Future research (to be undertaken within the next decade): Research and development of a digital twin of the Earth and planetary systems "Planetary Digital Twin" for evidence-based policy making (EBPM) for sustainability</b></p>
+    		<p style="text-align:left">Keywords:<br> <i>Integrated Assessment Model (IAM); Earth System Model (ESM); Environment Policy; Climate Change; Tipping Cascade; Neuro-Symbolic AI; Knowledge Representation &amp; Reasoning (KR); Parallel Computing; High Performance Computing (HPC); Abductive Reasoning; Nonlinear Time-Series Analysis; Stochastic Processes; Network Resilience; System Dynamics; Gaia Theory; World3 Model; DestinE; Earth4All Model; Operations Research; Physics-Informed Simulation & AI; (Cinematic) Scientific Visualization; Data Assimilation</i></p>
+    		<p style="text-align:left">I am still looking for a career path after completing the doctoral program. It will take me much time to decide what to do after completing the doctoral program, taking into consideration various conditions. The conditions are, for example: </p>
+    		<ul>
+      		<li><p style="text-align:left">Skills developed to date (modeling & simulation, big data, AI, 3DCG) and research know-how, knowledge gained on-site or online</p></li>
+      		<li><p style="text-align:left">Fundamental interest (graphical and colorful visual information, macroscopic objects that are abstract and conceptual but can be analyzed mathematically)</p></li>
+      		<li><p style="text-align:left">Personality (idea man, likes to strategize through contemplation and reflection, can do programming at least as well as the average persons but prefers to write sentences, prefers to use and apply existing tools rather than develop new theories; craftsmanship)</p></li>
+      		<li><p style="text-align:left">Workplace culture (is it a place where I fit in a win-win relationship, does it recognize diversity, etc.), income and benefits, and work-life balance</p></li>
+      		<li><p style="text-align:left">Family circumstances and world affairs</p></li>
+      		<li><p style="text-align:left">Geographic and geopolitical conditions (robustness to disasters, food culture, security, cost of living, social security system)</p></li>
+      		</ul>
+    		<p style="text-align:left">However, I have had some idea of the fields I would like to be involved in since around 2015. It is in the field of Earth and planetary systems (disciplines include Earth and planetary systems science, climate informatics, systems ecology, ecological economics, etc.). In my doctoral program, I have been working on a microscopic system of intra-host viral infection, but I would like to work on a more macroscopic Earth and planetary system as an application of the DD-KB approach framework. This topic may seem far away from the viruses I have been dealing with, but in fact, I consider it to be very close. For example, both viral infection systems and Earth and planetary systems are complex systems with multiscale and multiphysics properties, and they share the same formal expression in the sense that they are based on a network structure composed of time-evolving entities. They also have in common that they are (or should be) compatible with the DD-KB approach. There are two representative models related to the Earth and planetary systems: the Earth System Model (ESM) and the Integrated Assessment Model (IAM). The ESM is closer to natural science and data-driven (downscaling by deep learning to achieve large scale and high accuracy) model consisting of material cycles such as biogeochemical cycles or the Atlantic Meridional Overturning Circulation (AMOC), while the IAM is closer to social science and knowledge/model driven model interacting with socio-economic processes, such as behavior change of human groups and policy making (emphasizing causality and interpretability and aiming for simplicity). More recently, coupling these two models into a global-scale model has also been studied. I believe that the DD-KB approach will enable ESM-IAM coupled modeling for evidence-based policy making (EBPM), which is based on big data but can also explain the rationale behind the results. Because of the real-time properties of Earth's satellite data, it may be called the "Earth Digital Twin" built on the metaverse rather than a simulation model. Furthermore, the fact that marine viruses (marine virome) form a huge biomass and have a significant impact on marine ecosystems is an example of a situation where my biological knowledge can be put to good use. In addition, I have always been fond of graphical things, from my youth when I wanted to be a cartoonist or CG animator to the present day when I am into simulation and data visualization (although recently I have been more interested in the development of the theoretical basis of AI...). Therefore, I am thinking of contributing to Socially Engaged Art (SEA) by using 3DCG and high-performance supercomputers to express these scientific digital twins in a semi-artistic way. Through the above attempts, I would like to conduct R&D in cooperation with various stakeholders, with the major goals of further understanding the mechanisms of the Earth and planetary systems (basic research aspect) and contributing to evidence-based policy making and advocacy to realize a safe and secure society and sustainable development in the Anthropocene (applied research aspect).</p>
+    		
+    		<a name="003"></a><p style="text-align:left"><b>Why Earth?</b></p>
+        <p style="text-align:left">The above mentioned reason is the high affinity of the DD-KB approach, and in fact, this approach can be applied to anything as long as we have data and knowledge. I would like to explain why I am so interested in the Earth and planetary systems. In fact, I have been interested in the sustainability of the human race and the global environment since I was in high school, or even as far back as junior high school, influenced by Osamu Tezuka's "Phoenix" and Rachel Carson's "Silent Spring." For example, the Millennium Development Goals (MDGs) (the current SDGs) include the eradication of poverty and hunger, the reduction of infant mortality (and the resulting control of population explosion), and the sustainable development of the global environment. I was fascinated by the life of the late Dr. Tetsu Nakamura (especially his "Green Earth Project") and decided to study epidemiology and infectious diseases in the tropics at Nagasaki University School of Medicine, the Mecca of infectious disease research in Japan. However, when I actually entered medical school, I was confronted with a typical career path as a doctor that was like a stamp rally on a rail, and the gap between the reality of medicine and the high-minded ideal I had envisioned, and I began to question the "virtue of self-sacrifice through hard work" and lost my passion for medicine. I spent many days wondering about my chosen career path. I even took a year off from school to pursue a career in art (Being an artist is another face of mine. I am still creating indie games as my hobby. At the time, I was thinking of making it my main career). After returning to medical school, I knocked on the door of a laboratory at the Institute of Tropical Medicine and began to learn how to conduct research, which led me to mathematical modeling of infectious diseases. Simulation using mathematical models was so much fun that I forgot to eat or sleep because of its visual impact and my love of planning strategies, and this became the basis for my current research. In my research life, I have always had an awareness of sustainability since childhood, and I have encountered interesting topics related to the Earth and planetary systems, such as the "Gaia hypothesis (theory)" and the "Svensmark effect," as I searched through various resources. Although my research interests have undergone many changes and twists and turns, I have always had an underlying desire to "contribute to the safe protection of something that is currently in danger because it has been abused or neglected in the past, so that it can be better in the future." This feeling has never changed, even though it has sometimes been the socially vulnerable citizens who have been marginalized and isolated, such as certain groups of patients, or the global Earth environment. This background has led me to want to work on Earth and planetary systems after completing my Ph.D.</p>
+    		
+    		<p class="txt2" style="text-align:left"><b>More Detailed Explanation of Previous to Current Studies</b>(descending order)</p>
+    		<a name="004"></a><p style="text-align:left"><b>&#10070; Learning Causal Network from Multivariate Time Series for Identifying Differential Equations of Dynamical Systems</b> (2022 - present)</p>
+    		<p style="text-align:left">Keywords: <i>Data-Driven &amp; Knowledge-Based Integrated Approach; Observational Causal Discovery; Equation Discovery; Robustness; Interpretability</i></p>
+      		<table>
+    			<tr>
+      				<td><p style="text-align:left"><div class="researchfigures"><img src="/imgs_res/Ov05.png" oncontextmenu="return false;"></img></div></p></td>
+      				<td><p style="text-align:left">Discovering Ordinary Differential Equations (ODEs) governing the dynamics of a system is significant for our better understanding of the world. Considering existing equation discovery techniques have not explicitly discovered causality, The efforts in this study are dedicated to learning causal network topology from temporal data based on Generative Adversarial Networks (GANs) for robustness to adversarial noise and incorporating it into equation discovery for less model complexity. I conjectured that observational causal discovery could limit the search space in equation discovery and prevent models from overfitting due to those terms that are irrelevant to the causal model. [Odaka et al. <i>AAAI-SSS23</i> 2023](d18) [Odaka et al. <i>JSAI</i> 2023](d19) (I cannot write details here because this study is ongoing and private now. I hope to make the results open to the public very soon.) </p></td>
+    			</tr>
+  			</table>
+  			
+  			<a name="005"></a><p style="text-align:left"><b>&#10070; Data-Driven and Knowledge-Based Gene Network Inference for Constructing COVID-19 Signaling Pathways</b> (2021 - present)</p>
+    		<p style="text-align:left">Keywords: <i>Gene Network Inference; Partial Correlation; Network (Re-)Construction; Pathway Enrichment Analysis; COVID-19 Disease Map</i></p><br>
+      		<table>
+    			<tr>
+      				<td><p style="text-align:left"><div class="researchfigures"><img src="/imgs_res/Ov03.PNG" oncontextmenu="return false;"></img></div></p></td>
+      				<td><p style="text-align:left">I developed a data-driven and knowledge-based integrated approach to gene network inference. Differential co-expressed genes (DCGs) of gene of interest (ICAM1, ACTB, C15orf48) were extracted via statistical processing of single-cell omics data from COVID-19 patients and built second-order partial correlation network of DCGs. The meaning of all the edges in this correlation network were carefully examined using seven knowledge bases. To analyze what types of pathways are activated in data, pathway enrichment analysis was conducted in which the validated network model were mapped onto function-known pathway database KEGG. As a result, novel pathways were identified, such as NF-kB noncanonical pathway or pathways related to viral synapse formation by microtubule molecules, that are absent from the current COVID-19 Disease Map.<a href="https://www.researchsquare.com/article/rs-1300133/v1">[Odaka et al. <i>Research Square</i> 2022]</a>(b1) [Odaka et al. CAMDA 2022](d17)</p></td>
+    			</tr>
+    			<tr>
+      				<td><p style="text-align:left"><div class="researchfigures"><img src="/imgs_res/Ov04.png" oncontextmenu="return false;"></img></div></p></td>
+      				<td><p style="text-align:left"></p></td>
+    			</tr>
+  			</table>
+  			
+  			<a name="006"></a><p style="text-align:left"><b>&#10070; Sensitivity Analysis and Stability Analysis of SARS-CoV-2 Dynamics Model Based on Differential Equations</b> (2020 - 2021)</p>
+    		<p style="text-align:left">Keywords: <i>Numerical Analysis; Equation-Based Modeling; Evolutionary Programming</i></p>
+      		<table>
+    			<tr>
+      				<td><p style="text-align:left"><div class="researchfigures"><img src="/imgs_res/Heliyon_01.jpg" oncontextmenu="return false;"></img></div></p></td>
+      				<td><p style="text-align:left">This study is about modeling and simulation of the viral load kinetics with the TIV model based on differential equations to find out the qualitative relationship between the severity of COVID-19 and the reactivation risk of asymptomatic carriers <a href="https://dl.acm.org/doi/abs/10.1145/3429210.3429214">[Odaka &amp; Inoue <i>CSBio</i> 2020]</a>(c3, d13). Expanding the models from one to four, the dynamical properties of the four models were investigated based on numerical analyses, including sensitivity analysis and stability analysis <a href="https://www.sciencedirect.com/science/article/pii/S2405844021023100">[Odaka &amp; Inoue <i>Heliyon</i> 2021]</a> (a1). After guaranteeing asymptomatic stability of solution orbits and pruning unnecessary parameters, models underwent calibration experiments, thereby allowing us to find an association between assumed cell-to-cell viral transmission effect and COVID-19 severity.</p></td>
+    			</tr>
+    			<tr>
+      				<td><p style="text-align:left"><div class="researchfigures"><img src="/imgs_res/Heliyon_02.jpg" oncontextmenu="return false;"></img></div></p></td>
+      				<td><p style="text-align:left">Cell-to-cell transmission is a direct transfer of viral particles from one cell to another cell. This transmission manner has been observed in other retroviruses, such as HIV-1 or HTLV-1, however, it has not been observed yet in SARS-CoV-2 infection (until late 2021). This study showed that assumed cell-to-cell transmission of SARS-CoV-2 would potentially have larger effect on rather than cell-free transmission.</p></td>
+    			</tr>
+  			</table>
+  			
+  			<a name="007"></a><p style="text-align:left"><b>&#10070; Data-driven Network Analysis of Global Stock Ownership Network in Chinalization by One Belt One Road Initiative</b> (2018-2019)</p>
+    		<p style="text-align:left">Keywords: <i>Big Data; Network Visualization; Depth-First Search</i></p>
+      		<table>
+    			<tr>
+      				<td><p style="text-align:left"><div class="researchfigures2"><img src="/imgs_res/Chinalization.png" oncontextmenu="return false;"></img></div></p></td>
+      				<td><p style="text-align:left">As globalization has increased capital investment in international economic markets, it has become increasingly important to understand and control the dynamic changes in power relations among nations and the corporate investment strategies of nations. In this study, big data on stock ownership was derived from Bureau van Dijk, including 300 million firms and 140 million directors and shareholders, percolation rules, and depth-first search algorithms to extract subnetworks (groups of owned and controlled firms such that one shareholder is the ultimate owner) hidden in the global network structure of ownership  [Odaka and Mizuno <i>IPSJ</i> 2019](c1-2, d4-8, e1-2). Analyzing data allowed us to measure the scale of corporate ownership and control, including direct and indirect ownership and control linkages. In addition to visualizing the measured scale and attempting to discover knowledge, a hypothesis-testing data analysis was conducted. Corporate ownership and control scale were measured and visualized by extracting a partial network in which the Chinese government is the ultimate shareholder. Progressive reduction of the shareholding required for corporate ownership increased corporate ownership for French and South African (financial, services, manufacturing, and mining industries) firms and firms in tax havens. The trend for Japanese and Polish firms was toward controlling micro and small businesses. Network analysis was performed by extracting partial networks where the ultimate shareholder is a shareholder coalition formed by multiple shareholder alliances. China, the U.S., and GAFA were defined as shareholder alliances. Both China and the U.S. increased their ownership size through alliances. The ownership size relationship between China and the U.S. is reversed when the threshold is progressively reduced. The U.S. partial network is scale-free and rapidly increaseed its ownership size through hub firms. There was the difference in investment strategy between China's concentrated investment and the U.S.'s diversified investment. GAFAs do not increase in size through alliances but rather through business linkages. In addition, a similar extraction was performed for the historical data set to observe the dynamics of control size. The results were compared for China, the U.S., France, Germany, and Japan, where the final shareholders are China, the U.S., France, Germany, and Japan. China showed a steady increase, possibly due to the impact of Chineseization through the One Belt, One Road initiative. The U.S. was in a steady decline due to the global recession. France and Germany were staying the same as the U.S., while Japan was increasing the size of its dominance in Thailand and Hong Kong, possibly due to Abenomics.</p></td>
+    			</tr>
+  			</table>
+  			
+  			<a name="008"></a><p style="text-align:left"><b>&#10070; Protein Sequence and Structure Homology Analysis for Predicting Sex Determinant Proteins of Human Malaria Parasites</b> (2016-2018)</p>
+    		<p style="text-align:left">Keywords: <i>Malaria; Sex Determination; Gametogenesis; Matras</i></p>
+      		<table>
+    			<tr>
+      				<td><p style="text-align:left"><div class="researchfigures"><img src="/imgs_res/Homology.JPG" oncontextmenu="return false;"></img></div></p></td>
+      				<td><p style="text-align:left">Although sex determination is a critical process during the transmission of human malaria parasites Plasmodium, sex-determinant proteins have not been completely specified. Here the purpose of this study was to identify novel sex-determinant proteins of Plasmodium for transmission-blocking drug/vaccine design. As the first step, candidate proteins were identified by homology analysis. Sequence homology was examined between sex-determinant model organisms proteins and Plasmodium falciparum proteins. The structure homology comparison tool aligned the proteins with low sequence similarity. As a result, two types of candidates were found: 8 proteins with high sequence similarity and two proteins with low sequence similarity but high structural similarity. [Odaka <i>ICOPA</i> 2018] (d3)</p></td>
+    			</tr>
+  			</table>
+  			
+  			<a name="009"></a><p style="text-align:left"><b>&#10070; Analyzing Mathematical Model of Malaria Epidemics in Heterogeneous Environments for Optimum Vaccination Strategy</b> (2015 - 2019)</p>
+    		<p style="text-align:left">Keywords: <i>SIR Model; SEI-SI Model; High Frequency Data; Global Sensitivity Analysis; Sobol Sequences; Curve Fitting</i></p>
+      		<table>
+    			<tr>
+      				<td><p style="text-align:left"><div class="researchfigures2"><img src="/imgs_res/Malaria_01.png" oncontextmenu="return false;"></img></div></p></td>
+      				<td><p style="text-align:left">Targeting malaria hotspots has been considered an effective intervention because one assumes that the basic reproduction number (R0) in a heterogeneous setting should be bigger than R0 in a homogeneous setting. This assumption allows us to consider that targeting malaria hotspots cannot work well because the relationship in R0 can be false corresponding to parameter settings. If the effect on R0 of parameter settings is clarified, theoretically optimum vaccination strategy would be predicted for a pragmatic malaria vaccine trial, which started in 2019. Here the purpose of this study was to simulate the effectiveness (the level of prevalence decline after completing vaccination to half of the total population) corresponding to transmission intensity. The SEI-SI models was built in the heterogeneous or homogeneous biting setting with vaccination coverage of two types of vaccines: sporozoite (SpV) and transmission-blocking (TBV). [Odaka and Sunahara <i>CCS</i> 2019](d1-2, d9-10)</p></td>
+    			</tr>
+    			<tr>
+      				<td><p style="text-align:left"><div class="researchfigures"><img src="/imgs_res/Malaria_02.JPG" oncontextmenu="return false;"></img></div></p></td>
+      				<td><p style="text-align:left">The vector emergence population dramatically affected the effectiveness when other parameters were fixed. The increase in the emergence population of SpV and TBV made the effectiveness more significant in targeting the low-risk group. The effectiveness of SpV exceeded that of TBV. A little effect of vaccination caused this inverse phenomenon compared to regular vector supply, like "a drop in the ocean." Sensitivity analysis using the one-factor-at-a-time method (OFAT) and canonical discriminant analysis (about  30,000 iterations) allowed to find that the human recovery rate needs to be carefully set. Overall, targeting malaria hotspots can be counterproductive when transmission intensity is high.</p></td>
+    			</tr>
+  			</table>
+  	    </div>
+      </main>
+    </div>
+</body>
+</html>
