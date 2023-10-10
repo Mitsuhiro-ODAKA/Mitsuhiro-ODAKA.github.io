@@ -8,6 +8,7 @@ function langSet() {
     }
     else{
       var result = str.replace("github.io","github.io/index_en.html");
+      var result = result.replace("index_en.html/","index_en.html");
     }
 	}
   window.location.href = result;
